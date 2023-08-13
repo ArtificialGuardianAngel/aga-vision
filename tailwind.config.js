@@ -7,12 +7,33 @@ module.exports = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+      colors: {
+        background: '#1C2949',
+        mainColor: '#D6E1FA',
+        card: 'rgba(255, 255, 255, 0.03)',
+        accentGreen: '#11F4D1',
+        blue7: '#22304D',
+        cardCombined: 'rgb(37, 48, 77)',
       },
+      fontSize: {},
+      fontWeight: {},
+      fontFamily: {
+        ceraPro: 'Cera Pro',
+      },
+    },
+    screens: {
+      xl: { max: '1279px' },
+      // => @media (max-width: 1279px) { ... }
+
+      lg: { max: '1023px' },
+      // => @media (max-width: 1023px) { ... }
+
+      md: { max: '767px' },
+      // => @media (max-width: 767px) { ... }
+
+      sm: { max: '639px' },
+      // => @media (max-width: 639px) { ... }
     },
   },
   plugins: [],
-}
+};
