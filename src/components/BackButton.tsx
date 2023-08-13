@@ -20,7 +20,7 @@ const BackButton: React.FC<Props> = ({ className }) => {
         />
       </div>
 
-      <div className="text-[13px] font-[600] uppercase">Back</div>
+      <div className="text-[13px] font-[600] uppercase md:hidden">Back</div>
     </Link>
   );
 };

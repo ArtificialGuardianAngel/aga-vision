@@ -478,7 +478,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="grid grid-cols-[1fr_1fr_1fr] gap-[30px] p-[50px_0]">
+            <div className="grid grid-cols-[1fr_1fr_1fr] gap-[30px] p-[50px_0] md:grid-cols-[1fr]">
               <div className="m-auto md:hidden">
                 <Image src="/long-arrow.svg" alt="" width={14} height={84} />
               </div>
@@ -490,7 +490,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="grid grid-cols-[1fr_1fr_1fr] gap-[30px]">
+            <div className="grid grid-cols-[1fr_1fr_1fr] gap-[30px] md:grid-cols-[1fr]">
               <div className="challenges-card-bg rounded-[20px] flex justify-center items-center p-[3px] text-center">
                 <div className="h-full w-full flex flex-col p-[50px_20px] gap-[28px] border-transparent bg-cardCombined rounded-[20px] items-center">
                   <div className="icon">
@@ -661,15 +661,15 @@ export default function Home() {
           </div>
 
           <div className="text-center">
-            <h5 className="text-[40px] font-[200] text-center leading-[calc(29/40)] mb-[30px]">
+            <h5 className="text-[40px] font-[200] text-center leading-[calc(29/40)] mb-[30px] md:leading-normal md:text-[26px]">
               Submission form
             </h5>
-            <h6 className="text-[18px] leading-[calc(13/18)] text-center mb-[30px]">
+            <h6 className="text-[18px] leading-[calc(13/18)] text-center mb-[30px] md:leading-none md:text-[16px]">
               Read the details about submitting solutions to The Guardian
               Challenges.
             </h6>
             <Button
-              className="ml-auto mr-auto mb-[50px]"
+              className="ml-auto mr-auto mb-[50px] md:mb-0"
               size="lg"
               type="secondary"
             >
@@ -681,7 +681,7 @@ export default function Home() {
 
           <div className="flex flex-col gap-[50px] items-center">
             <div className="linear-rect"></div>
-            <h5 className="text-[40px] font-[200] text-center leading-[1.3] mb-[30px]">
+            <h5 className="text-[40px] font-[200] text-center leading-[1.3] mb-[30px] md:text-[26px]">
               Guidelines for submitting solutions to The Guardian Challenges
             </h5>
           </div>
@@ -699,10 +699,10 @@ export default function Home() {
           height={293}
         />
 
-        <h5 className="text-[40px] font-[200] text-center leading-[calc(29/40)] mb-[50px]">
+        <h5 className="text-[40px] font-[200] text-center leading-[calc(29/40)] mb-[50px] md:text-[26px] md:leading-none">
           Let the The Guardian Challenge begin.
         </h5>
-        <h6 className="text-[18px] text-center max-w-[880px] ml-auto mr-auto">
+        <h6 className="text-[18px] text-center max-w-[880px] ml-auto mr-auto md:text-[16px]">
           Join The Guardian Challenge today and seize the opportunity to shape
           the very fabric of AI while contributing to the development of a
           global alternative financial system. Unleash your creativity,

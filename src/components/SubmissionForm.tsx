@@ -22,7 +22,7 @@ const SubmissionForm = () => {
   const [challenge, setChallenge] = useState<string>('');
 
   return (
-    <form className="bg-card p-[50px] rounded-[4px] flex flex-col gap-[50px] text-start">
+    <form className="bg-card p-[50px] rounded-[4px] flex flex-col gap-[50px] text-start md:p-[50px_0] md:bg-transparent">
       <div>
         <h6 className="text-[16px] leading-[calc(12/16)] font-[500] mb-[50px]">
           You are submitting a solution/s as:
@@ -58,7 +58,7 @@ const SubmissionForm = () => {
         <Input placeholder="Link to video with demo of the solution" />
       </div>
 
-      <div className="flex gap-[50px]">
+      <div className="flex gap-[50px] md:flex-col">
         <div className="flex-1">
           <Checkbox>
             I accept{' '}

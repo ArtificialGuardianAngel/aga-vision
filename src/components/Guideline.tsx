@@ -5,7 +5,7 @@ const GUIDELINE_CARDS: { title: string; content: React.ReactNode }[] = [
   {
     title: 'Introduction',
     content: (
-      <div className="text-[18px] leading-[calc(151/126)]">
+      <div className="text-[18px] md:text-[16px] leading-[calc(151/126)]">
         The Guardian Challenge is a global initiative that seeks innovative
         solutions in the field of artificial intelligence (AI) & Quantum
         computing. This document outlines the process for individuals or teams
@@ -21,7 +21,7 @@ const GUIDELINE_CARDS: { title: string; content: React.ReactNode }[] = [
   {
     title: 'Understanding the Challenge',
     content: (
-      <div className="text-[18px] leading-[calc(151/126)]">
+      <div className="text-[18px] md:text-[16px] leading-[calc(151/126)]">
         Read the challenge description carefully to grasp the problem statement,
         objectives, evaluation criteria, and any specific requirements or
         constraints. Ensure that your solution aligns with the provided
@@ -32,7 +32,7 @@ const GUIDELINE_CARDS: { title: string; content: React.ReactNode }[] = [
   {
     title: 'Solution Development',
     content: (
-      <div className="text-[18px] leading-[calc(151/126)]">
+      <div className="text-[18px] md:text-[16px] leading-[calc(151/126)]">
         Develop your solution by employing your knowledge of AI and related
         technologies. Be creative, innovative, and consider practical
         applications of your solution. Take into account any specifications or
@@ -43,7 +43,7 @@ const GUIDELINE_CARDS: { title: string; content: React.ReactNode }[] = [
   {
     title: 'Documentation',
     content: (
-      <div className="text-[18px] leading-[calc(151/126)]">
+      <div className="text-[18px] md:text-[16px] leading-[calc(151/126)]">
         <p className="mb-[20px]">
           Prepare a comprehensive document that outlines your solution. It
           should include the following sections:
@@ -85,7 +85,7 @@ const GUIDELINE_CARDS: { title: string; content: React.ReactNode }[] = [
   {
     title: 'Python',
     content: (
-      <div className="text-[18px] leading-[calc(151/126)]">
+      <div className="text-[18px] md:text-[16px] leading-[calc(151/126)]">
         For coding solutions, it is required that the submissions are based on
         the Python programming language, with the ideal utilization of the
         Django framework. Additionally, it is recommended to incorporate vector
@@ -100,7 +100,7 @@ const GUIDELINE_CARDS: { title: string; content: React.ReactNode }[] = [
   {
     title: 'Submission',
     content: (
-      <div className="text-[18px] leading-[calc(151/126)]">
+      <div className="text-[18px] md:text-[16px] leading-[calc(151/126)]">
         Submit your solution according to the submission guidelines provided for
         The Guardian Challenge. This typically involves sending your solution
         document, GitHub and video link, along with any supporting files or
@@ -111,7 +111,7 @@ const GUIDELINE_CARDS: { title: string; content: React.ReactNode }[] = [
   {
     title: 'Evaluation and Selection',
     content: (
-      <div className="text-[18px] leading-[calc(151/126)]">
+      <div className="text-[18px] md:text-[16px] leading-[calc(151/126)]">
         A jury of experts will evaluate the submitted proposals based on the
         evaluation criteria outlined in the challenge description. They will
         assess the feasibility, creativity, technical merit, and practicality of
@@ -123,14 +123,14 @@ const GUIDELINE_CARDS: { title: string; content: React.ReactNode }[] = [
     title: 'Winner Announcement',
     content: (
       <>
-        <div className="text-[18px] leading-[calc(151/126)] mb-[30px]">
+        <div className="text-[18px] md:text-[16px] leading-[calc(151/126)] mb-[30px]">
           Once the evaluation process is complete, the jury will select the
           winning solution that best meets the challenge requirements. The
           winner will be notified through the contact information provided and
           publicly announced on The Guardian Challenge platform or relevant
           channels.
         </div>
-        <div className="text-[18px] leading-[calc(151/126)]">
+        <div className="text-[18px] md:text-[16px] leading-[calc(151/126)]">
           The jury of The Guardian Challenge holds the absolute and sole
           discretion to reward the prize to the solution they deem most
           deserving. Their decision is final and cannot be disputed. The jury
@@ -146,14 +146,14 @@ const GUIDELINE_CARDS: { title: string; content: React.ReactNode }[] = [
     title: 'Conclusion',
     content: (
       <>
-        <div className="text-[18px] leading-[calc(151/126)] mb-[30px]">
+        <div className="text-[18px] md:text-[16px] leading-[calc(151/126)] mb-[30px]">
           Submitting your solution to The Guardian Challenges requires careful
           consideration, comprehensive documentation, and effective
           communication. By following these guidelines and presenting your
           solution in a clear and detailed manner, you increase your chances of
           being recognized for your innovative contribution to the field of AI.
         </div>
-        <div className="text-[18px] leading-[calc(151/126)]">
+        <div className="text-[18px] md:text-[16px] leading-[calc(151/126)]">
           Remember to review the specific guidelines and instructions provided
           for each challenge, as they may vary. Good luck with your submission!
         </div>

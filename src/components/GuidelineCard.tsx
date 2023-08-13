@@ -7,11 +7,11 @@ interface Props {
 
 const GuidelineCard: React.FC<Props> = ({ title, content }) => {
   return (
-    <div className="rounded-[10px] p-[50px] flex flex-col gap-[30px] bg-card">
-      <h5 className="text-accentGreen text-[20px] font-[600] leading-[calc(15/20)]">
+    <div className="rounded-[10px] p-[50px] flex flex-col gap-[30px] bg-card md:p-[50px_30px]">
+      <h5 className="text-accentGreen text-[20px] font-[600] leading-[calc(15/20)] md:leading-none">
         {title}
       </h5>
-      <div>{content}</div>
+      <div className="md:text-[16px]">{content}</div>
     </div>
   );
 };

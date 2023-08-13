@@ -30,12 +30,12 @@ export default function TrainingFunction() {
   return (
     <>
       <main className="relative">
-        <BackButton className="absolute top-[50px] left-[50px]" />
+        <BackButton className="absolute top-[50px] left-[50px] md:top-[30px] md:left-[20px]" />
 
-        <section className="p-[150px_0_25px]">
+        <section className="p-[150px_0_25px] md:p-[100px_0_25px]">
           <VideoBackground />
 
-          <div className="flex flex-col gap-[100px] container">
+          <div className="flex flex-col gap-[100px] container md:gap-[50px]">
             <div className="flex flex-col items-center">
               <Image
                 className="mix-blend-lighten max-[1560px]:max-w-[620px]"
@@ -44,7 +44,7 @@ export default function TrainingFunction() {
                 width={500}
                 height={272}
               />
-              <div className="p-[30px_50px] rounded-[100px] bg-[rgba(255,255,255,0.05)] text-[40px] font-[200] leading-[calc(29/40)] mb-[50px]">
+              <div className="p-[30px_50px] rounded-[100px] bg-[rgba(255,255,255,0.05)] text-[40px] font-[200] leading-[calc(29/40)] mb-[50px] md:text-[20px] md:p-[20px_30px] md:w-full md:text-center">
                 The Guardian Training Camp
               </div>
               <div className="text-center text-[18px] max-w-[880px] m-auto">
@@ -67,8 +67,8 @@ export default function TrainingFunction() {
               </div>
             </div>
 
-            <div className="bg-card p-[70px] w-full rounded-[40px] flex flex-col gap-[50px]">
-              <h3 className="text-[30px] leading-[calc(22/30)]">
+            <div className="bg-card p-[70px] w-full rounded-[40px] flex flex-col gap-[50px] md:gap-[30px] md:p-[50px_20px]">
+              <h3 className="text-[30px] leading-[calc(22/30)] md:text-[24px]">
                 Learn about:
               </h3>
 
@@ -88,11 +88,16 @@ export default function TrainingFunction() {
 
             {Object.entries(TRAINING_CENTER).map(([name, item]) => (
               <div key={name} className="flex flex-col gap-[50px] items-center">
-                <h3 className="text-[40px] font-[200] leading-[calc(29/40)]">
+                <h3 className="text-[40px] font-[200] leading-[calc(29/40)] md:text-[26px] md:leading-none">
                   {name}
                 </h3>
 
-                <Button size="lg" link={item.git} linkType="external">
+                <Button
+                  className="md:w-full"
+                  size="lg"
+                  link={item.git}
+                  linkType="external"
+                >
                   go to github repository
                 </Button>
 
@@ -100,7 +105,7 @@ export default function TrainingFunction() {
                   Video-lessons:
                 </h4>
 
-                <div className="grid grid-cols-2 w-full gap-[30px]">
+                <div className="grid grid-cols-2 w-full gap-[30px] md:grid-cols-1">
                   {item.youtube.map((video) =>
                     video.title || video.link || video.description ? (
                       <TrainingCenter
@@ -119,7 +124,7 @@ export default function TrainingFunction() {
                   Video channels / playlists:
                 </h4>
 
-                <div className="grid grid-cols-2 w-full gap-[30px]">
+                <div className="grid grid-cols-2 w-full gap-[30px] md:grid-cols-1">
                   {item.playlists.map((playlist, i) =>
                     playlist.title || playlist.link || playlist.description ? (
                       <TrainingCenter

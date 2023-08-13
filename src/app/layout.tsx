@@ -23,7 +23,7 @@ export default function RootLayout({
       <body className={cn('bg-background text-mainColor', sora.className)}>
         {children}
 
-        <section className="p-[75px_0_25px] container">
+        <section className="p-[75px_0_25px] container md:p-[25px_0]">
           <div className="flex flex-col items-center gap-[50px]">
             <div className="linear-rect"></div>
             <div className="text-[14px] font-[500]">Powered by NUAH</div>
