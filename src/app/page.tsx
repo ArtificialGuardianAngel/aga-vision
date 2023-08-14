@@ -201,7 +201,7 @@ export default function Home() {
 
             <div className="text-[22px] font-[300] leading-[calc(32/25)]">
               Dive into <span className="green">real-time development:</span>{' '}
-              explore code progression directly on our Legion's interactive
+              explore code progression directly on our Legions interactive
               GitHub repository.
             </div>
 
@@ -419,7 +419,7 @@ export default function Home() {
 
             <div className="text-[18px] leading-[calc(21/18)]">
               <span className="green">Solve and upload:</span> craft an elegant
-              and efficient code that showcases your creation's capabilities and
+              and efficient code that showcases your creation&apos;s capabilities and
               solves real-world challenges.
             </div>
           </div>

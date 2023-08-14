@@ -1,19 +1,19 @@
-import React, { HTMLProps, PropsWithChildren } from 'react';
+import React, { HtmlHTMLAttributes, PropsWithChildren } from 'react';
 import cn from 'classnames';
 import Image from 'next/image';
 import Link from 'next/link';
 
 interface ButtonProps {
-  type: 'primary' | 'secondary';
-  size: 'sm' | 'lg';
+  type?: 'primary' | 'secondary';
+  size?: 'sm' | 'lg';
   icon?: 'arrow' | 'external';
   link?: string;
   linkType?: 'external' | 'internal';
 }
 
-type Props = ButtonProps & HTMLProps<HTMLButtonElement> & PropsWithChildren;
+type Props = PropsWithChildren<ButtonProps & HtmlHTMLAttributes<HTMLButtonElement>>;
 
-const Button: React.FC<Props> = ({
+const Button = ({
   size = 'sm',
   type = 'primary',
   icon,
@@ -22,7 +22,7 @@ const Button: React.FC<Props> = ({
   className,
   linkType,
   onClick,
-}) => {
+}:Props) => {
   const stylesClass = cn(
     'relative cursor-pointer font-[600] rounded-[50px] uppercase inline-block text-center',
     className,

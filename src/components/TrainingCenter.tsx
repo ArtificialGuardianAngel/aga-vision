@@ -18,7 +18,7 @@ const TrainingCenter: React.FC<Props> = ({
 }) => {
   const buttonProps: {
     link?: string;
-    linkType?: string;
+    linkType?: "external" | "internal";
     className?: string;
     type?: 'primary' | 'secondary';
     onClick?: () => void;

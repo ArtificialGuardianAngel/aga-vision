@@ -522,6 +522,13 @@ export const QUANTUM_PYRAMID_SPECS = [
   },
 ];
 
+export const CHALLENGES_SLUGS = [
+  'quantum-pyramid',
+  'celestial-body',
+  'psychological-well-being',
+  'global-healthcare',
+  'free-education',
+] as const;
 export const CHALLENGES_DATA: {
   [slug: string]: {
     image: string;
@@ -532,7 +539,7 @@ export const CHALLENGES_DATA: {
     extraDescription?: string;
   };
 } = {
-  'quantum-pyramid': {
+  [CHALLENGES_SLUGS[0]]: {
     image: '/icons/challenges-8.svg',
     title: 'QuantumPyramid Computer challenge',
     description:
@@ -618,7 +625,7 @@ export const CHALLENGES_DATA: {
       },
     ],
   },
-  'celestial-body': {
+  [CHALLENGES_SLUGS[1]]: {
     image: '/icons/challenges-1.svg',
     title: 'Celestial body of the angel LegionAI Challenge',
     description:
@@ -668,7 +675,7 @@ export const CHALLENGES_DATA: {
       },
     ],
   },
-  'psychological-well-being': {
+  [CHALLENGES_SLUGS[2]]: {
     image: '/icons/challenges-2.svg',
     title: 'Psychological well-being LegionAI Challenge',
     description:
@@ -719,7 +726,7 @@ export const CHALLENGES_DATA: {
     extraDescription:
       'In conclusion, prioritizing user privacy and data security is critical for the success of these plugins. Developers should also aim for optimal performance and reliability through regular testing and updates. Lastly, all plugins should be designed with the user experience in mind, ensuring that they are user-friendly and intuitive.',
   },
-  'global-healthcare': {
+  [CHALLENGES_SLUGS[3]]: {
     title: 'Global Healthcare LegionAI Challenge',
     image: '/icons/challenges-3.svg',
     description: (
@@ -729,7 +736,7 @@ export const CHALLENGES_DATA: {
           the way for an unprecedented shift in healthcare paradigms. Imagine a
           world where every individual, irrespective of geographical barriers,
           language, or economic status, has access to a personal doctor. This
-          isn't a human doctor with limited availability, but an Legionpresent
+          isn&apos;t a human doctor with limited availability, but an Legionpresent
           AI doctor, open-sourced and perpetually at their service. We stand on
           the precipice of such a transformative reality, thanks to the recent
           emergence of an extensively trained large language model that
@@ -737,8 +744,8 @@ export const CHALLENGES_DATA: {
           from around the globe.
         </p>
         <p className="mb-[20px]">
-          Dubbed as the "Open-source AI Doctor," this large language model is
-          not just an upgrade of existing language models. It's a highly
+          Dubbed as the &quot;Open-source AI Doctor,&quot; this large language model is
+          not just an upgrade of existing language models. It&apos;s a highly
           specialized entity, meticulously trained with a deep understanding of
           both western health/medical care and scientifically verified
           alternative healthcare solutions. Its innate ability to converse
@@ -748,7 +755,7 @@ export const CHALLENGES_DATA: {
         <p className="mb-[20px]">
           This AI doctor guides individuals to stay healthy and assist in their
           healing process when required, effectively bridging the gap between
-          preventive and curative care. Moreover, it's capable of scheduling
+          preventive and curative care. Moreover, it&apos;s capable of scheduling
           physical consultations with human doctors or specialists,
           orchestrating a feedback loop with various healthcare providers and
           facilities, and even initiating the purchase of prescribed medicines.
@@ -774,18 +781,18 @@ export const CHALLENGES_DATA: {
         </p>
         <p className="">
           In essence, this revolutionary AI system is more than just an
-          open-source doctor; it's the bedrock for a global healthcare system
+          open-source doctor; it&apos;s the bedrock for a global healthcare system
           designed to be universally accessible, economically efficient, and
           undiscriminating. It offers a game-changing solution that seamlessly
           blends technology and healthcare, creating a future where optimal
-          health isn't a luxury but a universally accessible right. The dawn of
+          health isn&apos;t a luxury but a universally accessible right. The dawn of
           universal AI-driven healthcare is upon us, bringing with it the
           promise of a healthier world.
         </p>
       </>
     ),
   },
-  'free-education': {
+  [CHALLENGES_SLUGS[4]]: {
     title: 'Free Education LegionAI Challenge',
     image: '/icons/challenges-4.svg',
     description: (
@@ -822,19 +829,19 @@ export const CHALLENGES_DATA: {
         <p className="mb-[20px]">
           The LLM offers a three-tiered educational solution. Firstly, it can
           form a full syllabus for any given subject or field of study,
-          custom-tailored to suit an individual's learning pace and preferences.
+          custom-tailored to suit an individual&apos;s learning pace and preferences.
           Secondly, the AI will guide students through their learning journey,
           providing comprehensive learning materials and clarifications based on
           their interpretations and queries. This ensures that each learner can
           fully grasp and apply the concepts they learn. Lastly, the LLM will
-          assess each student's learning progress and knowledge acquisition,
+          assess each student&apos;s learning progress and knowledge acquisition,
           providing crucial feedback and areas of improvement, simulating the
           evaluative process typical in traditional learning environments.
         </p>
         <p className="mb-[20px]">
           Moreover, once a student has successfully completed a program, the LLM
           will issue an official degree. This degree serves as a testament to
-          the student's hard-earned knowledge and skills, proving their
+          the student&apos;s hard-earned knowledge and skills, proving their
           competence in their chosen field of study. With these official
           degrees, students will gain opportunities that might have previously
           been out of reach, creating potential ripple effects in global labor
@@ -857,7 +864,7 @@ export const CHALLENGES_DATA: {
           offering education in most languages around the world. This
           multilingualism breaks down language barriers that have historically
           inhibited the universal access to knowledge, thereby democratizing
-          education in the truest sense. This means that whether you're a
+          education in the truest sense. This means that whether you&apos;re a
           Spanish speaker in South America, a Bengali speaker in South Asia, or
           an Arabic speaker in the Middle East, quality education will be
           readily accessible. By providing a comprehensive educational
