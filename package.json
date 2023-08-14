@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start -p 18888",
-    "lint": "next lint"
+    "lint": "next lint",
+    "test": "echo Ok"
   },
   "dependencies": {
     "@types/node": "20.4.8",
