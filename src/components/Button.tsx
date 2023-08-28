@@ -4,14 +4,16 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 interface ButtonProps {
-  type?: 'primary' | 'secondary';
+  type?: 'primary' | 'secondary' | 'card';
   size?: 'sm' | 'lg';
   icon?: 'arrow' | 'external';
   link?: string;
   linkType?: 'external' | 'internal';
 }
 
-type Props = PropsWithChildren<ButtonProps & HtmlHTMLAttributes<HTMLButtonElement>>;
+type Props = PropsWithChildren<
+  ButtonProps & HtmlHTMLAttributes<HTMLButtonElement>
+>;
 
 const Button = ({
   size = 'sm',
@@ -22,7 +24,7 @@ const Button = ({
   className,
   linkType,
   onClick,
-}:Props) => {
+}: Props) => {
   const stylesClass = cn(
     'relative cursor-pointer font-[600] rounded-[50px] uppercase inline-block text-center',
     className,
@@ -35,6 +37,7 @@ const Button = ({
         size === 'lg',
       ['pr-[40px]']: icon && size === 'sm',
       ['pr-[50px]']: icon && size === 'lg',
+      ['bg-white/10 text-[#AEB9D2] font-bold']: type === 'card',
     },
   );
 
@@ -91,6 +94,7 @@ const Button = ({
           ['text-[13px] leading-[calc(9/13)] p-[25px_30px] text-[#4C5576]']:
             size === 'lg',
           ['pr-[40px]']: icon,
+          ['bg-white/10 text-[#AEB9D2] font-bold']: type === 'card',
         },
       )}
       onClick={onClick}

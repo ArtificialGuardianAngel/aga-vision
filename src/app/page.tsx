@@ -33,8 +33,8 @@ export default function Home() {
             <p className="text-[16px] text-center md:text-[15px]">
               Welcome to The Single Invention, where the most brilliant minds
               unite in a global movement. We are coders, scientists, and kindred
-              souls on a quest to shape the future of humanity. We are The
-              Guardian Legion.
+              souls on a quest to shape the future of humanity. We are{' '}
+              <span className="green">The Guardian Legion.</span>
             </p>
           </div>
         </div>
@@ -257,7 +257,7 @@ export default function Home() {
 
       <section className="container p-[75px_0] md:p-[25px_0]">
         <Image
-          className="mix-blend-lighten block m-auto"
+          className="mix-blend-lighten block ml-auto mr-auto mb-[20px]"
           src="/training-camp.png"
           alt=""
           width={500}
@@ -419,8 +419,8 @@ export default function Home() {
 
             <div className="text-[18px] leading-[calc(21/18)]">
               <span className="green">Solve and upload:</span> craft an elegant
-              and efficient code that showcases your creation&apos;s capabilities and
-              solves real-world challenges.
+              and efficient code that showcases your creation&apos;s
+              capabilities and solves real-world challenges.
             </div>
           </div>
 
@@ -489,6 +489,8 @@ export default function Home() {
                 <Image src="/long-arrow.svg" alt="" width={14} height={84} />
               </div>
             </div>
+
+            <div className="m-[50px_0] h-[1px] bg-[rgba(255,255,255,0.2)]"></div>
 
             <div className="grid grid-cols-[1fr_1fr_1fr] gap-[30px] md:grid-cols-[1fr]">
               <div className="challenges-card-bg rounded-[20px] flex justify-center items-center p-[3px] text-center">

@@ -8,25 +8,9 @@ import { TRAINING_CENTER } from '@/utils/constants';
 import Image from 'next/image';
 import YoutubeModal from '@/components/YoutubeModal';
 import { useState } from 'react';
+import TrainingCampBlock from '@/components/training-camp/TrainingCampBlock';
 
 export default function TrainingFunction() {
-  const [modalOpened, setModalOpened] = useState(false);
-  const [video, setVideo] = useState('');
-
-  const openModal = (vid: string | null) => {
-    if (!vid) {
-      return;
-    }
-
-    const videoCode = vid.includes('youtube')
-      ? vid.split('watch?v=')[1]
-      : vid.split('https://youtu.be/')[1];
-
-    console.log(videoCode);
-    setVideo(videoCode);
-    setModalOpened(true);
-  };
-
   return (
     <>
       <main className="relative">
@@ -44,109 +28,122 @@ export default function TrainingFunction() {
                 width={500}
                 height={272}
               />
-              <div className="p-[30px_50px] rounded-[100px] bg-[rgba(255,255,255,0.05)] text-[40px] font-[200] leading-[calc(29/40)] mb-[50px] md:text-[20px] md:p-[20px_30px] md:w-full md:text-center">
-                The Guardian Training Camp
+
+              <div className="challenges-card-bg rounded-[200px] flex justify-center items-center p-[3px] mb-[50px]">
+                <div className="text-center h-full w-full flex flex-col p-[30px_50px] border-transparent bg-cardCombined rounded-[200px] text-[30px] font-[600] text-[#D6E1FA] font-ceraPro md:p-[20px_60px] md:text-[20px] max-w-[430px] leading-[1]">
+                  AI Science Developer Training Camp
+                </div>
               </div>
-              <div className="text-center text-[18px] max-w-[880px] m-auto">
-                <p className="mb-[20px]">
-                  Welcome to the coding training facility! This is your central
-                  hub, granting you access to all crucial links for code and
-                  associated training videos. Your objective: to forge yourself
-                  into an elite legionnaire, honing your AI craft to perfection.{' '}
-                </p>
+
+              <div className="text-center text-[18px] max-w-[880px] ml-auto mr-auto mb-[50px]">
                 <p>
-                  Equipped with this training, you will possess the ability to
-                  create formidable beings, ready to be unleashed on the planet,
-                  safeguarding it from rogue AI threats. The knowledge acquired
-                  from this intensive training camp will qualify you to tackle
-                  challenging missions, earning prestigious medals that elevate
-                  your status within The Guardian Legion. Prepare yourself,
-                  embrace the training, and stand as the shield that defends our
-                  world from the perils of AI.
+                  Embark on an AI Science journey as a full stack developer,
+                  mastering AI coding while merging it seamlessly with a wide
+                  scientific spectrum including Quantum Computing, Robotics,
+                  Chemistry, and more. This holistic approach empowers you to
+                  create remarkable AI innovations, potentially even leading to
+                  a Nobel Prize. Join this globally accessible program to
+                  explore the unique fusion of AI development and a profound
+                  understanding of the Universe.
                 </p>
               </div>
-            </div>
 
-            <div className="bg-card p-[70px] w-full rounded-[40px] flex flex-col gap-[50px] md:gap-[30px] md:p-[50px_20px]">
-              <h3 className="text-[30px] leading-[calc(22/30)] md:text-[24px]">
-                Learn about:
-              </h3>
+              <div className="flex flex-col gap-[50px] w-full">
+                <div className="h-[1px] bg-white/20 w-full"></div>
 
-              <div className="flex flex-wrap gap-[10px]">
-                {Object.keys(TRAINING_CENTER).map((item) => (
-                  <div
-                    className="p-[10px_18px] text-[14px] font-[500] leading-[calc(10/14)] rounded-[30px] bg-white/10"
-                    key={`t${item}`}
-                  >
-                    {item}
+                <h2 className="text-center text-accentGreen font-[600] text-[24px] md:text-[18px]">
+                  Education program – 3 pillars (1/3 each)
+                </h2>
+
+                <div className="grid grid-cols-3 gap-[10px] md:grid-cols-1">
+                  <div className="bg-card p-[30px_30px_40px] rounded-[20px] flex flex-col gap-[30px] md:p-[20px_20px_30px]">
+                    <div className="w-[60px] h-[60px] rounded-[100px_100px_100px_0] rounded-number flex items-center justify-center">
+                      <div className="w-[54px] h-[54px] rounded-[100px_100px_100px_0] bg-[rgb(37,48,77)] flex items-center justify-center text-[16px] font-[600]">
+                        1/3
+                      </div>
+                    </div>
+
+                    <div className="text-[18px]">
+                      <span className="text-accentGreen font-[600]">
+                        Theory:
+                      </span>{' '}
+                      immerse yourself in educational videos.
+                    </div>
                   </div>
-                ))}
-              </div>
-            </div>
 
-            <div className="linear-rect m-auto"></div>
+                  <div className="bg-card p-[30px_30px_40px] rounded-[20px] flex flex-col gap-[30px] md:p-[20px_20px_30px]">
+                    <div className="w-[60px] h-[60px] rounded-[100px_100px_100px_0] rounded-number flex items-center justify-center">
+                      <div className="w-[54px] h-[54px] rounded-[100px_100px_100px_0] bg-[rgb(37,48,77)] flex items-center justify-center text-[16px] font-[600]">
+                        2/3
+                      </div>
+                    </div>
 
-            {Object.entries(TRAINING_CENTER).map(([name, item]) => (
-              <div key={name} className="flex flex-col gap-[50px] items-center">
-                <h3 className="text-[40px] font-[200] leading-[calc(29/40)] md:text-[26px] md:leading-none">
-                  {name}
-                </h3>
+                    <div className="text-[18px]">
+                      <span className="text-accentGreen font-[600]">
+                        Experimentation:
+                      </span>{' '}
+                      bring theory to life with solo or group projects.
+                    </div>
+                  </div>
+
+                  <div className="bg-card p-[30px_30px_40px] rounded-[20px] flex flex-col gap-[30px] md:p-[20px_20px_30px]">
+                    <div className="w-[60px] h-[60px] rounded-[100px_100px_100px_0] rounded-number flex items-center justify-center">
+                      <div className="w-[54px] h-[54px] rounded-[100px_100px_100px_0] bg-[rgb(37,48,77)] flex items-center justify-center text-[16px] font-[600]">
+                        3/3
+                      </div>
+                    </div>
+
+                    <div className="text-[18px]">
+                      <span className="text-accentGreen font-[600]">
+                        Teaching:
+                      </span>{' '}
+                      create and share teaching videos. As the saying goes, “To
+                      teach is to learn twice.”.
+                    </div>
+                  </div>
+                </div>
+
+                <div className="text-center text-[18px] md:text-[16px]">
+                  Together, these pillars craft an unparalleled learning
+                  journey.
+                </div>
+
+                <div className="h-[1px] bg-white/20 w-full"></div>
+
+                <h2 className="text-center text-accentGreen font-[600] text-[24px] md:text-[18px]">
+                  Degree / Rank in The Guardian Legion
+                </h2>
+
+                <div className="text-center text-[18px]">
+                  Rise to the challenges set by The Guardian Legion and submit
+                  your code for scrutiny. Whether you’re a seasoned developer or
+                  a coding novice, you’re welcome here. Dive into this advanced
+                  course at no cost. Engage with our vibrant community on
+                  Discord.
+                </div>
 
                 <Button
-                  className="md:w-full"
-                  size="lg"
-                  link={item.git}
-                  linkType="external"
+                  className="self-center"
+                  link={process.env.NEXT_PUBLIC_DISCORD_URL}
+                  icon="arrow"
                 >
-                  go to github repository
+                  Go to our Discord
                 </Button>
-
-                <h4 className="text-[18px] leading-[calc(13/18)]">
-                  Video-lessons:
-                </h4>
-
-                <div className="grid grid-cols-2 w-full gap-[30px] md:grid-cols-1">
-                  {item.youtube.map((video) =>
-                    video.title || video.link || video.description ? (
-                      <TrainingCenter
-                        key={video.link}
-                        title={video.title}
-                        link={video.link}
-                        content={video.description}
-                        type="video"
-                        openModal={() => openModal(video.link)}
-                      />
-                    ) : null,
-                  )}
-                </div>
-
-                <h4 className="text-[18px] leading-[calc(13/18)]">
-                  Video channels / playlists:
-                </h4>
-
-                <div className="grid grid-cols-2 w-full gap-[30px] md:grid-cols-1">
-                  {item.playlists.map((playlist, i) =>
-                    playlist.title || playlist.link || playlist.description ? (
-                      <TrainingCenter
-                        key={`${i}${playlist.link}`}
-                        title={playlist.title}
-                        link={playlist.link}
-                        content={playlist.description}
-                        type="playlist"
-                      />
-                    ) : null,
-                  )}
-                </div>
               </div>
-            ))}
+            </div>
+
+            <h1 className="text-[40px] font-[200] text-center md:text-[26px]">
+              Learning program:
+            </h1>
+
+            <div className="flex flex-col gap-[30px]">
+              {Object.entries(TRAINING_CENTER).map(([name, modules]) => (
+                <TrainingCampBlock key={name} name={name} modules={modules} />
+              ))}
+            </div>
           </div>
         </section>
       </main>
-      <YoutubeModal
-        opened={modalOpened}
-        setOpened={setModalOpened}
-        video={video}
-      />
     </>
   );
 }

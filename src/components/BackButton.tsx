@@ -5,11 +5,12 @@ import cn from 'classnames';
 
 interface Props {
   className?: string;
+  href?: string;
 }
 
-const BackButton: React.FC<Props> = ({ className }) => {
+const BackButton: React.FC<Props> = ({ className, href = '/' }) => {
   return (
-    <Link href="/" className={cn(className, 'flex gap-[15px] items-center')}>
+    <Link href={href} className={cn(className, 'flex gap-[15px] items-center')}>
       <div className="rounded-full bg-accentGreen w-[40px] h-[40px] flex items-center justify-center">
         <Image
           className="rotate-180"
