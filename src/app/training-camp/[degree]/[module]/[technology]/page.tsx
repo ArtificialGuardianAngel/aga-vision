@@ -54,7 +54,7 @@ export default function TechnologyPage({
           <div className="flex flex-col gap-[50px] container">
             <div className="flex flex-col gap-[30px] items-center">
               <h2 className="text-center text-[40px] font-[200]">
-                {params.technology}
+                {decodeURI(params.technology)}
               </h2>
 
               <div className="text-center">{data.description}</div>

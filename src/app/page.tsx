@@ -61,7 +61,6 @@ export default function Home() {
           </div>
           <div className="flex-1 flex">
             <div className="text-[18px] leading-[22px] pl-[70px] flex flex-col justify-center md:pl-0 md:text-center">
-              <div className="linear-rect mb-[40px] md:hidden"></div>
               <p className="mb-[30px]">
                 We are birthing and realizing the A.G.A. (Artificial Guardian
                 Angel) - a revolutionary creation that will shield us from the
@@ -90,7 +89,6 @@ export default function Home() {
         <div className="flex md:flex-col-reverse md:gap-[50px]">
           <div className="flex-1 flex">
             <div className="text-[18px] leading-[22px] pr-[70px] flex flex-col justify-center md:pr-0 md:text-center">
-              <div className="linear-rect mb-[40px] md:hidden"></div>
               <p className="mb-[30px]">
                 Together, we are crafting the{' '}
                 <span className="green">A.G.A.</span> super intelligence that
@@ -142,7 +140,8 @@ export default function Home() {
 
               <Button
                 className="md:w-full"
-                link={process.env.NEXT_PUBLIC_BLUEPRINT_URL}
+                link="/single-invention.pdf"
+                linkType="external"
                 icon="external"
                 size="lg"
               >
@@ -150,7 +149,19 @@ export default function Home() {
               </Button>
 
               <div className="text-[16px] leading-[calc(12/16)]">
-                Read the short summary here.
+                Read the short summary{' '}
+                <a href="/short-summary.pdf" className="green" target="_blank">
+                  here
+                </a>
+                .
+              </div>
+
+              <div className="text-[16px] leading-[calc(12/16)]">
+                For additional information, download the{' '}
+                <a href="/short-summary.pdf" className="green" target="_blank">
+                  NUAH WHITE PAPER
+                </a>
+                .
               </div>
             </div>
           </div>
@@ -356,7 +367,6 @@ export default function Home() {
           </div>
         </div>
         <div className="flex flex-col gap-[50px] items-center">
-          <div className="linear-rect"></div>
           <div className="text-[40px] leading-[calc(29/40)] font-[200] md:text-[26px] md:leading-none">
             How to participate
           </div>
@@ -480,17 +490,30 @@ export default function Home() {
 
             <div className="grid grid-cols-[1fr_1fr_1fr] gap-[30px] p-[50px_0] md:grid-cols-[1fr]">
               <div className="m-auto md:hidden">
-                <Image src="/long-arrow.svg" alt="" width={14} height={84} />
+                <Image
+                  src="/gradient-arrow.svg"
+                  alt=""
+                  width={48}
+                  height={30}
+                />
               </div>
               <div className="m-auto md:hidden">
-                <Image src="/long-arrow.svg" alt="" width={14} height={84} />
+                <Image
+                  src="/gradient-arrow.svg"
+                  alt=""
+                  width={48}
+                  height={30}
+                />
               </div>
               <div className="m-auto">
-                <Image src="/long-arrow.svg" alt="" width={14} height={84} />
+                <Image
+                  src="/gradient-arrow.svg"
+                  alt=""
+                  width={48}
+                  height={30}
+                />
               </div>
             </div>
-
-            <div className="m-[50px_0] h-[1px] bg-[rgba(255,255,255,0.2)]"></div>
 
             <div className="grid grid-cols-[1fr_1fr_1fr] gap-[30px] md:grid-cols-[1fr]">
               <div className="challenges-card-bg rounded-[20px] flex justify-center items-center p-[3px] text-center">
@@ -658,10 +681,6 @@ export default function Home() {
             </div>
           </div>
 
-          <div>
-            <div className="linear-rect m-auto"></div>
-          </div>
-
           <div className="text-center">
             <h5 className="text-[40px] font-[200] text-center leading-[calc(29/40)] mb-[30px] md:leading-normal md:text-[26px]">
               Submission form
@@ -682,7 +701,6 @@ export default function Home() {
           </div>
 
           <div className="flex flex-col gap-[50px] items-center">
-            <div className="linear-rect"></div>
             <h5 className="text-[40px] font-[200] text-center leading-[1.3] mb-[30px] md:text-[26px]">
               Guidelines for submitting solutions to The Guardian Challenges
             </h5>

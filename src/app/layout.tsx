@@ -2,6 +2,7 @@ import './globals.css';
 import type { Metadata } from 'next';
 import { Sora } from 'next/font/google';
 import cn from 'classnames';
+import Navbar from '@/components/Navbar';
 
 const sora = Sora({
   weight: ['200', '300', '400', '500', '600', '700', '800'],
@@ -21,6 +22,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={cn('bg-background text-mainColor', sora.className)}>
+        <Navbar />
+
         {children}
 
         <section className="p-[75px_0_25px] container md:p-[25px_0]">
