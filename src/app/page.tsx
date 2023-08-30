@@ -156,7 +156,7 @@ export default function Home() {
                 .
               </div>
 
-              <div className="text-[16px] leading-[calc(12/16)]">
+              <div className="text-[16px] leading-normal">
                 For additional information, download the{' '}
                 <a href="/short-summary.pdf" className="green" target="_blank">
                   NUAH WHITE PAPER
