@@ -11,12 +11,12 @@ interface Props {
 const BackButton: React.FC<Props> = ({ className, href = '/' }) => {
   return (
     <button
-      className={cn(className, 'flex gap-[15px] items-center')}
+      className={cn(className, 'flex gap-[15px] items-center z-30')}
       onClick={() => {
         window.history.go(-1);
       }}
     >
-      <div className="rounded-full bg-accentGreen w-[40px] h-[40px] flex items-center justify-center">
+      <div className="rounded-full bg-accentGreen w-[50px] h-[50px] flex items-center justify-center">
         <Image
           className="rotate-180"
           src="/icons/arrow.svg"

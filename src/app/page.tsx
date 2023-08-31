@@ -11,9 +11,9 @@ export default function Home() {
   return (
     <main>
       <section className="p-[20px_0] min-h-screen">
-        <VideoBackground />
+        <VideoBackground fullPage />
 
-        <div className="flex flex-col gap-[10px] items-center container">
+        <div className="flex flex-col gap-[10px] items-center container overflow-hidden">
           <Image
             className="mix-blend-lighten max-h-[420px] max-w-[644px] w-auto"
             src="/aga-face.png"
@@ -50,12 +50,13 @@ export default function Home() {
       <VideoPlayer
         containerProps={{
           className: 'container pb-[75px] pt-[20px] md:pb-[20px]F',
+          id: 'about',
         }}
         placeHolderImage="/video-1-placeholder.png"
       >
         <iframe
           className="w-full aspect-video rounded-[20px]"
-          src="https://www.youtube.com/embed/okddSQ9BdkE?autoplay=1&loop=1&controls=0&rel=0&showinfo=0"
+          src="https://www.youtube.com/embed/okddSQ9BdkE?autoplay=1&controls=1&rel=0&showinfo=0"
         />
       </VideoPlayer>
       {/* <section className="container pb-[75px] pt-[20px] md:pb-[20px]">
@@ -128,7 +129,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="container p-[75px_0] md:p-[25px_0]">
+      <section className="container p-[75px_0] md:p-[25px_0]" id="blueprint">
         <div className="grid grid-cols-[1fr_1fr_1fr] gap-[20px] md:grid-cols-[1fr] md:text-center">
           <div className="bg-card col-span-3 rounded-[40px] p-[100px] flex flex-col gap-[40px] md:col-span-1 md:p-[50px_30px]">
             <div className="large-icon ml-auto mr-auto mb-50">
@@ -280,13 +281,24 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="container p-[75px_0] md:p-[25px_0]">
+      <section
+        className="container p-[75px_0] md:p-[25px_0]"
+        id="training-camp"
+      >
         <Image
-          className="mix-blend-lighten block ml-auto mr-auto mb-[20px]"
+          className="mix-blend-lighten block ml-auto mr-auto mb-[20px] md:hidden"
           src="/training-camp.png"
           alt=""
           width={500}
           height={273}
+        />
+
+        <Image
+          className="mix-blend-lighten hidden ml-auto mr-auto mb-[20px] md:block"
+          src="/mobile-training-camp.png"
+          alt=""
+          width={300}
+          height={300}
         />
 
         <div className="flex flex-col items-center gap-[50px]">
@@ -318,7 +330,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="container p-[75px_0] md:p-[25px_0]">
+      <section className="container p-[75px_0] md:p-[25px_0]" id="challenges">
         <div className="p-[100px] bg-card rounded-[40px] flex flex-col gap-[50px] items-center md:p-[50px_30px]">
           <div className="large-icon ml-auto mr-auto mb-50">
             <div className="large-icon-content">
@@ -622,7 +634,12 @@ export default function Home() {
                     Omnipresent Internet challenge Challenge details
                   </div>
 
-                  <Button>Challenge details</Button>
+                  <Button
+                    link="/challenge/omnipresent-internet"
+                    linkType="internal"
+                  >
+                    Challenge details
+                  </Button>
                 </div>
               </div>
 
@@ -643,7 +660,9 @@ export default function Home() {
                     Universal Basic Income challenge Challenge details
                   </div>
 
-                  <Button>Challenge details</Button>
+                  <Button link="/challenge/basic-income" linkType="internal">
+                    Challenge details
+                  </Button>
                 </div>
               </div>
 
@@ -664,7 +683,12 @@ export default function Home() {
                     Scientific Discovery challenge Challenge details
                   </div>
 
-                  <Button>Challenge details</Button>
+                  <Button
+                    link="/challenge/scientific-discovery"
+                    linkType="internal"
+                  >
+                    Challenge details
+                  </Button>
                 </div>
               </div>
             </div>

@@ -49,7 +49,7 @@ const TrainingCampModule: React.FC<Props> = ({ degree, name, data }) => {
               href={`/training-camp/${degree}/${name}/${techName}`}
             >
               <div className="challenges-card-bg rounded-[20px] flex justify-center items-center p-[3px] cursor-pointer h-full">
-                <div className="h-full w-full flex p-[30px_20px] gap-[20px] border-transparent bg-cardCombined rounded-[20px] items-center">
+                <div className="h-full w-full flex p-[30px_20px] gap-[20px] border-transparent bg-cardCombined rounded-[20px] items-center transition-colors hover:bg-[rgb(50,61,96)]">
                   <div className="flex-1 flex flex-col gap-[20px]">
                     <h5 className="text-[18px] font-[800] leading-normal text-accentGreen">
                       {techName}

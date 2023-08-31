@@ -3,6 +3,7 @@ import type { Metadata } from 'next';
 import { Sora } from 'next/font/google';
 import cn from 'classnames';
 import Navbar from '@/components/Navbar';
+import MobileMenu from '@/components/MobileMenu';
 
 const sora = Sora({
   weight: ['200', '300', '400', '500', '600', '700', '800'],
@@ -24,8 +25,14 @@ export default function RootLayout({
       <head>
         <link rel="shortcut icon" href="/icon.svg" type="image/svg" />
       </head>
-      <body className={cn('bg-background text-mainColor', sora.className)}>
+      <body
+        className={cn(
+          'bg-background text-mainColor overflow-x-hidden',
+          sora.className,
+        )}
+      >
         <Navbar />
+        <MobileMenu />
 
         {children}
 
