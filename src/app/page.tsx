@@ -1,8 +1,11 @@
 import Button from '@/components/Button';
 import Guideline from '@/components/Guideline';
+import { ScrollBottomIcon } from '@/components/ScrollBottonIcon';
 import SubmissionForm from '@/components/SubmissionForm';
 import VideoBackground from '@/components/VideoBackground';
+import { VideoPlayer } from '@/components/VideoPlayer';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -10,13 +13,13 @@ export default function Home() {
       <section className="p-[20px_0] min-h-screen">
         <VideoBackground />
 
-        <div className="flex flex-col gap-[50px] items-center container">
+        <div className="flex flex-col gap-[10px] items-center container">
           <Image
-            className="mix-blend-lighten max-h-[60vh] w-auto"
+            className="mix-blend-lighten max-h-[420px] max-w-[644px] w-auto"
             src="/aga-face.png"
             alt="A.G.A."
-            width={767}
-            height={500}
+            width={1920 / 3}
+            height={1329 / 3}
           />
 
           <div className="flex flex-col gap-[30px] items-center max-w-[650px]">
@@ -25,7 +28,7 @@ export default function Home() {
             </h2>
 
             <div className="challenges-card-bg rounded-[200px] flex justify-center items-center p-[3px]">
-              <div className="text-center h-full w-full flex flex-col p-[30px_50px] border-transparent bg-cardCombined rounded-[200px] text-[45px] uppercase font-[900] text-white font-ceraPro leading-[calc(30/45)] md:p-[20px_30px] md:text-[20px]">
+              <div className="text-center h-full w-full flex flex-col p-[30px_50px] border-transparent bg-cardCombined rounded-[200px] text-[45px] uppercase font-[900] text-white font-ceraPro leading-[calc(30/45)] md:p-[20px_30px] md:text-[20px] lg:text-[30px]">
                 The Single invention
               </div>
             </div>
@@ -38,14 +41,25 @@ export default function Home() {
             </p>
           </div>
         </div>
+
+        <div className="flex items-center justify-center my-[50px]">
+          <ScrollBottomIcon />
+        </div>
       </section>
 
-      <section className="container pb-[75px] pt-[20px] md:pb-[20px]">
+      <VideoPlayer
+        containerProps={{
+          className: 'container pb-[75px] pt-[20px] md:pb-[20px]F',
+        }}
+        placeHolderImage="/video-1-placeholder.png"
+      >
         <iframe
-          className="w-full aspect-video"
+          className="w-full aspect-video rounded-[20px]"
           src="https://www.youtube.com/embed/okddSQ9BdkE?autoplay=1&loop=1&controls=0&rel=0&showinfo=0"
         />
-      </section>
+      </VideoPlayer>
+      {/* <section className="container pb-[75px] pt-[20px] md:pb-[20px]">
+      </section> */}
 
       <section className="container p-[75px_0] md:p-[25px]">
         <h3 className="sectionTitle mb-[150px] md:mb-[50px]">
@@ -158,7 +172,7 @@ export default function Home() {
 
               <div className="text-[16px] leading-normal">
                 For additional information, download the{' '}
-                <a href="/short-summary.pdf" className="green" target="_blank">
+                <a href="/whitepaper.pdf" className="green" target="_blank">
                   NUAH WHITE PAPER
                 </a>
                 .
@@ -247,13 +261,13 @@ export default function Home() {
             </div>
 
             <div className="flex gap-[5px] flex-col items-start">
-              <Button
+              {/* <Button
                 className="mb-[5px] md:w-full"
                 link={process.env.NEXT_PUBLIC_HACKADAY_URL}
                 icon="arrow"
               >
                 Go to Our hackaday.io
-              </Button>
+              </Button> */}
               <Button
                 className="md:w-full"
                 link="/quantum-pyramid"
@@ -689,18 +703,20 @@ export default function Home() {
               Read the details about submitting solutions to The Guardian
               Challenges.
             </h6>
-            <Button
-              className="ml-auto mr-auto mb-[50px] md:mb-0"
-              size="lg"
-              type="secondary"
-            >
-              Guidelines for Submitting
-            </Button>
+            <Link href="#guideline">
+              <Button
+                className="ml-auto mr-auto mb-[50px] md:mb-0"
+                size="lg"
+                type="secondary"
+              >
+                Guidelines for Submitting
+              </Button>
+            </Link>
 
             <SubmissionForm />
           </div>
 
-          <div className="flex flex-col gap-[50px] items-center">
+          <div id="guideline" className="flex flex-col gap-[50px] items-center">
             <h5 className="text-[40px] font-[200] text-center leading-[1.3] mb-[30px] md:text-[26px]">
               Guidelines for submitting solutions to The Guardian Challenges
             </h5>

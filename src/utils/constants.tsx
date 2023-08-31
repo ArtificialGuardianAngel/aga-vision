@@ -1260,9 +1260,9 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
         git: ['https://github.com/pandas-dev/pandas'],
         youtube: [
           {
-            title:
-              'GitHub Copilot tips and tricks. Description: GitHub Copilot is designed to be your AI pair programmer. Just like any other tool, you might be curious about how to get the most out of it. Where will it perform best? Do I need to change how I code? @GeekTrainer provides some tips and tricks to help you get started. ',
-            description: null,
+            title: 'GitHub Copilot tips and tricks.',
+            description:
+              'GitHub Copilot is designed to be your AI pair programmer. Just like any other tool, you might be curious about how to get the most out of it. Where will it perform best? Do I need to change how I code? @GeekTrainer provides some tips and tricks to help you get started.',
             link: 'https://www.youtube.com/watch?v=1qs6QKk0DVc',
           },
           {

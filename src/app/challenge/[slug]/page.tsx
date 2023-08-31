@@ -4,6 +4,7 @@ import VideoBackground from '@/components/VideoBackground';
 import ChallengeCard from '@/components/challenge/ChallengeCard';
 import { CHALLENGES_DATA } from '@/utils/constants';
 import Image from 'next/image';
+import Link from 'next/link';
 import { useMemo } from 'react';
 
 interface Props {
@@ -21,7 +22,7 @@ export default function Challenge({ params }: Props) {
 
   return (
     <main className="relative">
-      <BackButton className="absolute top-[50px] left-[50px] md:top-[30px] md:left-[20px]" />
+      <BackButton className="fixed top-[50px] left-[50px] md:top-[30px] md:left-[20px]" />
 
       <section className="p-[150px_0_25px] md:p-[100px_0_25px]">
         <VideoBackground />
@@ -78,8 +79,9 @@ export default function Challenge({ params }: Props) {
                 <div className="max-w-[880px] text-center">
                   {data.extraDescription}
                 </div>
-
-                <Button size="lg">Submit your work</Button>
+                <Link href="/#submmition-form">
+                  <Button size="lg">Submit your work</Button>
+                </Link>
               </div>
             )}
           </div>

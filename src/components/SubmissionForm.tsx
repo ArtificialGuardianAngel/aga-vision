@@ -34,7 +34,7 @@ const SubmissionForm = () => {
       data[name] = value as string;
     });
     data['challenge'] = challenge;
-    data['participants'] = (data['participants'] as string).split(',')
+    data['participants'] = (data['participants'] as string).split(',');
     const validation = schema.safeParse(data);
 
     if (validation.success) {
@@ -42,14 +42,12 @@ const SubmissionForm = () => {
       open('Successfully submitted', 'success');
       return;
     }
-    open(
-      validation.error.errors.map((i) => i.message).join('\n'),
-      'error',
-    );
+    open(validation.error.errors.map((i) => i.message).join('\n'), 'error');
   };
   return (
     <>
       <form
+        id="submmition-form"
         className="bg-card p-[50px] rounded-[4px] flex flex-col gap-[50px] text-start md:p-[50px_0] md:bg-transparent"
         onSubmit={handleSubmit}
       >
