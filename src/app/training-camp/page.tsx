@@ -14,7 +14,7 @@ export default function TrainingFunction() {
   return (
     <>
       <main className="relative">
-        <BackButton className="absolute top-[50px] left-[50px] md:top-[30px] md:left-[20px]" />
+        <BackButton className="fixed top-[50px] left-[50px] md:top-[20px] md:left-[20px]" />
 
         <section className="p-[150px_0_25px] md:p-[100px_0_25px]">
           <VideoBackground />
@@ -22,11 +22,19 @@ export default function TrainingFunction() {
           <div className="flex flex-col gap-[100px] container md:gap-[50px]">
             <div className="flex flex-col items-center">
               <Image
-                className="mix-blend-lighten max-[1560px]:max-w-[620px]"
+                className="mix-blend-lighten max-[1560px]:max-w-[620px] md:hidden"
                 alt=""
                 src="/training-camp.png"
                 width={500}
                 height={272}
+              />
+
+              <Image
+                className="mix-blend-lighten hidden ml-auto mr-auto mb-[20px] md:block"
+                src="/mobile-training-camp.png"
+                alt=""
+                width={300}
+                height={300}
               />
 
               <div className="challenges-card-bg rounded-[200px] flex justify-center items-center p-[3px] mb-[50px]">

@@ -45,7 +45,7 @@ export default function TechnologyPage({
       <main className="relative">
         <BackButton
           href="/training-camp"
-          className="absolute top-[50px] left-[50px] md:top-[30px] md:left-[20px]"
+          className="fixed top-[50px] left-[50px] md:top-[20px] md:left-[20px]"
         />
 
         <section className="p-[150px_0_25px] md:p-[100px_0_25px]">
