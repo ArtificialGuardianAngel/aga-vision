@@ -22,6 +22,8 @@ const VideoBackground: React.FC<Props> = ({ fullPage = true }) => {
         autoPlay
         loop
         muted
+        controls={false}
+        playsInline
       >
         <source src="/video-bg.mp4" type="video/mp4" />
       </video>
