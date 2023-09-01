@@ -10,12 +10,12 @@ import Link from 'next/link';
 export default function Home() {
   return (
     <main>
-      <section className="p-[20px_0] min-h-screen">
+      <section className="p-[20px_0] min-h-screen flex items-center flex-col">
         <VideoBackground fullPage />
 
         <div className="flex flex-col gap-[10px] items-center container overflow-hidden">
           <Image
-            className="mix-blend-lighten max-h-[420px] max-w-[644px] w-auto"
+            className="mix-blend-lighten xxl:max-w-[520px] w-auto max-w-[960px]"
             src="/aga-face.png"
             alt="A.G.A."
             width={1920 / 3}

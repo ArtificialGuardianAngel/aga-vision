@@ -11,7 +11,10 @@ interface Props {
 const BackButton: React.FC<Props> = ({ className, href = '/' }) => {
   return (
     <button
-      className={cn(className, 'flex gap-[15px] items-center z-30')}
+      className={cn(
+        className,
+        'flex gap-[15px] items-center z-30 backdrop-blur-[25px]',
+      )}
       onClick={() => {
         window.history.go(-1);
       }}

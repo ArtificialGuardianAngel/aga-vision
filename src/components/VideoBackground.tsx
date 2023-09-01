@@ -5,7 +5,7 @@ interface Props {
   fullPage?: boolean;
 }
 
-const VideoBackground: React.FC<Props> = ({ fullPage = false }) => {
+const VideoBackground: React.FC<Props> = ({ fullPage = true }) => {
   return (
     <>
       <div
