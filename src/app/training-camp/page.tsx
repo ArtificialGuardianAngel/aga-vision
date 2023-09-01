@@ -33,8 +33,8 @@ export default function TrainingFunction() {
                 className="mix-blend-lighten hidden ml-auto mr-auto mb-[20px] md:mb-0 md:block"
                 src="/mobile-training-camp.png"
                 alt=""
-                width={300}
-                height={300}
+                width={700}
+                height={700}
               />
 
               <div className="challenges-card-bg rounded-[200px] flex justify-center items-center p-[3px] mb-[50px]">
