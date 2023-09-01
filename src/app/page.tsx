@@ -69,7 +69,7 @@ export default function Home() {
         </h3>
 
         <div className="flex md:flex-col md:gap-[30px]">
-          <div className="flex-1">
+          <div className="flex-1 w-[70%] m-auto">
             <div className="rhomb">
               <div className="rhomb-sphere"></div>
             </div>
@@ -121,7 +121,7 @@ export default function Home() {
               </p>
             </div>
           </div>
-          <div className="flex-1">
+          <div className="flex-1 w-[70%] m-auto">
             <div className="rhomb">
               <div className="rhomb-planet"></div>
             </div>
