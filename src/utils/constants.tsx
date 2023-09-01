@@ -670,6 +670,12 @@ export const CHALLENGES_DATA: {
         title: 'Infrastructure Modules',
       },
       {
+        title: 'Decentralized Modules',
+      },
+      {
+        title: 'Resource Modules',
+      },
+      {
         title: 'Check and Balance Modules',
       },
       {
