@@ -21,20 +21,20 @@ export default function TrainingFunction() {
 
           <div className="flex flex-col gap-[100px] container md:gap-[50px]">
             <div className="flex flex-col items-center">
-              <Image
+              {/* <Image
                 className="mix-blend-lighten max-[1560px]:max-w-[620px] md:hidden"
                 alt=""
                 src="/training-camp.png"
                 width={500}
                 height={272}
-              />
+              /> */}
 
               <Image
-                className="mix-blend-lighten hidden ml-auto mr-auto mb-[20px] md:mb-0 md:block"
+                className="mix-blend-lighten ml-auto mr-auto mb-[20px] md:mb-0"
                 src="/mobile-training-camp.png"
                 alt=""
-                width={700}
-                height={700}
+                width={350}
+                height={350}
               />
 
               <div className="challenges-card-bg rounded-[200px] flex justify-center items-center p-[3px] mb-[50px]">
