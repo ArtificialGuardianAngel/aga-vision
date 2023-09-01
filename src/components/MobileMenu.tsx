@@ -19,9 +19,10 @@ const MobileMenu: React.FC<{}> = () => {
       >
         <div
           className={cn(
-            'w-[16px] h-[2px] rounded-[2px] bg-accentGreen absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[calc(-50%-5px)] transition-all',
+            'w-[16px] h-[2px] rounded-[2px] bg-accentGreen absolute top-[50%] left-[50%] translate-x-[-50%] transition-all',
             {
               ['translate-y-[0] rotate-45']: opened,
+              ['translate-y-[calc(-50%-5px)] rotate-0']: !opened,
             },
           )}
         ></div>
@@ -33,17 +34,18 @@ const MobileMenu: React.FC<{}> = () => {
         ></div>
         <div
           className={cn(
-            'w-[16px] h-[2px] rounded-[2px] bg-accentGreen absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[calc(-50%+5px)] transition-all',
+            'w-[16px] h-[2px] rounded-[2px] bg-accentGreen absolute top-[50%] left-[50%] translate-x-[-50%] transition-all',
             {
               ['translate-y-[0] -rotate-45']: opened,
+              ['translate-y-[calc(-50%+5px)] rotate-0']: !opened,
             },
           )}
         ></div>
       </div>
       <div
         className={cn(
-          'fixed top-0 left-0 w-screen h-[100dvh] z-40 flex items-center justify-center translate-x-full transition-all',
-          { 'translate-x-0': opened },
+          'fixed top-0 left-0 w-screen h-[100dvh] z-40 flex items-center justify-center transition-all',
+          { 'translate-x-0': opened, 'translate-x-full': !opened },
         )}
         style={{
           background:
