@@ -16,7 +16,7 @@ export default function TrainingFunction() {
       <main className="relative">
         <BackButton className="fixed top-[50px] left-[50px] md:top-[20px] md:left-[20px]" />
 
-        <section className="p-[150px_0_25px] md:p-[100px_0_25px]">
+        <section className="p-[150px_0_25px] md:p-[75px_0_25px]">
           <VideoBackground />
 
           <div className="flex flex-col gap-[100px] container md:gap-[50px]">
@@ -30,7 +30,7 @@ export default function TrainingFunction() {
               />
 
               <Image
-                className="mix-blend-lighten hidden ml-auto mr-auto mb-[20px] md:block"
+                className="mix-blend-lighten hidden ml-auto mr-auto mb-[20px] md:mb-0 md:block"
                 src="/mobile-training-camp.png"
                 alt=""
                 width={300}

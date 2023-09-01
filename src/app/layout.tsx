@@ -4,6 +4,7 @@ import { Sora } from 'next/font/google';
 import cn from 'classnames';
 import Navbar from '@/components/Navbar';
 import MobileMenu from '@/components/MobileMenu';
+import BackToTopButton from '@/components/BackToTopButton';
 
 const sora = Sora({
   weight: ['200', '300', '400', '500', '600', '700', '800'],
@@ -33,6 +34,7 @@ export default function RootLayout({
       >
         <Navbar />
         <MobileMenu />
+        <BackToTopButton />
 
         {children}
 

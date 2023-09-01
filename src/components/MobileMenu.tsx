@@ -13,7 +13,7 @@ const MobileMenu: React.FC<{}> = () => {
     <>
       <div
         className={cn(
-          'fixed w-[50px] h-[50px] rounded-full border-accentGreen top-[20px] right-[20px] z-50 border-2 hidden md:block',
+          'fixed w-[50px] h-[50px] rounded-full border-accentGreen top-[20px] right-[20px] z-50 border-2 hidden md:block backdrop-blur-[25px]',
         )}
         onClick={() => setOpened((p) => !p)}
       >

@@ -18,7 +18,7 @@ const TrainingCenter: React.FC<Props> = ({
 }) => {
   const buttonProps: {
     link?: string;
-    linkType?: "external" | "internal";
+    linkType?: 'external' | 'internal';
     className?: string;
     type?: 'primary' | 'secondary';
     onClick?: () => void;
@@ -44,7 +44,7 @@ const TrainingCenter: React.FC<Props> = ({
         )}
 
         {content && (
-          <div className="text-[16px] leading-[calc(19/16)]">{content}</div>
+          <div className="text-[16px] leading-[calc(20/16)]">{content}</div>
         )}
 
         {link && (
