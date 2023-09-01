@@ -297,8 +297,8 @@ export default function Home() {
           className="mix-blend-lighten hidden ml-auto mr-auto mb-[20px] md:block"
           src="/mobile-training-camp.png"
           alt=""
-          width={300}
-          height={300}
+          width={700}
+          height={700}
         />
 
         <div className="flex flex-col items-center gap-[50px]">
@@ -347,7 +347,7 @@ export default function Home() {
             </h4>
           </div>
 
-          <div className="text-center text-[18px] leading-[calc(21/18)] md:leading-none md:text-[16px]">
+          <div className="text-center text-[18px] leading-[calc(21/18)] md:leading-[calc(20/16)] md:text-[16px]">
             <span className="green">
               Are you ready to revolutionize the world of AI?
             </span>{' '}
@@ -753,7 +753,7 @@ export default function Home() {
       <section className="p-[25px_0] container">
         <Image
           className="mix-blend-lighten block ml-auto mr-auto mb-[50px]"
-          src="/teleport.jpeg"
+          src="/teleport.png"
           alt=""
           width={500}
           height={293}
