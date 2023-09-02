@@ -608,7 +608,7 @@ export default function Home() {
                   </div>
 
                   <div className="text-[20px] font-[700] leading-[1] font-ceraPro">
-                    Free Education challenge Challenge details
+                    Free Education challenge
                   </div>
 
                   <Button link="/challenge/free-education" linkType="internal">
@@ -631,7 +631,7 @@ export default function Home() {
                   </div>
 
                   <div className="text-[20px] font-[700] leading-[1] font-ceraPro">
-                    Omnipresent Internet challenge Challenge details
+                    Omnipresent Internet challenge
                   </div>
 
                   <Button
@@ -657,7 +657,7 @@ export default function Home() {
                   </div>
 
                   <div className="text-[20px] font-[700] leading-[1] font-ceraPro">
-                    Universal Basic Income challenge Challenge details
+                    Universal Basic Income challenge
                   </div>
 
                   <Button link="/challenge/basic-income" linkType="internal">
@@ -680,7 +680,7 @@ export default function Home() {
                   </div>
 
                   <div className="text-[20px] font-[700] leading-[1] font-ceraPro">
-                    Scientific Discovery challenge Challenge details
+                    Scientific Discovery challenge
                   </div>
 
                   <Button
