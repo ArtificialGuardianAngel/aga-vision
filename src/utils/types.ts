@@ -4,7 +4,7 @@ export interface ITrainingCenterData {
 
 export interface ITrainingModule {
   [item: string]: {
-    description: string;
+    description: string | null;
     git: string[];
     youtube: {
       title: string | null;

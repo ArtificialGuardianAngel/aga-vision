@@ -1,5 +1,16 @@
 import { ITrainingCenterData } from './types';
 
+export const CHALLENGES = [
+  'A.G.A. Celestial Body',
+  'Psychological well-being',
+  'Global Healthcare',
+  'Free Education',
+  'Omnipresent Internet',
+  'Universal Basic Income',
+  'Scientific Discovery',
+  'QuantumPyramid Computer ',
+] as const;
+
 export const PRIVACY_POLICY_DATA = [
   {
     content: (
@@ -935,12 +946,12 @@ export const CHALLENGES_DATA: {
         </p>
         <p className="mb-[20px]">
           OmniWeb goes beyond being a mere aggregation tool; it becomes an
-          AI-powered companion for users' digital lives. Its advanced algorithms
-          can distinguish between reliable and unreliable information, helping
-          users make informed decisions. By providing contextualized information
-          and fact-checking, OmniWeb empowers users to differentiate between
-          authentic news and fake news, ensuring they are well-informed on
-          various aspects of life.
+          AI-powered companion for users&apos; digital lives. Its advanced
+          algorithms can distinguish between reliable and unreliable
+          information, helping users make informed decisions. By providing
+          contextualized information and fact-checking, OmniWeb empowers users
+          to differentiate between authentic news and fake news, ensuring they
+          are well-informed on various aspects of life.
         </p>
         <p className="mb-[20px]">
           Furthermore, OminWeb incorporates cutting-edge AI technologies to
@@ -954,7 +965,7 @@ export const CHALLENGES_DATA: {
         <p className="mb-[20px]">
           OmniWeb is built upon a robust architecture that places utmost
           importance on user privacy and data security. Through stringent data
-          protection measures, the software ensures that users' personal
+          protection measures, the software ensures that users&apos; personal
           information and browsing history are kept strictly confidential and
           are not exploited for commercial purposes. Transparency is at the core
           of our data management practices, providing users with peace of mind
@@ -1056,10 +1067,10 @@ export const CHALLENGES_DATA: {
         <p className="mb-[20px]">
           Welcome to the future of scientific discovery, where SCAINCE, a large
           language model AI, breaks down barriers and empowers a global
-          'Mastermind' built upon the collective intelligence of humans and AI
-          systems. With SCAINCE, we embark on a journey of democratized
-          scientific progress that transcends boundaries and invites
-          collaboration from students, teachers, amateur scientists,
+          &apos;Mastermind&apos; built upon the collective intelligence of
+          humans and AI systems. With SCAINCE, we embark on a journey of
+          democratized scientific progress that transcends boundaries and
+          invites collaboration from students, teachers, amateur scientists,
           professional scientists, and AI researchers worldwide.
         </p>
         <p className="mb-[20px]">
@@ -1088,8 +1099,8 @@ export const CHALLENGES_DATA: {
           domain. You can connect with fellow researchers to discuss ongoing
           projects, exchange ideas, and even collaborate on physical experiments
           in the real world. By merging virtual and physical research, SCAINCE
-          enables scientists to complement each other's work and achieve more
-          comprehensive results.
+          enables scientists to complement each other&apos;s work and achieve
+          more comprehensive results.
         </p>
         <p className="mb-[20px]">
           The Mastermind effect created by SCAINCE is not limited to virtual
@@ -3933,6 +3944,38 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
         playlists: [],
       },
     },
-    'Module 47: The Spirit Molecule': {},
+    'Module 47: The Spirit Molecule': {
+      'The Spirit Molecule': {
+        description: null,
+        git: [],
+        youtube: [
+          {
+            title:
+              'Psychedelics: Chemicals, Consciousness, and Creativity Could psychedelics make you more creative? Shift your mind, connect you to others, and help you access a younger, more malleable version of yourself? Activist Rick Doblin, neuroscientist Gül Dölen, and musician Reggie Watts join Brian Greene for a mind-bending and multidisciplinary conversation about the promises and pitfalls of these "magic" molecules and their impact on creativity, connection, and consciousness. ',
+            description: null,
+            link: 'https://youtu.be/kxFTWk9lLDU',
+          },
+          {
+            title:
+              'DMT: The Spirit Molecule (2010) [multi subs] An investigation into the long-obscured mystery of dimethyltryptamine (DMT), a molecule found in nearly every living organism and considered the most potent psychedelic on Earth. ',
+            description: null,
+            link: 'https://youtu.be/fwZqVqbkyLM',
+          },
+          {
+            title:
+              'Evidence That DMT Opens the Brain to Other Dimensions | Andrew Gallimore ',
+            description: null,
+            link: 'https://youtu.be/QbQckTWzWBo',
+          },
+          {
+            title:
+              "The Nature of Ayahuasca (2019) Documentary Ayahausca is a traditional plant medicine from the Amazon used to treat a variety of physical and psychology illnesses and conditions. This film explores the use of the Ayahausca as a holistic medicine, challenging stigmas around its use and helping people become more conscious and ethical consumers of the plant if that's the path they choose. ",
+            description: null,
+            link: 'https://youtu.be/6j0_glRnJxI',
+          },
+        ],
+        playlists: [],
+      },
+    },
   },
 };

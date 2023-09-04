@@ -8,52 +8,96 @@ import Select from './Select';
 import Link from 'next/link';
 import schema from '@/lib/schemas/submition-form.schema';
 import { useAlert } from '@/lib/hooks/use-alert';
-
-const CHALLENGES = [
-  'A.G.A. Celestial Body',
-  'Psychological well-being',
-  'Global Healthcare',
-  'Free Education',
-  'Omnipresent Internet',
-  'Universal Basic Income',
-  'Scientific Discovery',
-  'QuantumPyramid Computer ',
-];
+import { CHALLENGES } from '@/utils/constants';
+import Image from 'next/image';
 
 const SubmissionForm = () => {
   const { alertComponent, open } = useAlert();
   const [challenge, setChallenge] = useState<string>('');
-  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
+  const [success, setSuccess] = useState(false);
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     e.stopPropagation();
     const fd = new FormData(e.currentTarget);
-    const data: Record<string, string | string[] | boolean> = {}; // Object to store the form values
+    const data: Record<string, string | string[] | boolean | Object> = {}; // Object to store the form values
 
     // Loop through the FormData entries and populate formValues object
     fd.forEach((value, name) => {
       data[name] = value as string;
     });
+    data['links'] = {
+      document: data['document_link'],
+      github: data['github_link'],
+      video: data['video_link'],
+    };
+    delete data['document_link'];
+    delete data['github_link'];
+    delete data['video_link'];
     data['challenge'] = challenge;
     data['participants'] = (data['participants'] as string).split(',');
+    data['privacy'] = data['privacy'] === 'on';
     const validation = schema.safeParse(data);
 
     if (validation.success) {
-      // make request to next api
-      open('Successfully submitted', 'success');
-      return;
+      try {
+        await fetch('/api/submit', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(data),
+        });
+
+        setSuccess(true);
+      } catch (e) {
+        open('Something went wrong', 'error');
+      } finally {
+        return;
+      }
     }
     open(validation.error.errors.map((i) => i.message).join('\n'), 'error');
   };
+
+  if (success) {
+    return (
+      <div className="p-[50px] flex flex-col gap-[50px] bg-card rounded-[10px] md:p-[50px_20px] md:mr-[-20px] md:ml-[-20px] md:rounded-none">
+        <div className="flex flex-col gap-[30px] items-center">
+          <div className="rounded-full w-[80px] h-[80px] border-[1px] border-accentGreen flex items-center justify-center">
+            <Image src="/icons/icon-check.svg" alt="" width={20} height={14} />
+          </div>
+
+          <div className="text-[40px] font-[200] leading-[calc(29/40)] md:text-[26px]">
+            OK, done!
+          </div>
+        </div>
+
+        <div className="text-[18px] text-center md:text-[16px]">
+          Thank you for submitting your solution through our website form!
+          We&apos;ve received your submission and will be responding to the
+          email address you provided in the form.
+        </div>
+
+        <Button
+          size="lg"
+          className="self-center"
+          onClick={() => setSuccess(false)}
+        >
+          Submit another solution
+        </Button>
+      </div>
+    );
+  }
+
   return (
     <>
       <form
         id="submmition-form"
-        className="bg-card p-[50px] rounded-[4px] flex flex-col gap-[50px] text-start md:p-[50px_0] md:bg-transparent"
+        className="bg-card p-[50px] rounded-[4px] flex flex-col gap-[50px] text-start md:p-[50px_20px] md:ml-[-20px] md:mr-[-20px] md:rounded-none"
         onSubmit={handleSubmit}
       >
         <div>
           <h6 className="text-[16px] leading-[calc(12/16)] font-[500] mb-[50px]">
-            You are submitting a solution/s as:
+            You are submitting a solution as:
           </h6>
           <div className="flex gap-[40px]">
             <Checkbox type="radio" name="type" value="Individual">

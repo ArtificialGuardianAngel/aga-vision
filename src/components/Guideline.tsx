@@ -1,5 +1,8 @@
-import React from 'react';
+'use client';
+
+import React, { useState } from 'react';
 import GuidelineCard from './GuidelineCard';
+import Button from './Button';
 
 const GUIDELINE_CARDS: { title: string; content: React.ReactNode }[] = [
   {
@@ -163,11 +166,30 @@ const GUIDELINE_CARDS: { title: string; content: React.ReactNode }[] = [
 ];
 
 const Guideline = () => {
+  const [opened, setOpened] = useState(false);
+
   return (
-    <div className="flex flex-col gap-[10px]">
-      {GUIDELINE_CARDS.map(({ title, content }) => (
-        <GuidelineCard key={title} title={title} content={content} />
-      ))}
+    <div className="flex flex-col gap-[50px]">
+      <div id="guideline" className="flex flex-col gap-[50px] items-center">
+        <h5 className="text-[40px] font-[200] text-center leading-[1.3] md:text-[26px]">
+          Guidelines for submitting solutions to The Guardian Challenges
+        </h5>
+      </div>
+      <Button
+        size="lg"
+        type="secondary"
+        className="self-center min-w-[200px]"
+        onClick={() => setOpened((p) => !p)}
+      >
+        {opened ? 'Hide' : 'Show'} guidelines
+      </Button>
+      {opened && (
+        <div className="flex flex-col gap-[10px]">
+          {GUIDELINE_CARDS.map(({ title, content }) => (
+            <GuidelineCard key={title} title={title} content={content} />
+          ))}
+        </div>
+      )}
     </div>
   );
 };

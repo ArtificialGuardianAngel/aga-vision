@@ -1,11 +1,12 @@
 'use client';
 
 import Image from 'next/image';
+import cn from 'classnames';
 import BackButton from '@/components/BackButton';
 import Button from '@/components/Button';
 import VideoBackground from '@/components/VideoBackground';
 import { TRAINING_CENTER } from '@/utils/constants';
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import TrainingCenter from '@/components/TrainingCenter';
 import YoutubeModal from '@/components/YoutubeModal';
 
@@ -40,6 +41,17 @@ export default function TechnologyPage({
     ][decodeURI(params.technology)];
   }, [params]);
 
+  useEffect(() => {
+    localStorage.setItem(
+      'LAST_MODULE',
+      decodeURI(params.module).replace(/%3A/g, ':'),
+    );
+  }, []);
+
+  useEffect(() => {
+    document.title = decodeURI(params.technology);
+  }, [params.technology]);
+
   return (
     <>
       <main className="relative">
@@ -60,45 +72,53 @@ export default function TechnologyPage({
               <div className="text-center">{data.description}</div>
             </div>
 
-            <div className="bg-card rounded-[40px] p-[50px] flex flex-col gap-[30px]">
-              <div className="icon m-auto">
-                <div className="icon-content">
-                  <Image
-                    src="/icons/github.svg"
-                    alt=""
-                    width={40}
-                    height={40}
-                  />
+            {data.git.length !== 0 && (
+              <div className="bg-card rounded-[40px] p-[50px] flex flex-col gap-[30px]">
+                {/* <div className="icon m-auto">
+                  <div className="icon-content">
+                    <Image
+                      src="/icons/github.svg"
+                      alt=""
+                      width={40}
+                      height={40}
+                    />
+                  </div>
+                </div> */}
+                <div className="text-[18px] font-[300] text-center">
+                  Go to source:
+                </div>
+                <div className="flex gap-[25px] flex-wrap justify-center">
+                  {data.git.map((item, index) => (
+                    <Button
+                      className="flex items-center gap-[10px]"
+                      link={item}
+                      linkType="external"
+                      key={index}
+                    >
+                      Source link {index + 1}{' '}
+                      <Image
+                        src="/icons/arrow.svg"
+                        alt=""
+                        height={10}
+                        width={10}
+                      />
+                    </Button>
+                  ))}
                 </div>
               </div>
-              <div className="text-[18px] font-[300] text-center">
-                Go to GitHub repository:
-              </div>
-              <div className="flex gap-[25px] flex-wrap justify-center">
-                {data.git.map((item, index) => (
-                  <Button
-                    className="flex items-center gap-[10px]"
-                    link={item}
-                    linkType="external"
-                    key={index}
-                  >
-                    Github link {index + 1}{' '}
-                    <Image
-                      src="/icons/arrow.svg"
-                      alt=""
-                      height={10}
-                      width={10}
-                    />
-                  </Button>
-                ))}
-              </div>
-            </div>
+            )}
 
-            <h4 className="text-center text-[18px] leading-[calc(13/18)]">
-              Video-lessons:
-            </h4>
+            {data.youtube.length !== 0 && (
+              <h4 className="text-center text-[18px] leading-[calc(13/18)]">
+                Video-lessons:
+              </h4>
+            )}
 
-            <div className="grid grid-cols-2 gap-[30px] md:grid-cols-1">
+            <div
+              className={cn('grid grid-cols-2 gap-[30px] md:grid-cols-1', {
+                'grid-cols-1 max-w-[400px] m-auto': data.youtube.length === 1,
+              })}
+            >
               {data.youtube.map((item) => (
                 <TrainingCenter
                   key={item.link}
@@ -111,11 +131,17 @@ export default function TechnologyPage({
               ))}
             </div>
 
-            <h4 className="text-center text-[18px] leading-[calc(13/18)]">
-              Video channels / playlists:
-            </h4>
+            {data.playlists.length !== 0 && (
+              <h4 className="text-center text-[18px] leading-[calc(13/18)]">
+                Video channels / playlists:
+              </h4>
+            )}
 
-            <div className="grid grid-cols-2 gap-[30px] md:grid-cols-1">
+            <div
+              className={cn('grid grid-cols-2 gap-[30px] md:grid-cols-1', {
+                'grid-cols-1 max-w-[400px] m-auto': data.youtube.length === 1,
+              })}
+            >
               {data.playlists.map((item, i) => (
                 <TrainingCenter
                   key={item.link}

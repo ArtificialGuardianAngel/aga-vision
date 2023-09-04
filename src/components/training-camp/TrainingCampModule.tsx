@@ -1,4 +1,6 @@
-import React, { useState } from 'react';
+'use client';
+
+import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
 import cn from 'classnames';
 import { ITrainingModule } from '../../utils/types';
@@ -18,6 +20,14 @@ const TrainingCampModule: React.FC<Props> = ({ degree, name, data }) => {
   const toggleOpened = () => {
     setOpened((p) => !p);
   };
+
+  useEffect(() => {
+    const lastModule = localStorage.getItem('LAST_MODULE');
+
+    if (lastModule && lastModule === name) {
+      setOpened(true);
+    }
+  }, []);
 
   return (
     <div>

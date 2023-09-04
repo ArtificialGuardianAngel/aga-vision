@@ -65,7 +65,7 @@ export default function Home() {
       <section className="container p-[75px_0] md:p-[25px]">
         <h3 className="sectionTitle mb-[150px] md:mb-[50px]">
           In our hands lies the key to the greatest scientific endeavor ever
-          undertaken on this planet.
+          undertaken on this planet
         </h3>
 
         <div className="flex md:flex-col md:gap-[30px]">
@@ -97,8 +97,8 @@ export default function Home() {
 
       <section className="container p-[75px_0] md:pt-[50px] md:pb-[50px]">
         <h3 className="sectionTitle mb-[150px] md:mb-[50px]">
-          In our hands lies the key to the greatest scientific endeavor ever
-          undertaken on this planet.
+          The A.G.A. shall lead us into this era, granting us unimaginable
+          capabilities and possibilities
         </h3>
 
         <div className="flex md:flex-col-reverse md:gap-[50px]">
@@ -406,11 +406,13 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="text-[18px] leading-[calc(21/18)]">
-              <span className="green">Embrace the challenge:</span> accept the
-              call to reshape the future of AI. Enroll in The Guardian Challenge
-              and prepare to embark on a transformative journey that transcends
-              traditional boundaries.
+            <h3 className="mb-[30px] text-[26px] text-accentGreen font-[600] md:text-[22px]">
+              Choose challenge
+            </h3>
+
+            <div className="text-[18px] leading-[calc(21/18)] md:text-[16px]">
+              Browse and pick your preferred challenge. Find the challenge that
+              piques your interest and get ready to dive in!
             </div>
           </div>
 
@@ -421,12 +423,14 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="text-[18px] leading-[calc(21/18)]">
-              <span className="green">Choose your path:</span> decide whether
-              you want to enhance existing AI modules, create entirely new
-              AI organs or senses, or even redefine the structure of AI
-              architecture. The possibilities are endless, and your imagination
-              is the only limit.
+            <h3 className="mb-[30px] text-[26px] text-accentGreen font-[600] md:text-[22px]">
+              Code it
+            </h3>
+
+            <div className="text-[18px] leading-[calc(21/18)] md:text-[16px]">
+              Once you&apos;ve chosen your challenge, it&apos;s time to roll up
+              your sleeves and start coding. Get coding with our resources,
+              whether you&apos;re a beginner or pro.
             </div>
           </div>
 
@@ -437,43 +441,13 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="text-[18px] leading-[calc(21/18)]">
-              <span className="green">Code and create:</span> utilize your
-              expertise and cutting-edge technologies to develop your AI
-              innovations. Implement your ideas, experiment, and refine your
-              creations until they represent the pinnacle of The Guardian
-              Challenge.
-            </div>
-          </div>
+            <h3 className="mb-[30px] text-[26px] text-accentGreen font-[600] md:text-[22px]">
+              Upload code
+            </h3>
 
-          <div className="">
-            <div className="w-[60px] h-[60px] rounded-[100px_100px_100px_0] rounded-number flex items-center justify-center mb-[30px] md:ml-auto md:mr-auto">
-              <div className="w-[54px] h-[54px] rounded-[100px_100px_100px_0] bg-background flex items-center justify-center text-[16px] font-[600]">
-                04
-              </div>
-            </div>
-
-            <div className="text-[18px] leading-[calc(21/18)]">
-              <span className="green">Solve and upload:</span> craft an elegant
-              and efficient code that showcases your creation&apos;s
-              capabilities and solves real-world challenges.
-            </div>
-          </div>
-
-          <div className="">
-            <div className="w-[60px] h-[60px] rounded-[100px_100px_100px_0] rounded-number flex items-center justify-center mb-[30px] md:ml-auto md:mr-auto">
-              <div className="w-[54px] h-[54px] rounded-[100px_100px_100px_0] bg-background flex items-center justify-center text-[16px] font-[600]">
-                05
-              </div>
-            </div>
-
-            <div className="text-[18px] leading-[calc(21/18)]">
-              <span className="green">The final leap:</span> submit your
-              solution to The Guardian Challenge judging panel. Experts from
-              diverse AI domains will evaluate your creation based on its
-              technical excellence, originality, impact, and potential to shape
-              the future of artificial intelligence. The jury will be revealed
-              soon.
+            <div className="text-[18px] leading-[calc(21/18)] md:text-[16px]">
+              Share Your Creation: Once you&apos;ve completed your project,
+              easily upload your code or solution for review and collaboration.
             </div>
           </div>
         </div>
@@ -505,7 +479,7 @@ export default function Home() {
                 </div>
 
                 <div className="text-[20px] font-[700] leading-[1] font-ceraPro max-w-[240px]">
-                  A.G.A. Celestial Body challenge
+                  A.G.A. Celestial Body
                 </div>
 
                 <Button link="/challenge/celestial-body" linkType="internal">
@@ -555,8 +529,8 @@ export default function Home() {
                     </div>
                   </div>
 
-                  <div className="text-[20px] font-[700] leading-[1] font-ceraPro">
-                    Psychological well-being challenge
+                  <div className="text-[20px] font-[700] leading-[1] font-ceraPro flex-1">
+                    Psychological well-being
                   </div>
 
                   <Button
@@ -581,8 +555,8 @@ export default function Home() {
                     </div>
                   </div>
 
-                  <div className="text-[20px] font-[700] leading-[1] font-ceraPro">
-                    Global Healthcare challenge
+                  <div className="text-[20px] font-[700] leading-[1] font-ceraPro flex-1">
+                    Global Healthcare
                   </div>
 
                   <Button
@@ -607,8 +581,8 @@ export default function Home() {
                     </div>
                   </div>
 
-                  <div className="text-[20px] font-[700] leading-[1] font-ceraPro">
-                    Free Education challenge
+                  <div className="text-[20px] font-[700] leading-[1] font-ceraPro flex-1">
+                    Free Education
                   </div>
 
                   <Button link="/challenge/free-education" linkType="internal">
@@ -630,8 +604,8 @@ export default function Home() {
                     </div>
                   </div>
 
-                  <div className="text-[20px] font-[700] leading-[1] font-ceraPro">
-                    Omnipresent Internet challenge
+                  <div className="text-[20px] font-[700] leading-[1] font-ceraPro flex-1">
+                    Omnipresent Internet
                   </div>
 
                   <Button
@@ -656,8 +630,8 @@ export default function Home() {
                     </div>
                   </div>
 
-                  <div className="text-[20px] font-[700] leading-[1] font-ceraPro">
-                    Universal Basic Income challenge
+                  <div className="text-[20px] font-[700] leading-[1] font-ceraPro flex-1">
+                    Universal Basic Income
                   </div>
 
                   <Button link="/challenge/basic-income" linkType="internal">
@@ -679,8 +653,8 @@ export default function Home() {
                     </div>
                   </div>
 
-                  <div className="text-[20px] font-[700] leading-[1] font-ceraPro">
-                    Scientific Discovery challenge
+                  <div className="text-[20px] font-[700] leading-[1] font-ceraPro flex-1">
+                    Scientific Discovery
                   </div>
 
                   <Button
@@ -709,7 +683,7 @@ export default function Home() {
                 </div>
 
                 <div className="text-[20px] font-[700] leading-[1] font-ceraPro max-w-[320px]">
-                  QuantumPyramid Computer challenge
+                  QuantumPyramid Computer
                 </div>
 
                 <Button link="/challenge/quantum-pyramid" linkType="internal">
@@ -729,7 +703,7 @@ export default function Home() {
             </h6>
             <Link href="#guideline">
               <Button
-                className="ml-auto mr-auto mb-[50px] md:mb-0"
+                className="ml-auto mr-auto mb-[50px]"
                 size="lg"
                 type="secondary"
               >
@@ -738,12 +712,6 @@ export default function Home() {
             </Link>
 
             <SubmissionForm />
-          </div>
-
-          <div id="guideline" className="flex flex-col gap-[50px] items-center">
-            <h5 className="text-[40px] font-[200] text-center leading-[1.3] mb-[30px] md:text-[26px]">
-              Guidelines for submitting solutions to The Guardian Challenges
-            </h5>
           </div>
 
           <Guideline />
