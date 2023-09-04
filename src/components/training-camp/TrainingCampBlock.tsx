@@ -6,7 +6,7 @@ interface Props {
   modules: {
     [name: string]: {
       [item: string]: {
-        description: string;
+        description: string | null;
         git: string[];
         youtube: {
           title: string | null;

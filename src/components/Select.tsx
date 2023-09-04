@@ -4,7 +4,7 @@ import cn from 'classnames';
 
 interface Props {
   placeholder: string;
-  options: string[];
+  options: string[] | readonly string[];
   value: string;
   onChange: (value: string) => void;
 }
