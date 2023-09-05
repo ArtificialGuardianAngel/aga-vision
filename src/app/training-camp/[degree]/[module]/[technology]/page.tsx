@@ -41,6 +41,10 @@ export default function TechnologyPage({
     ][decodeURI(params.technology)];
   }, [params]);
 
+  const notOnlyGithub = useMemo(() => {
+    return !!data.git.find((item) => !item.includes('github'));
+  }, [data]);
+
   useEffect(() => {
     localStorage.setItem(
       'LAST_MODULE',
@@ -76,18 +80,20 @@ export default function TechnologyPage({
 
             {data.git.length !== 0 && (
               <div className="bg-card rounded-[40px] p-[50px] flex flex-col gap-[30px]">
-                {/* <div className="icon m-auto">
-                  <div className="icon-content">
-                    <Image
-                      src="/icons/github.svg"
-                      alt=""
-                      width={40}
-                      height={40}
-                    />
+                {!notOnlyGithub && (
+                  <div className="icon m-auto">
+                    <div className="icon-content">
+                      <Image
+                        src="/icons/github.svg"
+                        alt=""
+                        width={40}
+                        height={40}
+                      />
+                    </div>
                   </div>
-                </div> */}
+                )}
                 <div className="text-[18px] font-[300] text-center">
-                  Go to source:
+                  Go to {notOnlyGithub ? 'source' : 'github'}:
                 </div>
                 <div className="flex gap-[25px] flex-wrap justify-center">
                   {data.git.map((item, index) => (
