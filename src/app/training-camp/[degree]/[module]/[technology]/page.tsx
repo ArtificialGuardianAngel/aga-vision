@@ -49,7 +49,9 @@ export default function TechnologyPage({
   }, []);
 
   useEffect(() => {
-    document.title = decodeURI(params.technology);
+    document.title = `${decodeURI(
+      params.technology,
+    )} – aga.vision – Welcome to our A.G.A. community.`;
   }, [params.technology]);
 
   return (
@@ -115,8 +117,9 @@ export default function TechnologyPage({
             )}
 
             <div
-              className={cn('grid grid-cols-2 gap-[30px] md:grid-cols-1', {
-                'grid-cols-1 max-w-[400px] m-auto': data.youtube.length === 1,
+              className={cn('grid gap-[30px] md:grid-cols-1', {
+                'grid-cols-1 max-w-[520px] m-auto': data.youtube.length === 1,
+                'grid-cols-2': data.youtube.length !== 1,
               })}
             >
               {data.youtube.map((item) => (
@@ -138,8 +141,10 @@ export default function TechnologyPage({
             )}
 
             <div
-              className={cn('grid grid-cols-2 gap-[30px] md:grid-cols-1', {
-                'grid-cols-1 max-w-[400px] m-auto': data.youtube.length === 1,
+              className={cn('grid gap-[30px] md:grid-cols-1', {
+                'grid-cols-1 max-w-[520px] m-auto w-full':
+                  data.playlists.length === 1,
+                'grid-cols-2': data.playlists.length !== 1,
               })}
             >
               {data.playlists.map((item, i) => (
