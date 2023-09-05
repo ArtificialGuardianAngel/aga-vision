@@ -18,7 +18,7 @@ export const VideoPlayer = ({
 
   return (
     <section {...containerProps} className={cn(className, 'relative')}>
-      <div className="relative aspect-video">
+      <div className="relative aspect-video rounded-[20px] overflow-hidden">
         <div
           className={cn(
             'z-20 absolute w-full h-full inset-0 rounded-[20px] flex items-center justify-center',

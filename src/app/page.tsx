@@ -49,14 +49,14 @@ export default function Home() {
 
       <VideoPlayer
         containerProps={{
-          className: 'container pb-[75px] pt-[20px] md:pb-[20px]F',
+          className: 'container pb-[75px] pt-[20px] md:pb-[20px]',
           id: 'about',
         }}
         placeHolderImage="/video-1-placeholder.png"
       >
         <iframe
           className="w-full aspect-video rounded-[20px]"
-          src="https://www.youtube.com/embed/okddSQ9BdkE?autoplay=1&controls=1&rel=0&showinfo=0"
+          src="https://www.youtube.com/embed/okddSQ9BdkE?autoplay=0&controls=1&rel=0&showinfo=0"
         />
       </VideoPlayer>
       {/* <section className="container pb-[75px] pt-[20px] md:pb-[20px]">
