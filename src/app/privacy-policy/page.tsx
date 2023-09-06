@@ -13,10 +13,11 @@ export default function PrivacyPolicy() {
 
         <div className="container">
           <div className="items-center flex flex-col gap-[50px] mb-[50px]">
-            <div className="p-[30px_50px] rounded-[100px] bg-[rgba(255,255,255,0.05)] text-[40px] font-[200] leading-[calc(29/40)] md:text-[20px] md:p-[20px_30px] md:w-full md:text-center">
-              Privacy Policy
+            <div className="challenges-card-bg rounded-[200px] flex justify-center items-center p-[3px] mb-[50px] max-w-[530px]">
+              <div className="text-center h-full w-full flex flex-col p-[20px_50px] border-transparent bg-cardCombined rounded-[200px] text-[30px] font-[600] text-[#D6E1FA] md:p-[20px_60px] md:text-[20px] leading-[calc(38/30)]">
+                Privacy Policy
+              </div>
             </div>
-            <div className="linear-rect"></div>
           </div>
         </div>
 

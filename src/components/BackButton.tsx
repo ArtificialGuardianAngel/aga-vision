@@ -11,10 +11,7 @@ interface Props {
 const BackButton: React.FC<Props> = ({ className, href = '/' }) => {
   return (
     <button
-      className={cn(
-        className,
-        'flex gap-[15px] items-center z-30 backdrop-blur-[25px]',
-      )}
+      className={cn(className, 'flex gap-[15px] items-center z-30')}
       onClick={() => {
         window.history.go(-1);
       }}
@@ -28,8 +25,6 @@ const BackButton: React.FC<Props> = ({ className, href = '/' }) => {
           height={14}
         />
       </div>
-
-      <div className="text-[13px] font-[600] uppercase md:hidden">Back</div>
     </button>
   );
 };
