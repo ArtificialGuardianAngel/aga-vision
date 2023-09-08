@@ -3,6 +3,7 @@ import Button from '@/components/Button';
 import VideoBackground from '@/components/VideoBackground';
 import ChallengeCard from '@/components/challenge/ChallengeCard';
 import { CHALLENGES_DATA } from '@/utils/constants';
+import { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useMemo } from 'react';
@@ -10,6 +11,19 @@ import { useMemo } from 'react';
 interface Props {
   params: {
     slug: string;
+  };
+}
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  // read route params then fetch data
+
+  // return an object
+  return {
+    title: `${
+      CHALLENGES_DATA[params.slug]
+        ? CHALLENGES_DATA[params.slug].title + ' | '
+        : ''
+    }A.G.A. Vision - Welcome to our A.G.A. community`,
   };
 }
 

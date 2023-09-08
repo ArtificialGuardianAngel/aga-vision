@@ -235,6 +235,7 @@ export default function Home() {
               <Button
                 className="md:w-full"
                 link={process.env.NEXT_PUBLIC_GITHUB_URL}
+                linkType="external"
                 icon="arrow"
               >
                 Go to Our Github
