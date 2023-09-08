@@ -51,7 +51,7 @@ export default function Challenge({ params }: Props) {
 
           {(data.cardsTitle || data.cards || data.extraDescription) && (
             <div className="p-[70px_0] md:p-[50px_0]">
-              <div className="m-auto linear-rect"></div>
+              <div className="m-auto linear-rect-solid"></div>
             </div>
           )}
 

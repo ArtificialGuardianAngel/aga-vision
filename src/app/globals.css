@@ -145,6 +145,13 @@ pre {
   border-radius: 100px;
 }
 
+.linear-rect-solid {
+  width: 10px;
+  height: 50px;
+  background: linear-gradient(180deg, #11f4d1 0%, #11f4d1 100%);
+  border-radius: 100px;
+}
+
 .green {
   color: #11f4d1;
 }

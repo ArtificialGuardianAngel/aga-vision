@@ -50,7 +50,7 @@ export default function TechnologyPage({
       'LAST_MODULE',
       decodeURI(params.module).replace(/%3A/g, ':'),
     );
-  }, []);
+  }, [params.module]);
 
   useEffect(() => {
     document.title = `${decodeURI(
