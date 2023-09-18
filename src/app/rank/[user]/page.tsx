@@ -53,7 +53,7 @@ export default async function RankPage({ params }: Props) {
     <>
       <main className="relative">
         <section className="container pt-[90px]">
-          <VideoBackground videoSource="/rank-video-bg.mp4" mask={false} />
+          <VideoBackground videoSource="/rank-video-bg.mp4" mask mobileMask />
 
           <div className="rounded-[50px] p-[70px] bg-card backdrop-blur-[15px] flex flex-col gap-[30px] md:p-[50px_20px] md:rounded-[20px]">
             <div className="flex flex-col gap-[15px] text-center">

@@ -5,12 +5,14 @@ interface Props {
   fullPage?: boolean;
   videoSource?: string;
   mask?: boolean;
+  mobileMask?: boolean;
 }
 
 const VideoBackground: React.FC<Props> = ({
   fullPage = true,
   videoSource = '/video-bg.mp4',
   mask = true,
+  mobileMask = false,
 }) => {
   return (
     <>
@@ -19,6 +21,7 @@ const VideoBackground: React.FC<Props> = ({
           absolute: !fullPage,
           fixed: fullPage,
           ['wrapper-background']: mask,
+          ['mobile-mask']: mobileMask,
         })}
       ></div>
       <video
