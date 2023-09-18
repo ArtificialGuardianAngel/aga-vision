@@ -10,6 +10,7 @@ export interface ITrainingModule {
       title: string | null;
       description: string | null;
       link: string | null;
+      external?: boolean;
     }[];
     playlists: {
       title: string | null;

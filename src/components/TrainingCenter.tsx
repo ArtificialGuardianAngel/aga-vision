@@ -6,6 +6,7 @@ interface Props {
   content: string | null;
   type: 'playlist' | 'video';
   link: string | null;
+  external?: boolean;
   openModal?: () => void;
 }
 
@@ -14,6 +15,7 @@ const TrainingCenter: React.FC<Props> = ({
   content,
   type,
   link,
+  external,
   openModal,
 }) => {
   const buttonProps: {
@@ -27,7 +29,7 @@ const TrainingCenter: React.FC<Props> = ({
     type: 'secondary',
   };
 
-  if (type === 'playlist') {
+  if (type === 'playlist' || external) {
     if (link) {
       buttonProps.link = link;
       buttonProps.linkType = 'external';
@@ -49,7 +51,7 @@ const TrainingCenter: React.FC<Props> = ({
 
         {link && (
           <Button
-            onClick={() => (openModal ? openModal() : null)}
+            onClick={() => (openModal && !external ? openModal() : null)}
             {...buttonProps}
           >
             {type === 'playlist' ? 'Open channel' : 'Watch video'}

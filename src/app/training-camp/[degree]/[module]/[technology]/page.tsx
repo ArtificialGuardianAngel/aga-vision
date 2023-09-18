@@ -124,7 +124,8 @@ export default function TechnologyPage({
 
             <div
               className={cn('grid gap-[30px] md:grid-cols-1', {
-                'grid-cols-1 max-w-[520px] m-auto': data.youtube.length === 1,
+                'grid-cols-1 max-w-[520px] m-auto w-full':
+                  data.youtube.length === 1,
                 'grid-cols-2': data.youtube.length !== 1,
               })}
             >
@@ -136,6 +137,7 @@ export default function TechnologyPage({
                   content={item.description}
                   type="video"
                   openModal={() => openModal(item.link)}
+                  external={item.external}
                 />
               ))}
             </div>

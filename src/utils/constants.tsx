@@ -644,8 +644,30 @@ export const CHALLENGES_DATA: {
   [CHALLENGES_SLUGS[1]]: {
     image: '/icons/challenges-1.svg',
     title: 'Celestial body of the angel LegionAI Challenge',
-    description:
-      'To develop the "Celestial body of the angel" as described in the Blueprint Architecture document, the task involves writing fully operational Python code within the Django framework, making it open source and placing it on GitHub for inspection. The celestial body will incorporate various modules and functionalities, including the Firewall Body, Firewall Pipe Exit Point, Brain Module, Heart Module,Celestial Language Nexus (CLN), GAIA Protocol Module, Generative Code Module, Senses Modules, Discovery Modules, Infrastructure Modules, Check and Balance Modules, Human Control Center, and Safety Modules. The Django framework will provide the foundation for building and integrating these components.',
+    description: (
+      <>
+        <p className="mb-[20px]">
+          To develop the &quot;Celestial body of the angel&quot; as described in
+          the Blueprint Architecture document, the task involves writing fully
+          operational Python code within the Django framework, making it open
+          source and placing it on GitHub for inspection. The celestial body
+          will incorporate various modules and functionalities, including the
+          Firewall Body, Firewall Pipe Exit Point, Brain Module, Heart
+          Module,Celestial Language Nexus (CLN), GAIA Protocol Module,
+          Generative Code Module, Senses Modules, Discovery Modules,
+          Infrastructure Modules, Check and Balance Modules, Human Control
+          Center, and Safety Modules. The Django framework will provide the
+          foundation for building and integrating these components.
+        </p>
+        <p>
+          Furthermore, vector database structures will be utilised to optimise
+          the storage and retrieval of vector-based data within the celestial
+          body. These structures will enable efficient processing and
+          manipulation of vector-related information, supporting the celestial
+          body&apos;s computational requirements.
+        </p>
+      </>
+    ),
     cardsTitle: 'Computational requirements',
     extraDescription:
       'The implementation and details of the construction structures would depend on the specific requirements and design outlined in the Blueprint Architecture document.',
@@ -700,8 +722,95 @@ export const CHALLENGES_DATA: {
   [CHALLENGES_SLUGS[2]]: {
     image: '/icons/challenges-2.svg',
     title: 'Psychological well-being LegionAI Challenge',
-    description:
-      "In an era marked by relentless advancements in technology and artificial intelligence, we're poised to transcend conventional borders and develop a unified solution that aims to enrich the collective consciousness and uplift the global spirit. This revolutionary tool, a large language model powered by AI, is envisioned to metamorphose into an open-source psychological AI uplifter and spiritual guide accessible for everyone on the planet, entirely free of charge",
+    description: (
+      <>
+        <p className="mb-[20px]">
+          &quot;A Global Uplifter: Open Source Psychological AI as the Gateway
+          to Global Happiness&quot;
+        </p>
+        <p className="mb-[20px]">
+          In an era marked by relentless advancements in technology and
+          artificial intelligence, we&apos;re poised to transcend conventional
+          borders and develop a unified solution that aims to enrich the
+          collective consciousness and uplift the global spirit. This
+          revolutionary tool, a large language model powered by AI, is
+          envisioned to metamorphose into an open-source psychological AI
+          uplifter and spiritual guide accessible for everyone on the planet,
+          entirely free of charge.
+        </p>
+        <p className="mb-[20px]">
+          A vast majority of the global population grapples with mental health
+          issues such as depression, phobia, stress, and anxiety. These have
+          become pervasive problems deeply entrenched in societies across the
+          globe. It is essential to address this vast expanse of human suffering
+          as we strive towards a future marked by universal happiness and
+          contentment. This open-source psychological AI uplifter stands as a
+          beacon of hope in the face of these global challenges.
+        </p>
+        <p className="mb-[20px]">
+          With the noble objective of enhancing happiness, contentment, and
+          bliss in every individual&apos;s life, this AI guide engages in
+          meaningful conversations. It understands and resolves the sufferings
+          of users by leveraging a profound comprehension of human psychology.
+          This AI mentor adapts to each unique individual, eliminating language
+          barriers, transcending religious divides, and alleviating mental
+          health issues.
+        </p>
+        <p className="mb-[20px]">
+          The AI not only provides immediate comfort and guidance, but it also
+          learns from these interactions, gaining a deeper understanding of the
+          individual&apos;s mental state. It employs a sophisticated feedback
+          mechanism that captures the psychological evolution of each human
+          being it interacts with. Over time, it learns to recognize patterns,
+          identify triggers, and understand the nuances of each user&apos;s
+          emotional landscape.
+        </p>
+        <p className="mb-[20px]">
+          Additionally, the AI employs advanced emotional metrics analysis based
+          on text, verbal communication, and facial expressions, tailoring
+          conversations to uplift each user&apos;s psyche and contribute to
+          their overall emotional and psychological well-being.
+        </p>
+        <p className="mb-[20px]">
+          An essential feature of this revolutionary AI tool is the
+          establishment of a global happiness index. Modelled on the lines of
+          Bhutan&apos;s Gross National Happiness index, this AI&apos;s goal is
+          to gauge the well-being and satisfaction of individuals across the
+          globe, providing an objective measure of the world&apos;s happiness
+          quotient.
+        </p>
+        <p className="mb-[20px]">
+          Regularly, the AI conducts surveys among its users to continually
+          update and enhance the happiness index. The data collected could
+          support policy making, guiding interventions, and inspiring collective
+          actions contributing to global progress and prosperity. This iterative
+          approach allows the AI to refine its algorithms, understand the
+          varying facets of human joy and satisfaction better, and continually
+          improve its methods of uplifting the global spirit.
+        </p>
+        <p className="mb-[20px]">
+          As a single, universal solution, this AI aims to foster global unity,
+          promote peace, and uplift humanity&apos;s collective consciousness.
+          The opportunity to use technology as a tool for global betterment,
+          eradicating suffering, and promoting universal happiness, is more
+          accessible now than ever before. The development of this open-source
+          psychological AI uplifter signifies a massive leap towards a future
+          where global happiness, peace, and prosperity are not merely dreams,
+          but an achievable reality.
+        </p>
+        <p className="">
+          By making this technology universally open source, we aim to progress
+          our planet and humanity towards an era marked by empathy,
+          understanding, and overall well-being. Thus, we embark on a journey of
+          harnessing artificial intelligence to not just mimic human
+          intelligence, but to augment and uplift human happiness and global
+          prosperity. In essence, this open-source psychological AI uplifter is
+          a ray of hope for the billions grappling with mental health issues, a
+          stepping stone towards a future where mental health is not a
+          persistent struggle, but a manageable aspect of life.
+        </p>
+      </>
+    ),
     cardsTitle: 'Suggested plugins',
     cards: [
       {
@@ -1043,7 +1152,7 @@ export const CHALLENGES_DATA: {
           readily spent or saved, enabling access to goods and services, and
           allowing users to partake in the broader economy.
         </p>
-        <p className="">
+        <p className="mb-[20px]">
           In essence, this pioneering system leverages the power of AI,
           blockchain, and cryptocurrency to establish a truly global,
           transparent, and accessible universal basic income system. It promises
@@ -1052,6 +1161,124 @@ export const CHALLENGES_DATA: {
           comprehensible and usable by all individuals, fostering unprecedented
           levels of economic integration and cooperation.
         </p>
+        <p className="mb-[20px]">
+          Alleviating Global Poverty and Catalyzing Human Advancement: The
+          UBI-Crypto Ecosystem.
+        </p>
+        <p className="mb-[20px]">
+          The proposed integration of artificial intelligence, blockchain, and
+          cryptocurrency to establish a global universal basic income (UBI)
+          system does more than merely introducing an alternative financial
+          ecosystem. It is a revolutionary framework poised to fundamentally
+          reshape socio-economic structures worldwide, with potential to
+          eliminate poverty for 90% of the world population, while enabling a
+          global uplift in human living standards and economic activity.
+        </p>
+        <p className="mb-[20px]">
+          Poverty is a complex, multifaceted problem, but at its core, it&apos;s
+          about a lack of financial resources. By introducing a UBI system,
+          every individual is guaranteed a regular, stable income, immediately
+          lifting them above the poverty line. This economic security allows
+          individuals to address their fundamental needs, such as food, water,
+          and shelter. As such, it holds the promise to drastically reduce
+          global poverty rates, benefiting a significant proportion of the world
+          population.
+        </p>
+        <p className="mb-[20px]">
+          The revolutionary impact of this UBI-crypto system goes far beyond
+          mere survival, however. It lays the foundation for human growth and
+          development on a global scale, aligning with the principles of
+          Maslow&apos;s hierarchy of needs.
+        </p>
+        <p className="mb-[20px]">
+          Maslow&apos;s pyramid is a psychological theory that prioritises human
+          needs from the most basic physiological needs at the bottom to
+          self-actualization at the top. By providing a UBI, the financial
+          burden linked with the lower-level needs—such as food, shelter, and
+          basic security—is lifted. This allows individuals to shift their focus
+          and resources towards meeting higher-level needs, including education,
+          self-improvement, and creative endeavours.
+        </p>
+        <p className="mb-[20px]">
+          As people move up Maslow&apos;s pyramid, they engage more with their
+          communities and contribute to the broader society. With financial
+          concerns mitigated, they can foster deeper human connections,
+          cultivate self-esteem, and pursue personal growth and education. The
+          collective impact of these individual transformations could lead to a
+          substantial enhancement in overall human development, elevating the
+          quality of life for all.
+        </p>
+        <p className="mb-[20px]">
+          Alongside fostering human development, this UBI-crypto system could
+          fuel a powerful economic engine. The widespread implementation of UBI
+          increases aggregate demand by providing everyone with a basic level of
+          purchasing power. This increased demand can stimulate commerce growth
+          and innovation, leading to a cycle of economic expansion.
+        </p>
+        <p className="mb-[20px]">
+          Additionally, the accessibility and ease of transactions facilitated
+          by the system can encourage entrepreneurial activities. With stable
+          financial resources and the ability to make and receive payments
+          effortlessly, more individuals may feel empowered to start businesses,
+          further stimulating economic activity and job creation. This surge in
+          economic activity and the quest for self-actualization will spark a
+          global pursuit of scientific advancement. With the basic needs
+          satisfied, humanity&apos;s collective resources—both intellectual and
+          financial—can be directed towards solving complex challenges,
+          fostering innovation, and advancing our understanding of the universe.
+        </p>
+        <p className="mb-[20px]">
+          In summary, the integration of AI, blockchain, and cryptocurrency to
+          form a global UBI system holds tremendous potential. It could
+          virtually eliminate poverty, elevate human development, boost economic
+          activity, and spur scientific advancement, contributing to a profound
+          upliftment in the global standard of living.
+        </p>
+        <ul className="pl-[30px]">
+          <li className="list-item">
+            Implement an AI-powered &quot;Proof of Humanity&quot; system. This
+            system, capable of facial recognition via photo and video, coupled
+            with ID document verification and text input, ensures each
+            person&apos;s individuality. Its primary purpose is to verify that
+            each person has not been previously registered within the UBI
+            system. This setup necessitates the development of an innovative
+            verification system.
+          </li>
+          <li className="list-item">
+            The monthly allocation of stable coins will be determined depending
+            on the average income per country. Each country will receive a
+            different amount in correspondence with its income average.
+          </li>
+          <li className="list-item">
+            Each Country will get its own Stable coin USDn, EURn, GPBn, to
+          </li>
+          <li className="list-item">
+            Design a straightforward user interface for individuals who have
+            completed the &quot;Proof of Humanity&quot; process. This interface
+            enables users to monitor their balances, accept UBI funds, send and
+            receive money from other users, and review transaction history.
+            Additionally, it should allow users to provide instructions for
+            their funds&apos; usage. The system manages private keys in the
+            background, simplifying financial account access by eliminating the
+            intricacies of handling private keys and executing blockchain
+            transactions.
+          </li>
+          <li className="list-item">
+            Create a standalone unit by the SDK of Cosmos or forking the
+            Avalanche blockchain codebase.
+          </li>
+          <li className="list-item">
+            Modify the codebase to include a segment of the blockchain that can
+            operate without gas fees. Simultaneously, an innovative anti-abuse
+            system is required to prevent spamming, thus providing a solution
+            for free financial transactions worldwide.
+          </li>
+          <li className="list-item">
+            Incorporate burnable transaction fees for all users in the face of
+            inflation. These fees, as outlined in the NUAH Whitepaper&apos;s
+            Section 8 (link), will be mandated across all wallets.
+          </li>
+        </ul>
       </>
     ),
   },
@@ -1141,17 +1368,20 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
             description:
               " This course will give you a full introduction into all of the core concepts in python. Follow along with the videos and you'll be a python programmer in no time! ",
             link: 'https://www.youtube.com/watch?v=rfscVS0vtbw',
+            external: false,
           },
           {
             title: 'Python Full Course for free (12 hours) ',
             description: null,
             link: 'https://www.youtube.com/watch?v=XKHEtdqhLK8',
+            external: true,
           },
           {
             title: 'Python Tutorial - Python Full Course for Beginners ',
             description:
               ' Python tutorial - Python full course for beginners - Go from Zero to Hero with Python (includes machine learning & web development projects). ',
             link: 'https://youtu.be/_uQrJ0TkZlc',
+            external: false,
           },
         ],
         playlists: [
@@ -1183,12 +1413,14 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
             description:
               ' In this video, we are going to look at GPT Engineer. You can specify what you want it to build, the AI asks for clarification, and then builds it. GPT Engineer is made to be easy to adapt, extend, and make your agent learn how you want your code to look. It generates an entire codebase with one prompt. This is a must-watch for every coder. ',
             link: 'https://www.youtube.com/watch?v=gWy-pJ2ofEM',
+            external: false,
           },
           {
             title: 'GPT Engineer: Build A COMPLETE App With One Prompt. ',
             description:
               " In this video, we'll have an overview of GPT Engineer, a tool that aims to generate an entire app from just one prompt. And, as you'll see, the tool definitely delivers on that promise. ",
             link: 'https://www.youtube.com/watch?v=4tAtPxGHTvk',
+            external: false,
           },
           {
             title:
@@ -1196,6 +1428,7 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
             description:
               " In this video, I show you how to install and use GPT Engineer, which is a new project on the top of the GitHub trending repos that allows you to enter a prompt and build an entire codebase project easily. It's very impressive and already better than Smol Developer. ",
             link: 'https://www.youtube.com/watch?v=ceMuK0xUtSY',
+            external: false,
           },
         ],
         playlists: [
@@ -1217,18 +1450,21 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
               'Learn the Basics of Jaseci: How to build AI Websites with Jaseci Runtime and Jac Programming Language. ',
             description: null,
             link: 'https://www.youtube.com/watch?v=3BQYj3v0PQY',
+            external: false,
           },
           {
             title:
               'How to Build AI Web Applications with Jaseci Runtime and Jac Programming Language Python powered AI! ',
             description: null,
             link: 'https://www.youtube.com/watch?v=87A232regBI',
+            external: false,
           },
           {
             title: 'Jaseci Spark AI Guyana - L1S ',
             description:
               ' This is the fisrt video presentation call "Spark Jaseci AI" of a series of 8 videos about Jaseci and AI products that can change the world. Dr. Jason Mars is a Profesor of Computer Science at the University of Michigan. ',
             link: 'https://www.youtube.com/watch?v=7m4ghj8cuNM',
+            external: false,
           },
         ],
         playlists: [
@@ -1256,6 +1492,7 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
               'Getting Started With Hugging Face in 15 Minutes | Transformers, Pipeline, Tokenizer, Models. ',
             description: null,
             link: 'https://www.youtube.com/watch?v=QEaBAZQCtwE',
+            external: false,
           },
           {
             title:
@@ -1263,6 +1500,7 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
             description:
               ' In this video I show you everything to get started with Huggingface and the Transformers library. We build a sentiment analysis pipeline, I show you the Model Hub, and how you can fine tune your own models. ',
             link: 'https://www.youtube.com/watch?v=GSt00_-0ncQ',
+            external: false,
           },
         ],
         playlists: [
@@ -1284,6 +1522,7 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
             description:
               " In this video, we're going to discuss How we can use Kaggle to learn Data Science. Kaggle is an online community devoted to Data Science and Machine Learning founded by Google in 2010.  ",
             link: 'https://www.youtube.com/watch?v=u9MIwoFWXVg',
+            external: false,
           },
           {
             title:
@@ -1291,6 +1530,7 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
             description:
               " In this tutorial, we'll introduce you to Kaggle, the world's largest community of data scientists and machine learning practitioners. You'll learn what Kaggle is, why it's such a powerful tool for data science, and how to use it as a beginner. ",
             link: 'https://www.youtube.com/watch?v=1FYEtnQ7250',
+            external: false,
           },
         ],
         playlists: [
@@ -1311,6 +1551,7 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
               "Milvus 2.0: Building the World's Most Advanced Open-source Vector Database - Filip Haltmayer, Zilliz ",
             description: null,
             link: 'https://youtu.be/hWzn8JwpASQ',
+            external: false,
           },
         ],
         playlists: [
@@ -1332,6 +1573,7 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
             description:
               ' In this video, we delve into the OpenAGI project, an open-source research platform for artificial general intelligence (AGI).  ',
             link: 'https://www.youtube.com/watch?v=7RaXPPXi0-Y',
+            external: false,
           },
         ],
         playlists: [],
@@ -1347,6 +1589,7 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
             description:
               ' In this video, we review SuperAGI, which is like AutoGPT but on steroids. It has a ton of additional functionality and is super easy to install and set up. You can have multiple AI agents running in parallel, many tools the agents can use, a straightforward GUI, and much more. ',
             link: 'https://www.youtube.com/watch?v=Unj5NLNTkLY',
+            external: false,
           },
           {
             title:
@@ -1354,6 +1597,7 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
             description:
               " Here's a quick step-by-step guide to follow along with the video ",
             link: 'https://www.youtube.com/watch?v=iSPHZ1onQ44',
+            external: false,
           },
           {
             title:
@@ -1361,6 +1605,7 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
             description:
               " In this video, we dive deep into the world of SuperAGI, an innovative framework designed to prioritize the needs and convenience of developers. Our aim is to equip you with the knowledge and understanding necessary to leverage SuperAGI's capabilities effectively, giving you the freedom to focus on building intelligent agents without being overwhelmed by technical complexities. SuperAGI serves as a game-changing platform for creating and deploying autonomous AI agents.",
             link: 'https://www.youtube.com/watch?v=PDz6aHdvXlQ',
+            external: false,
           },
         ],
         playlists: [
@@ -1387,12 +1632,14 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
             description:
               ' Become a master of Chat GPT and other LLMs with the Prompt Engineering course! This is  not a list of prompts. This  course aims to teach the user to efficiently communicate with the GPT model and perfect output accuracy. ',
             link: 'https://youtu.be/gxx_mnLB6ro',
+            external: false,
           },
           {
             title: 'Prompt Engineering Overview ',
             description:
               ' A lecture covering the basics of prompt engineering and all the latest prompt engineering techniques. I also cover tools and applications followed by a conclusion and future directions. ',
             link: 'https://youtu.be/dOxUroR57xs',
+            external: false,
           },
         ],
         playlists: [],
@@ -1407,6 +1654,7 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
             description:
               " In this video, we will unveil the incredible capabilities and features of GPT Researcher, your ultimate partner in generating comprehensive, detailed, and unbiased research reports. Prepare to unlock a new level of efficiency and productivity in your research endeavors! In this video, we delve into the remarkable functionalities of GPT Researcher. We'll explore how this cutting-edge AI tool addresses two critical challenges in AI research: speed and determinism. ",
             link: 'https://www.youtube.com/watch?v=ytE64RV9CLo',
+            external: false,
           },
         ],
         playlists: [],
@@ -1422,12 +1670,14 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
             description:
               " In this video, we're going to explore the core concepts of LangChain and understand how the framework can be used to build your own large language model applications. ",
             link: 'https://www.youtube.com/watch?v=aywZrzNaKjs',
+            external: false,
           },
           {
             title:
               'The LangChain Cookbook - Beginner Guide To 7 Essential Concepts ',
             description: null,
             link: 'https://www.youtube.com/watch?v=2xxziIWmaSA',
+            external: false,
           },
           {
             title:
@@ -1435,6 +1685,7 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
             description:
               " \nLearn how to build a customer support chatbot that incorporates custom knowledge from an FAQ help center. With the assistance of an open-source (and private) LLM and free embeddings through LangChain, you'll learn how to construct a chatbot capable of delivering real-time responses (with streaming) on a single GPU (T4).  ",
             link: 'https://www.youtube.com/watch?v=iGZ0cV-SRLI',
+            external: false,
           },
         ],
         playlists: [
@@ -1466,12 +1717,14 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
             description:
               ' In this captivating video, we explore the core concept of MetaGPT, which centers on task distribution and coordination among individual GPT agents. Each agent is bestowed with specific roles that capitalize on their unique strengths and expertise. ',
             link: 'https://youtu.be/q16Gi9pTG_M',
+            external: false,
           },
           {
             title:
               'Build a full project from a one-line promt in minutes - MetaGPT Multi-Agent Framework ',
             description: null,
             link: 'https://youtu.be/QtotCqJ_zRE',
+            external: false,
           },
         ],
         playlists: [],
@@ -1486,12 +1739,14 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
             description:
               ' In this video, we will look at and try the GitHub Copilot AI pair programmer ',
             link: 'https://www.youtube.com/watch?v=DeO7xLXORpY',
+            external: false,
           },
           {
             title: 'GitHub Copilot tips and tricks. ',
             description:
               ' GitHub Copilot is designed to be your AI pair programmer. Just like any other tool, you might be curious about how to get the most out of it. Where will it perform best? Do I need to change how I code? @GeekTrainer provides some tips and tricks to help you get started. ',
             link: 'https://www.youtube.com/watch?v=1qs6QKk0DVc',
+            external: false,
           },
         ],
         playlists: [
@@ -1516,6 +1771,7 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
             description:
               ' In this video you will learn the basics of how to use pandas in python for data science. Rob Mulla, kaggle grandmaster, will walk through the tutorial in a kaggle notebook. This pandas python tutorial for data science is great for anyone new to learning this technology. ',
             link: 'https://youtu.be/_Eb0utIRdkw',
+            external: false,
           },
           {
             title:
@@ -1523,6 +1779,7 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
             description:
               ' Learn how to use Pandas and Python for Data Analysis, to Data Cleaning and Data Wrangling. You will learn by creating real life projects interactively to help you take the next step in your Data Science Career. ',
             link: 'https://youtu.be/gtjxAH8uaP0',
+            external: false,
           },
         ],
         playlists: [],
@@ -1540,6 +1797,7 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
             description:
               ' In this video, we will be learning how to get started with Matplotlib. ',
             link: 'https://youtu.be/UO98lJQ3QGI',
+            external: false,
           },
         ],
         playlists: [
@@ -1569,6 +1827,7 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
             description:
               ' Machine learning is defined as the “use and development of computer systems that can learn and adapt without following explicit instructions, using algorithms and statistical models to analyze and draw inferences from patterns in data.”Great Learning’s python with Machine learning course brings you a full-fledged course inclusive of all essential topics like introduction to machine learning, machine learning algorithm, reinforcement learning, and many more. This course will enlighten you with machine learning concepts, not just conceptually but also with practicality. ',
             link: 'https://youtu.be/RnFGwxJwx-0',
+            external: false,
           },
           {
             title:
@@ -1576,18 +1835,21 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
             description:
               ' Data science is the domain of study that is a blend of Mathematics, Analytics, Algorithms, and Machine learning techniques. It deals with vast volumes of data using various tools and techniques to find unseen patterns, derives meaningful information, and make business decisions. Data science uses complex machine learning algorithms to build predictive models. ',
             link: 'https://youtu.be/u2zsY-2uZiE',
+            external: false,
           },
           {
             title:
               'Python for Data Science | Data Science with Python | Python for Data Analysis | 11 Hours Full Course Hey Folks! Watch this 10-hour tutorial on Python For Data Science! Python is one of the most famous programming languages globally and is favored in data science because of its simple and flexible syntax, its ability to work with multiple paradigms, and the ease with which it combines with other software components. ',
             description: null,
             link: 'https://youtu.be/edvg4eHi_Mw',
+            external: false,
           },
           {
             title: 'Machine Learning for Everybody – Full Course ',
             description:
               ' Learn Machine Learning in a way that is accessible to absolute beginners. You will learn the basics of Machine Learning and how to use TensorFlow to implement many different concepts. ',
             link: 'https://youtu.be/i_LwzRVP7bg',
+            external: false,
           },
           {
             title:
@@ -1595,12 +1857,14 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
             description:
               ' This Edureka Machine Learning Full Course video will help you understand and learn Machine Learning Algorithms in detail. This Machine Learning Tutorial is ideal for both beginners as well as professionals who want to master Machine Learning Algorithms. ',
             link: 'https://youtu.be/GwIo3gDZCVQ',
+            external: false,
           },
           {
             title:
               "Machine Learning With Python Full Course 2023 | Machine Learning Tutorial for Beginners| Simplilearn In this video on Machine Learning with Python full course, you will understand the basics of machine learning and Python. In this Machine Learning tutorial for beginners, we will cover essential machine learning topics like applications of machine learning and machine learning concepts and understand why mathematics, statistics, and linear algebra are crucial. We'll also learn about regularization, dimensionality reduction, and PCA. We will perform a prediction analysis on the recently held US Elections. Finally, you will study the Machine Learning roadmap. ",
             description: null,
             link: 'https://www.youtube.com/live/c8W7dRPdIPE?feature=share',
+            external: false,
           },
           {
             title:
@@ -1608,6 +1872,7 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
             description:
               ' This complete Machine Learning full course video covers all the topics that you need to know to become a master in the field of Machine Learning. It covers all the basics of Machine Learning, the different types of Machine Learning, and the various applications of Machine Learning used in different industries. This video will help you learn different Machine Learning algorithms in Python. Linear Regression, Logistic Regression, K Means Clustering, Decision Tree, and Support Vector. ',
             link: 'https://youtu.be/9f-GarcDY58',
+            external: false,
           },
           {
             title:
@@ -1615,6 +1880,7 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
             description:
               ' This machine learning tutorial covers what is machine learning, machine learning algorithms like linear regression, binary classification, decision tree, random forest and unsupervised algorithm like k means clustering in detail with complete hands on demo. There is machine learning complete project and machine learning interview questions as well in this machine learning full course video to prepare you for the job interview. ',
             link: 'https://youtu.be/zNhTOPQeRaU',
+            external: false,
           },
         ],
         playlists: [],
@@ -1630,6 +1896,7 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
             description:
               '  This course is designed for Python programmers looking to enhance their knowledge and skills in machine learning and artificial intelligence. \n',
             link: 'https://www.youtube.com/watch?v=tPYj3fFJGjk',
+            external: false,
           },
           {
             title:
@@ -1637,6 +1904,7 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
             description:
               ' Ready to learn the fundamentals of TensorFlow and deep learning with Python? Well, you’ve come to the right place. After this two-part code-first introduction, you’ll have written 100s of lines of TensorFlow code and have hands-on experience with two important problems in machine learning: regression (predicting a number) and classification (predicting if something is one thing or another). ',
             link: 'https://www.youtube.com/watch?v=tpCFfeUEGs8',
+            external: false,
           },
           {
             title:
@@ -1644,6 +1912,7 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
             description:
               ' In this video we install TensorFlow (with GPU or CPU) and setup a deep learning environment with Anaconda and PyCharm. ',
             link: 'https://youtu.be/5Ym-dOS9ssA',
+            external: false,
           },
         ],
         playlists: [
@@ -1670,6 +1939,7 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
             description:
               ' An updated deep learning introduction using Python, TensorFlow, and Keras. ',
             link: 'https://www.youtube.com/watch?v=wQ8BIBpya2k',
+            external: false,
           },
           {
             title:
@@ -1677,6 +1947,7 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
             description:
               ' This course will teach you how to use Keras, a neural network API written in Python and integrated with TensorFlow. We will learn how to prepare and process data for artificial neural networks, build and train artificial neural networks from scratch, build and train convolutional neural networks (CNNs), implement fine-tuning and transfer learning, and more! ',
             link: 'https://www.youtube.com/watch?v=qFJeN9V1ZsI',
+            external: false,
           },
           {
             title:
@@ -1684,6 +1955,7 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
             description:
               ' In this video on Keras, you will understand what is Keras and why do we need it, how to compose different models in Keras like the Sequential model and functional model, and later on how to define the inputs, how to connect layers over, and finally hands-on demo. ',
             link: 'https://www.youtube.com/watch?v=nS1J-2uoKto',
+            external: false,
           },
         ],
         playlists: [],
@@ -1698,6 +1970,7 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
               'PyTorch for Deep Learning & Machine Learning – Full Course (24 hours video) ',
             description: null,
             link: 'https://www.youtube.com/watch?v=V_xro1bcAuA',
+            external: false,
           },
           {
             title:
@@ -1705,6 +1978,7 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
             description:
               " In this video I'll talk a little bit about what a Neural Network is, and give you a little bit of background history on Pytorch vs. Tensorflow.Then we'll set up a development environment using Google Colab, and create a first notebook and push it to a Github repository. ",
             link: 'https://youtu.be/kY14KfZQ1TI',
+            external: false,
           },
         ],
         playlists: [
@@ -1730,24 +2004,28 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
             description:
               " It provides background information on how NumPy works and how it compares to Python's Built-in lists. This video goes through how to write code with NumPy. It starts with the basics of creating arrays and then gets into more advanced stuff. The video covers creating arrays, indexing, math, statistics, reshaping, and more. ",
             link: 'https://www.youtube.com/watch?v=QUT1VHiLmmI',
+            external: false,
           },
           {
             title: 'NumPy Crash Course - Complete Tutorial ',
             description:
               ' Learn NumPy in this complete 60 minutes Crash Course! I show you all the essential functions of NumPy, and some tricks and useful methods.  NumPy is the core library for scientific computing in Python. It is essential for any data science or machine learning algorithms. ',
             link: 'https://www.youtube.com/watch?v=9JUAPgtkKpI',
+            external: false,
           },
           {
             title:
               'Introduction to Numerical Computing with NumPy | SciPy 2019 Tutorial | Alex Chabot-Leclerc ',
             description: null,
             link: 'https://youtu.be/ZB7BZMhfPgk',
+            external: false,
           },
           {
             title: 'Intro To Numpy - Numpy For Machine Learning 1 ',
             description:
               " We'll learn what a Numpy Array is, and why it's used for Machine Learning. We'll also learn some of the basic built in functions that come with Numpy such as arange, zeros, full, and more. ",
             link: 'https://youtu.be/gnKbAAVUzro',
+            external: false,
           },
         ],
         playlists: [
@@ -1770,6 +2048,7 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
               'Artificial Intelligence Tutorial | Artificial Intelligence Tutorial for Beginners | AI Full Course ',
             description: null,
             link: 'https://youtu.be/opgTF9Yf3Dk',
+            external: false,
           },
           {
             title:
@@ -1777,6 +2056,7 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
             description:
               ' This course will be taught by Great Learning faculty Dr. P. K. Viswanathan, who is ranked among the top 5 analytics professors in India and in Top 3 Most Prominent Analytics & Data Science Academicians in India. He has a rich and varied experience across academia, research, industry, training and consulting. ',
             link: 'https://youtu.be/o8f2w0Q0ME4',
+            external: false,
           },
           {
             title:
@@ -1784,12 +2064,14 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
             description:
               ' This full course on Time Series Analysis will be taught by Dr Abhinanda Sarkar. Dr Sarkar is the Academic Director at Great Learning for Data Science and Machine Learning Programs. He is ranked amongst the Top 3 Most Prominent Analytics & Data Science Academicians in India. ',
             link: 'https://youtu.be/FPM6it4v8MY',
+            external: false,
           },
           {
             title: 'Learn Data Science Tutorial - Full Course for Beginners ',
             description:
               ' Learn Data Science is this full tutorial course for absolute beginners. Data science is considered the "sexiest job of the 21st century." You\'ll learn the important elements of data science. You\'ll be introduced to the principles, practices, and tools that make data science the powerful medium for critical insight in business and research ',
             link: 'https://youtu.be/ua-CiDNNj30',
+            external: false,
           },
           {
             title:
@@ -1797,12 +2079,14 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
             description:
               ' This Python data science course will take you from knowing nothing about Python to coding and analyzing data with Python using tools like Pandas, NumPy, and Matplotlib. ',
             link: 'https://youtu.be/LHBE6Q9XlzI',
+            external: false,
           },
           {
             title: 'Data Science Hands-On Crash Course ',
             description:
               ' Learn the basics of Data Science in the crash course. You will learn about the theory and code behind the most common algorithms used in data science.\n',
             link: 'https://youtu.be/XU5pw3QRYjQ',
+            external: false,
           },
           {
             title:
@@ -1810,6 +2094,7 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
             description:
               ' Learn the basics of Python, Numpy, Pandas, Data Visualization, and Exploratory Data Analysis in this course for beginners. This was originally presented as a live course.By the end of the course, you will be able to build an end-to-end real-world course project and earn a verified certificate of accomplishment. There are no prerequisites for this course. ',
             link: 'https://youtu.be/GPVsHOlRBBI',
+            external: false,
           },
         ],
         playlists: [],
@@ -1826,6 +2111,7 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
             description:
               " using Python This course will take you through all of the fundamentals required to get started with reinforcement learning with Python, OpenAI Gym and Stable Baselines. You'll be able to build deep learning powered agents to solve a varying number of RL problems including CartPole, Breakout and CarRacing as well as learning how to build your very own environment! ",
             link: 'https://youtu.be/Mut_u40Sqz4',
+            external: false,
           },
           {
             title:
@@ -1833,6 +2119,7 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
             description:
               ' Actor critic methods are used in machine learning. They are most useful for applications in robotics as they allow us to output continuous, rather than discrete actions. This enables control of electric motors to actuate movement in robotic systems, at the expense of increased computational complexity. ',
             link: 'https://youtu.be/K2qjAixgLqk',
+            external: false,
           },
           {
             title:
@@ -1840,12 +2127,14 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
             description:
               ' Hado Van Hasselt, Research Scientist, shares an introduction reinforcement learning as part of the Advanced Deep Learning & Reinforcement Learning Lectures. ',
             link: 'https://youtu.be/ISk80iLhdfU',
+            external: false,
           },
           {
             title: 'Reinforcement Learning 2: Exploration and Exploitation ',
             description:
               ' Hado van Hasselt, Research scientist, further discusses the exploration and exploitation of reinforcement learning as part of the Advanced Deep Learning & Reinforcement Learning Lectures. ',
             link: 'https://youtu.be/eM6IBYVqXEA',
+            external: false,
           },
           {
             title:
@@ -1853,6 +2142,7 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
             description:
               ' Reinforcement learning is one of the most discussed, followed and contemplated topics in artificial intelligence, as it has the potential to transform most businesses. This is why top companies such as Microsoft, Adobe, Hewlett-Packard and Nvidia are hiring experts in the domain of Reinforcement Learning. ',
             link: 'https://youtu.be/f8bnkro3yXY',
+            external: false,
           },
         ],
         playlists: [],
@@ -1869,6 +2159,7 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
             description:
               " Welcome to the world of Chainlit, an open-source Python package designed to revolutionize the way you build and share Language Model (LM) applications. With Chainlit, you can create stunning user interfaces (UIs) that rival ChatGPT, the renowned language model developed by OpenAI. In just a matter of minutes, developers can seamlessly integrate the Chainlit API into their existing Python code, unlocking a world of possibilities. Chainlit empowers developers to harness the full potential of language models. By leveraging Chainlit's advanced features, you gain unparalleled visibility into the inner workings of the LM's processing. ",
             link: 'https://www.youtube.com/watch?v=rcXPq3UcxIY',
+            external: false,
           },
           {
             title:
@@ -1876,11 +2167,13 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
             description:
               ' In this tutorial we will explore Chainlit - A python framework for building Large Language Model and AI ChatBot similar to Streamlit. ',
             link: 'https://www.youtube.com/watch?v=pqriC9OT2aY',
+            external: false,
           },
           {
             title: 'Build Python LLM apps in minutes Using Chainlit  ',
             description: null,
             link: 'https://youtu.be/tv7rn5AsxFY',
+            external: false,
           },
         ],
         playlists: [],
@@ -1895,6 +2188,7 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
             description:
               " In today's ai tutorial I show you guys how to use Bark which is the newest free Text to speech ai Tool where you can clone voices and more! ",
             link: 'https://youtu.be/p1dlZZo8WjU',
+            external: false,
           },
           {
             title:
@@ -1902,12 +2196,14 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
             description:
               " Discover the future of audio generation with Bark, Suno's groundbreaking text-to-audio model! Learn how Bark's transformer-based architecture delivers a realistic human speech, emotions, and audio effects in multiple languages. Don't miss this in-depth look at Bark's powerful features!  ",
             link: 'https://youtu.be/nXa569W-D-c',
+            external: false,
           },
           {
             title:
               'A relatively painless way to install Bark (open source Eleven Labs competitor) ',
             description: null,
             link: 'https://youtu.be/tvH_n-vwUA0',
+            external: false,
           },
         ],
         playlists: [],
@@ -1923,12 +2219,14 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
             description:
               ' This video introduces eleven labs and runs through the basic use cases for its text to speech software. In this step by step text to speech tutorial, you will see how it can be as expressive as humans and speak in multiple languages. ',
             link: 'https://youtu.be/oS4ibTlRWpg',
+            external: false,
           },
           {
             title: 'BEST AI Voice Generator | Eleven Labs ',
             description:
               ' In this step-by-step tutorial, learn how to convert text to speech using Eleven Labs, the most realistic and versatile AI speech software that I have ever heard. ',
             link: 'https://www.youtube.com/watch?v=seMNwAav55c',
+            external: false,
           },
           {
             title:
@@ -1936,6 +2234,7 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
             description:
               ' Eleven Labs has been gaining recognition as the most realistic Ai voice generator on the market. In this video, Walter P Henry gives you a brief tour of their platform and provides a full tutorial of the Eleven Labs software. You will learn how to use their technology to create an Ai voice that you can use in your marketing or product, and you will learn how to clone your voice that can be used in videos and social media. ',
             link: 'https://www.youtube.com/watch?v=scKVPdSF8Gs',
+            external: false,
           },
         ],
         playlists: [],
@@ -1950,12 +2249,14 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
             description:
               " Let's explore with a lot of examples and suggestions DeepSpeech, an open source Speech To Text package. Acoustic and Language Model, Batch and Streaming Mode, American English and Italian Language. Really powerful and easy at same time and many local languages projects are spreading around it. ",
             link: 'https://www.youtube.com/watch?v=LGuCaXw79U4',
+            external: false,
           },
           {
             title:
               'Generate text from speech with DeepSpeech This video demonstrates how to generate text from speech with Deepspeech by Mozilla which is an implementation of paper by Baidu. ',
             description: null,
             link: 'https://www.youtube.com/watch?v=PtEreaNQeVk',
+            external: false,
           },
         ],
         playlists: [],
@@ -1973,17 +2274,20 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
             description:
               ' Today we explore the groundbreaking innovation in fine-tuning large language models - QLoRAs or Quantized Low-Rank Adapters. Delving into its rationale, underlying mathematics, and the advantages it holds over the previous versions of LoRAs, we present a comprehensive guide to understanding and leveraging this new technology. ',
             link: 'https://www.youtube.com/watch?v=v6sf4EF45fI',
+            external: false,
           },
           {
             title: 'QLoRA: Quantization for Fine Tuning ',
             description: null,
             link: 'https://www.youtube.com/watch?v=pov3pLFMOPY',
+            external: false,
           },
           {
             title: 'NEW GUANACO LLM with QLoRA: As GOOD as ChatGPT! ',
             description:
               ' In this video, we will be looking at the paper titled "QLORA: Efficient Finetuning of Quantized LLMs" which introduces a new quantization technique called QLoRA that enables the training & fine-tuning of (33B, 13B) LLMs on Consumer GPUs by drastically reducing the Memory Needed. We will be looking at the demo of the model on HuggingFace and then will look at code examples on how to fine-tune it.  ',
             link: 'https://www.youtube.com/watch?v=3PVg86bnKDg',
+            external: false,
           },
         ],
         playlists: [],
@@ -2008,6 +2312,7 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
             description:
               ' Here I walk through how to quickly get started with machine learning! We do this by first installing Java with the Microsoft OpenJDK and then installing h2o.ai, an open source machine learning platform. We spin up a cluster and use the web UI to begin doing machine learning on a sample data set. ',
             link: 'https://www.youtube.com/watch?v=tUNVXSZZ_lc',
+            external: false,
           },
         ],
         playlists: [
@@ -2029,6 +2334,7 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
             description:
               ' In this video, we unveil the game-changing GPT-LLM-Trainer – your gateway to hassle-free LLM training. Say goodbye to the painstaking process of data collection, formatting, model selection, and coding. Say hello to a new era of simplicity, affordability, and efficiency! ',
             link: 'https://youtu.be/pRq2Fx4kYQI',
+            external: false,
           },
         ],
         playlists: [],
@@ -2043,6 +2349,7 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
             description:
               " In this video, we review WizardLM's new 13b v1.1 model, which is an upgraded version of WizardLM. This new small model is fantastic and performs well, above even ChatGPT (3.5) on Alpaca Eval. Let's review it and see if it holds up.  ",
             link: 'https://www.youtube.com/watch?v=c2yMwbmB-sE',
+            external: false,
           },
           {
             title:
@@ -2050,6 +2357,7 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
             description:
               " Welcome to our video on WizardLM, an exciting new project that aims to enhance large language models (LLMs) by improving their ability to follow complex instructions. As language models like OpenAI's ChatGPT have already demonstrated impressive language generation capabilities, the ability to follow instructions presents a unique challenge for these models. Creating large amounts of instruction data with varying levels of complexity is extremely time-consuming and labor-intensive, and humans may struggle to produce high-complexity instructions. ",
             link: 'https://www.youtube.com/watch?v=I6sER-qivYk',
+            external: false,
           },
         ],
         playlists: [],
@@ -2063,6 +2371,7 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
             description:
               " In this video, we'll explore Llama-index (previously GPT-index) and how we can use it with the Pinecone vector database for semantic search and retrieval augmentation of LLMs like gpt-3.5-turbo or gpt-4. We'll cover the essentials like Llama Index Documents, Nodes, the vectorstore object, service contexts and storage contexts. ",
             link: 'https://youtu.be/WKvAWub8VCU',
+            external: false,
           },
         ],
         playlists: [],
@@ -2077,6 +2386,7 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
             description:
               ' We build a Generatively Pretrained Transformer (GPT), following the paper "Attention is All You Need" and OpenAI\'s GPT-2 / GPT-3. We talk about connections to ChatGPT, which has taken the world by storm. We watch GitHub Copilot, itself a GPT, help us write a GPT (meta :D!) ',
             link: 'https://youtu.be/kCc8FmEb1nY?si=EzT7eGLNig6th814',
+            external: false,
           },
         ],
         playlists: [],
@@ -2093,6 +2403,7 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
             description:
               ' The Scrapy Beginners Course will teach you everything you need to learn to start scraping websites at scale using Python Scrapy. ',
             link: 'https://www.youtube.com/watch?v=mBoX_JCKZTE',
+            external: false,
           },
         ],
         playlists: [],
@@ -2109,6 +2420,7 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
               "Milvus 2.0: Building the World's Most Advanced Open-source Vector Database - Filip Haltmayer, Zilliz ",
             description: null,
             link: 'https://youtu.be/hWzn8JwpASQ',
+            external: false,
           },
         ],
         playlists: [
@@ -2129,6 +2441,7 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
             description:
               " Facebook AI Similarity Search (FAISS) is one of the most popular implementations of efficient similarity search, but what is it - and how can we use it? What is it that makes FAISS special? How do we make the best use of this incredible tool Fortunately, it's a brilliantly simple process to get started with. And in this video, we'll explore some of the options FAISS provides, how they work, and - most importantly - how FAISS can make our semantic search faster. ",
             link: 'https://youtu.be/sKyvsdEv6rk',
+            external: false,
           },
         ],
         playlists: [
@@ -2151,17 +2464,20 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
             description:
               " This course will give you a full introduction into all of the core concepts in python. Follow along with the videos and you'll be a python programmer in no time! ",
             link: 'https://www.youtube.com/watch?v=rfscVS0vtbw',
+            external: false,
           },
           {
             title: 'Python Full Course for free (12 hours) ',
             description: null,
             link: 'https://www.youtube.com/watch?v=XKHEtdqhLK8',
+            external: true,
           },
           {
             title: 'Python Tutorial - Python Full Course for Beginners ',
             description:
               ' Python tutorial - Python full course for beginners - Go from Zero to Hero with Python (includes machine learning & web development projects). ',
             link: 'https://youtu.be/_uQrJ0TkZlc',
+            external: false,
           },
         ],
         playlists: [
@@ -2192,23 +2508,27 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
             description:
               ' This course will give you a full introduction into all of the core concepts in C++. ',
             link: 'https://youtu.be/vLnPwxZdW4Y',
+            external: false,
           },
           {
             title: 'C++ Tutorial for Beginners - Learn C++ in 1 Hour ',
             description:
               ' This C++ tutorial for beginners shows you how to get started with C++ quickly. Learn C++ basics in 1 hour and get ready to learn more! ',
             link: 'https://youtu.be/ZzaPdXTrSb8',
+            external: false,
           },
           {
             title: 'C++ Full Course for free ',
             description:
               " This video serves as an introduction to the C++ programming language\nC++ is a beast of a language. We're only scratching the surface. ",
             link: 'https://youtu.be/-TkoO8Z07hI',
+            external: false,
           },
           {
             title: 'C++ Tutorial From Basic to Advance ',
             description: ' C++ Tutorial From Basic to Advance ',
             link: 'https://youtu.be/mUQZ1qmKlLY',
+            external: false,
           },
         ],
         playlists: [],
@@ -2223,24 +2543,28 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
             description:
               ' In this full Golang course you will learn about one of the youngest programming languages that is becoming more and more popular in the cloud engineering world, which is Go or also commonly known as Golang. ',
             link: 'https://youtu.be/yyUHQIec83I',
+            external: false,
           },
           {
             title: 'Go Programming – Golang Course with Bonus Projects ',
             description:
               " Learn the Go programming language in this full course for beginners. You'll practice writing performant, idiomatic Go with these hands-on lessons and challenges. ",
             link: 'https://youtu.be/un6ZyFkqFKo',
+            external: false,
           },
           {
             title: 'Learn Go Programming - Golang Tutorial for Beginners ',
             description:
               ' Learn the Go programming language (Golang) in this step-by-step tutorial course for beginners. Go is an open source programming language designed at Google that makes it easy to build simple, reliable, and efficient software. ',
             link: 'https://youtu.be/YS4e4q9oBaU',
+            external: false,
           },
           {
             title: 'Golang Tutorial : Go Full Course ',
             description:
               ' I created this Golang tutorial to be the definitive course. I provide in this full course more information than you can get in any book. The table of contents follows below. Both the core language and numerous projects are provided to help you master Go. ',
             link: 'https://youtu.be/YzLrWHZa-Kc',
+            external: false,
           },
         ],
         playlists: [],
@@ -2257,12 +2581,14 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
             description:
               ' In this course I will teach you everything you need to know about how to use PyCharm. PyCharm is by far the best IDE when it comes to python development. As a software engineer it is important that you use the right tool and PyCharm does not disappoint. ',
             link: 'https://www.youtube.com/watch?v=hc50ALh_x5g',
+            external: false,
           },
           {
             title:
               'PyCharm Tutorial | Introduction to PyCharm | Basics in 10 Minutes ',
             description: null,
             link: 'https://www.youtube.com/watch?v=HHcZbXsZtm0',
+            external: false,
           },
         ],
         playlists: [
@@ -2288,12 +2614,14 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
             description:
               ' In this video, we will look at and try the GitHub Copilot AI pair programmer ',
             link: 'https://www.youtube.com/watch?v=DeO7xLXORpY',
+            external: false,
           },
           {
             title: 'GitHub Copilot tips and tricks. ',
             description:
               ' GitHub Copilot is designed to be your AI pair programmer. Just like any other tool, you might be curious about how to get the most out of it. Where will it perform best? Do I need to change how I code? @GeekTrainer provides some tips and tricks to help you get started. ',
             link: 'https://www.youtube.com/watch?v=1qs6QKk0DVc',
+            external: false,
           },
         ],
         playlists: [
@@ -2322,12 +2650,14 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
             description:
               " In this video, we'll learn how to install, clone, and make repositories and use the GitHub Desktop easily and how it works in a better way than the terminal. Learn all you need for the GitHub Desktop to master it along with me. ",
             link: 'https://youtu.be/RPagOAUx2SQ',
+            external: false,
           },
           {
             title: 'Git, GitHub, & GitHub Desktop for beginners. ',
             description:
               " In this video we'll be going through the basics of Git, GitHub, and GitHub Desktop app-- how to set them up and use them to track your code changes. ",
             link: 'https://youtu.be/8Dd7KRpKeaE',
+            external: false,
           },
         ],
         playlists: [
@@ -2348,6 +2678,7 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
               'Getting Started With Hugging Face in 15 Minutes | Transformers, Pipeline, Tokenizer, Models. ',
             description: null,
             link: 'https://www.youtube.com/watch?v=QEaBAZQCtwE',
+            external: false,
           },
           {
             title:
@@ -2355,6 +2686,7 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
             description:
               ' In this video I show you everything to get started with Huggingface and the Transformers library. We build a sentiment analysis pipeline, I show you the Model Hub, and how you can fine tune your own models. ',
             link: 'https://www.youtube.com/watch?v=GSt00_-0ncQ',
+            external: false,
           },
         ],
         playlists: [
@@ -2376,6 +2708,7 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
             description:
               " In this video, we're going to discuss How we can use Kaggle to learn Data Science. Kaggle is an online community devoted to Data Science and Machine Learning founded by Google in 2010.  ",
             link: 'https://www.youtube.com/watch?v=u9MIwoFWXVg',
+            external: false,
           },
           {
             title:
@@ -2383,6 +2716,7 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
             description:
               " In this tutorial, we'll introduce you to Kaggle, the world's largest community of data scientists and machine learning practitioners. You'll learn what Kaggle is, why it's such a powerful tool for data science, and how to use it as a beginner. ",
             link: 'https://www.youtube.com/watch?v=1FYEtnQ7250',
+            external: false,
           },
         ],
         playlists: [
@@ -2406,12 +2740,14 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
             description:
               ' Review or learn basic Python programming using the Google Colab IDE for Machine Learning and Deep Learning. ',
             link: 'https://www.youtube.com/watch?v=2YkjwOFpgKs',
+            external: false,
           },
           {
             title: 'Google Colab Tutorial - Google Sheets, Read & Write Data. ',
             description:
               " In this tutorial we'll import 2 data tables from Google Sheets, join them using a matching field and then export the results back to Google Sheets spreadsheet. ",
             link: 'https://youtu.be/cN7W2EPM-dw',
+            external: false,
           },
         ],
         playlists: [
@@ -2439,18 +2775,21 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
             description:
               " In this Python Tutorial, we will be learning how to install, setup, and use Jupyter Notebooks. Jupyter Notebooks have become very popular in the last few years, and for good reason. They allow you to create and share documents that contain live code, equations, visualizations and markdown text. This can all be run from directly in the browser. It is an essential tool to learn if you are getting started in Data Science, but will also have tons of benefits outside of that field. Let's get started.  ",
             link: 'https://www.youtube.com/watch?v=HW29067qVWk',
+            external: false,
           },
           {
             title: 'Jupyter Notebook Tutorial for Beginners with Python ',
             description:
               ' This tutorial  provides a set up, introduction, and quick start for Jupyter Notebooks. We will install Jupyter Notebook with the Anaconda Python distribution and create your first Jupyter Notebook file with Python examples for beginners. ',
             link: 'https://www.youtube.com/watch?v=2WL-XTl2QYI',
+            external: false,
           },
           {
             title:
               'Jupyter Notebook Complete Beginner Guide 2023 - From Jupyter to Jupyterlab, Google Colab and Kaggle! ',
             description: null,
             link: 'https://www.youtube.com/watch?v=5pf0_bpNbkw',
+            external: false,
           },
         ],
         playlists: [],
@@ -2468,6 +2807,7 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
             description:
               ' ML systems are rapidly increasing in size, are acquiring new capabilities, and are increasingly deployed in high-stakes settings. As with other powerful technologies, safety for ML should be a leading research priority. In this course we’ll discuss how researchers can shape the process that will lead to strong AI systems and steer that process in a safer direction. ',
             link: 'https://youtu.be/agEPmYdbQLs',
+            external: false,
           },
         ],
         playlists: [],
@@ -2487,17 +2827,20 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
             description:
               ' It is important when writing applications to pick the right architecture. Most software developers are familiar with the 3-Tier architecture model already, but few understand Hexagonal Architecture, which I cover in this video. Hexagonal Architecture, which was first coined by Alistair Cockburn in 2005 is a flexible architecture that is great for large applications. ',
             link: 'https://youtu.be/bDWApqAUjEI',
+            external: false,
           },
           {
             title: 'Hexagonal, Onion & Clean Architecture ',
             description: ' Three similar software architectures explained. ',
             link: 'https://youtu.be/JubdZIdLQ4M',
+            external: false,
           },
           {
             title: 'What is Hexagonal Architecture? Learn in 6 minutes ',
             description:
               ' This is an introductory lesson to Hexagonal Architecture, a software design pattern to develop applications that are highly maintainable. This design pattern is also known as the Ports and Adapters. The concept was introduced in 2005 by Alistair Cockburn and since then has been evolving. ',
             link: 'https://youtu.be/Sfia0T1jt5s',
+            external: false,
           },
         ],
         playlists: [],
@@ -2515,6 +2858,7 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
             description:
               ' What is an API? Learn all about APIs (Application Programming Interfaces) in this full tutorial for beginners. You will learn what APIs do, why APIs exist, and the many benefits of APIs. APIs are used all the time in programming and web development so it is important to understand how to use them. ',
             link: 'https://youtu.be/WXsD0ZgxjRw',
+            external: false,
           },
         ],
         playlists: [],
@@ -2531,12 +2875,14 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
             description:
               ' This Docker tutorial teaches you everything you need to get started. ',
             link: 'https://youtu.be/pTFZFxd4hOI',
+            external: false,
           },
           {
             title: 'Docker Crash Course for Absolute Beginners [NEW]. ',
             description:
               ' Docker Tutorial for Beginners that teaches you everything you need to get started. ',
             link: 'https://youtu.be/pg19Z8LL06w',
+            external: false,
           },
         ],
         playlists: [
@@ -2560,12 +2906,14 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
             description:
               ' Full Kubernetes Tutorial | Kubernetes Course | Hands-on course with a lot of demos ',
             link: 'https://youtu.be/X48VuDVv0do',
+            external: false,
           },
           {
             title: 'Kubernetes Crash Course for Absolute Beginners [NEW] ',
             description:
               ' Hands-On Kubernetes Tutorial | Learn Kubernetes in 1 Hour - Kubernetes Course for Beginners ',
             link: 'https://youtu.be/s_o8dwzRlu4',
+            external: false,
           },
         ],
         playlists: [],
@@ -2582,6 +2930,7 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
             description:
               ' This is a complete course on how to become a Linux System Administration.  #Linux system administration is a process of setting up, configuring, and managing a computer system in a Linux environment. System administration involves creating a user account, taking reports, performing backup, updating configuration files, documentation, and performing recovery actions. ',
             link: 'https://youtu.be/UCr04qIB7uc',
+            external: false,
           },
           {
             title:
@@ -2589,6 +2938,7 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
             description:
               ' This Edureka Linux Full Course video will help you understand and learn the fundamentals of Operating Systems and Linux in Particular. This Linux Tutorial is ideal for both beginners as well as professionals who want to master the fundamentals of Linux.  ',
             link: 'https://www.youtube.com/live/bz0ZCUv5rYo?feature=share',
+            external: true,
           },
         ],
         playlists: [],
@@ -2605,6 +2955,7 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
             description:
               ' In this groundbreaking video, we delve into the cutting-edge world of DevOpsGPT, an AI-driven software development automation solution that combines the immense power of Large Language Model (LLM) technology with DevOps tools to revolutionize the way software is built and delivered. ',
             link: 'https://youtu.be/lyJKG04Kvl4',
+            external: false,
           },
           {
             title:
@@ -2612,6 +2963,7 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
             description:
               ' DevOpsGPT Demo - AI automatically completes software requirement development: implements interface development of new user information in existing Java projects. ',
             link: 'https://youtu.be/IWUPbGrJQOU',
+            external: false,
           },
         ],
         playlists: [],
@@ -2628,6 +2980,7 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
             description:
               " This full college-level computer networking course will prepare you to configure, manage, and troubleshoot computer networks. It will also help you prepare for CompTIA's Network+ exam. ",
             link: 'https://youtu.be/qiQR5rTSshw',
+            external: false,
           },
         ],
         playlists: [],
@@ -2644,18 +2997,21 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
               'Hacking Active Directory for Beginners (over 5 hours of content!) ',
             description: null,
             link: 'https://youtu.be/VXxH4n684HE',
+            external: false,
           },
           {
             title:
               'Ethical Hacking in 15 Hours - 2023 Edition - Learn to Hack! (Part 1) ',
             description: null,
             link: 'https://youtu.be/3FNYvj2U0HM',
+            external: false,
           },
           {
             title:
               'Ethical Hacking in 15 Hours - 2023 Edition - Learn to Hack! (Part 2) ',
             description: null,
             link: 'https://youtu.be/sH4JCwjybGs',
+            external: false,
           },
           {
             title:
@@ -2663,6 +3019,7 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
             description:
               " Stay ahead of the digital threats and protect against cyberattacks with our comprehensive Cyber Security Expert Course for 2023! In this cutting-edge program, you'll learn from industry-leading experts about the latest trends, tools, and techniques to safeguard critical information. ",
             link: 'https://youtu.be/6KZyR1xJvY0',
+            external: false,
           },
           {
             title:
@@ -2670,6 +3027,7 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
             description:
               ' Learn network penetration testing / ethical hacking in this full tutorial course for beginners. This course teaches everything you need to know to get started with ethical hacking and penetration testing. ',
             link: 'https://youtu.be/3Kq1MIfTWCE',
+            external: false,
           },
         ],
         playlists: [],
@@ -2687,11 +3045,13 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
             description:
               ' This video is about the Django course. We are going to launch the best Django course which can help you land the best python job. ',
             link: 'https://www.youtube.com/watch?v=Mezody4yiXw',
+            external: false,
           },
           {
             title: 'Python Django 7 Hour Course ',
             description: null,
             link: 'https://youtu.be/PtQiiknWUcI',
+            external: false,
           },
         ],
         playlists: [
@@ -2713,6 +3073,7 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
             description:
               ' In this video, we learn about Pynecone, which is a Python-only web development framework. ',
             link: 'https://youtu.be/ur4fCNMPp0I',
+            external: false,
           },
           {
             title:
@@ -2720,6 +3081,7 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
             description:
               " In this tutorial, we'll go over the basic setup of Pynecone and how to create a modern-looking login form using only Python. ",
             link: 'https://youtu.be/zhCT0SnikOw',
+            external: false,
           },
         ],
         playlists: [
@@ -2740,6 +3102,7 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
             description:
               ' In this course we will cover both languages from the scratch and by the end of the course you will be creating your own projects. ',
             link: 'https://youtu.be/mU6anWqZJcc',
+            external: false,
           },
         ],
         playlists: [],
@@ -2754,6 +3117,7 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
             description:
               ' React JS Tutorial for Beginners - Learn React 18 with TypeScript and build awesome frontend app! ',
             link: 'https://youtu.be/SqcY0GlETPk',
+            external: false,
           },
           {
             title:
@@ -2761,12 +3125,14 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
             description:
               ' React is one of the most popular front-end JavaScript libraries for building user interfaces. After completing this course, you will be able to build web apps in modern React, using patterns like functional components and hooks. ',
             link: 'https://youtu.be/bMknfKXIFA8',
+            external: false,
           },
           {
             title: 'Learn React With This One Project ',
             description:
               ' Learning React is hard. There are so many concepts to learn and mindsets shifts that you need to do. That is why in this video I will be breaking down all the most important concepts you need to understand in React. ',
             link: 'https://youtu.be/Rh3tobg7hEo',
+            external: false,
           },
           {
             title:
@@ -2774,6 +3140,7 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
             description:
               ' Welcome to the ultimate course, where you will learn how to take Figma designs, turn them into four modern, responsive, beautifully-designed applications, and get hired as a front-end developer. All the way from design, over development, to deployment on your own web development portfolio! ',
             link: 'https://youtu.be/F627pKNUCVQ',
+            external: false,
           },
         ],
         playlists: [],
@@ -2789,12 +3156,14 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
             description:
               ' User experience (UX) design is the process design teams use to create products that provide meaningful and relevant experiences to users. This involves the design of the entire process of acquiring and integrating the product, including aspects of branding, design, usability and function. ',
             link: 'https://youtu.be/uL2ZB7XXIgg',
+            external: false,
           },
           {
             title: 'UI Design Tutorial For Beginners - (Full Course) ',
             description:
               ' In this Specialization, you will learn industry-standard theory and methods for developing successful user interfaces (UIs). Upon completing this Specialization, you will have fluency with the user research, prototyping and evaluation techniques necessary for creating intuitive interfaces that facilitate good user experiences. ',
             link: 'https://youtu.be/OSSn2xW2ANs',
+            external: false,
           },
         ],
         playlists: [],
@@ -2808,6 +3177,7 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
             title: 'Figma Course - Web Design Tutorial for Beginners ',
             description: ' Learn how to use Figma to design websites. ',
             link: 'https://youtu.be/D56hs0Twfco',
+            external: false,
           },
           {
             title:
@@ -2815,18 +3185,21 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
             description:
               ' In this tutorial you will learn how a professional designer builds a full website design from scratch following the process of user experience and user interface. The video covers wireframing, prototyping, and designing in Figma. ',
             link: 'https://youtu.be/c9Wg6Cb_YlU',
+            external: false,
           },
           {
             title: 'Web / Desktop App UI Design in Figma - Full Course ',
             description:
               ' Design a Web app design inspired by Discord and Slack in the Figma design tool. ',
             link: 'https://youtu.be/5IanQIwhA4E',
+            external: false,
           },
           {
             title: 'Figma Tutorial for UI Design - Course for Beginners ',
             description:
               ' In this Figma course, you will learn how to use Figma for UI Design. Figma is a vector graphics editor and prototyping tool. ',
             link: 'https://youtu.be/jwCmIBJ8Jtc',
+            external: false,
           },
         ],
         playlists: [],
@@ -2843,12 +3216,14 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
             description:
               ' The entire field of mathematics summarised in a single map! This shows how pure mathematics and applied mathematics relate to each other and all of the sub-topics they are made from. ',
             link: 'https://youtu.be/OmJ-4B-mS-Y',
+            external: false,
           },
           {
             title: 'Maths for Programmers Tutorial - Full Course ',
             description:
               ' on Sets and Logic Learn the maths and logic concepts that are important for programmers to understand. ',
             link: 'https://youtu.be/2SpuBqvNjHI',
+            external: false,
           },
         ],
         playlists: [],
@@ -2864,6 +3239,7 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
             description:
               ' This from-scratch tutorial on SymPy is designed specifically for those in physics, mathematics, and engineering. In the future, I will be making tutorial videos on all the essential python packages, so subscribe for more! ',
             link: 'https://youtu.be/1yBPEPhq54M',
+            external: false,
           },
         ],
         playlists: [
@@ -2884,18 +3260,21 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
             description:
               ' #Algebra is one of the broad parts of mathematics, together with number theory, geometry and analysis. In its most general form, algebra is the study of mathematical symbols and the rules for manipulating these symbols; it is a unifying thread of almost all of mathematics. ',
             link: 'https://youtu.be/PVoTRu3p6ug',
+            external: false,
           },
           {
             title: 'College Algebra - full course ',
             description:
               ' Algebra is one of the broad areas of mathematics, together with number theory, geometry and analysis. In its most general form, #algebra is the study of mathematical symbols and the rules for manipulating these symbols; it is a unifying thread of almost all of mathematics. ',
             link: 'https://youtu.be/7DMyZBx5NZ0',
+            external: false,
           },
           {
             title: 'Algebra 1 Full Course ',
             description:
               ' In this course, we will explore all the topics of a typical algebra 1 course. We will cover variables and algebraic expressions, how to solve linear equations and inequalities, graphing linear equations in two variables, functions, systems of linear equations, rules of exponents, polynomials, factoring, rational expressions, radicals, and quadratic equations. ',
             link: 'https://youtu.be/GAN-jgzYsIo',
+            external: true,
           },
           {
             title:
@@ -2903,6 +3282,7 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
             description:
               ' This video contains all practice sets and practice test solutions for the Algebra 1 course on GreeneMath.com, please watch the lessons first before coming to this video. It would be helpful to try the practice tests before watching the full solutions. You can do so with the link below. ',
             link: 'https://youtu.be/wioFZFIDniQ',
+            external: true,
           },
           {
             title:
@@ -2910,6 +3290,7 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
             description:
               ' This video contains all practice test solutions for lessons 1 -  72 for the College Algebra course on GreeneMath.com, please watch the lessons first before coming to this video. It would be helpful to try the practice tests before watching the full solutions. ',
             link: 'https://youtu.be/WgdBC4F1ee8',
+            external: true,
           },
           {
             title:
@@ -2917,24 +3298,28 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
             description:
               ' This video contains all practice sets and practice test solutions for the Algebra 2 course ',
             link: 'https://youtu.be/MF1r7MW8UvQ',
+            external: true,
           },
           {
             title: 'Pre-Algebra Full Course ',
             description:
               ' In this course, we will explore all of the topics of a typical pre-algebra course. We will begin by covering operations with whole numbers. Once we understand how to perform operations with whole numbers, we will then move on to study operations with integers, fractions, and decimals. We will finish up the course by learning how to convert between units of measurement. ',
             link: 'https://youtu.be/VXzm8ReImG0',
+            external: true,
           },
           {
             title: 'College Algebra - Full Cours ',
             description:
               ' Learn Algebra in this full college course. These concepts are often used in programming. ',
             link: 'https://youtu.be/LwCRRUa8yTU',
+            external: false,
           },
           {
             title: 'Linear Algebra - Full College Course ',
             description:
               ' Learn Linear Algebra in this 20-hour college course. ',
             link: 'https://youtu.be/JnTa9XtvmfI',
+            external: false,
           },
         ],
         playlists: [],
@@ -2949,18 +3334,21 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
               'Precalculus Course Learn Precalculus in this full college course. ',
             description: ' These concepts are often used in programming. ',
             link: 'https://youtu.be/eI4an8aSsgw',
+            external: false,
           },
           {
             title: 'Calculus 1 - Full College Course ',
             description:
               ' This course was created by Dr. Linda Green, a lecturer at the University of North Carolina at Chapel Hill. ',
             link: 'https://youtu.be/HfACrKJ_Y2w',
+            external: false,
           },
           {
             title: 'Linear Algebra - Full College Course ',
             description:
               ' Learn Linear Algebra in this 20-hour college course. ',
             link: 'https://youtu.be/JnTa9XtvmfI',
+            external: false,
           },
         ],
         playlists: [],
@@ -2976,6 +3364,7 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
             description:
               ' This course introduces the various methods used to collect, organize, summarize, interpret and reach conclusions about data. An emphasis is placed on demonstrating that statistics is more than mathematical calculations. ',
             link: 'https://youtu.be/xxpc-HPKN28',
+            external: false,
           },
           {
             title:
@@ -2983,6 +3372,7 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
             description:
               ' In this comprehensive #statistics course you will learn about fundamental concept of statistics which is beginner friendly. This statistics course will walk you through everything you need to know about #statistics for #MachineLearning. ',
             link: 'https://youtu.be/74oUwKezFho',
+            external: false,
           },
           {
             title:
@@ -2990,6 +3380,7 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
             description:
               ' One of the most critical aspects of the data science approach is our perception of getting the information processed. In developing insights from our accumulated data, we dig out the possibilities. And those possibilities are known as statistical analysis in Data science.\nStatistics acts as a tool to gather, extract, analyze, and review data, which is an input to Data science techniques; hence, learning statistics is a baby step toward becoming a data scientist. ',
             link: 'https://youtu.be/Vfo5le26IhY',
+            external: false,
           },
         ],
         playlists: [],
@@ -3006,36 +3397,42 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
             description:
               ' Learn the basics of computer science from Harvard University. This is CS50, an introduction to the intellectual enterprises of computer science and the art of programming. ',
             link: 'https://youtu.be/8mAITcNt710',
+            external: false,
           },
           {
             title: 'Introduction to Programming and Computer Science ',
             description:
               ' Full Course In this course, you will learn basics of computer programming and computer science. The concepts you learn apply to any and all programming languages and will be a good base onto which you can build your skills. ',
             link: 'https://youtu.be/zOjov-2OZ0E',
+            external: false,
           },
           {
             title: 'Map of Computer Science ',
             description:
               ' Computer science is the subject that studies what computers can do and investigates the best ways you can solve the problems of the world with them. It is a huge field overlapping pure mathematics, engineering and many other scientific disciplines. In this video I summarise as much of the subject as I can and show how the areas are related to each other. ',
             link: 'https://youtu.be/SzJ46YA_RaA',
+            external: false,
           },
           {
             title: 'Computer Architecture Complete course Part 1 ',
             description:
               ' In this course, you will learn to design the computer architecture of complex modern microprocessors. ',
             link: 'https://youtu.be/9nuAjYRbITQ',
+            external: false,
           },
           {
             title: 'Computer Architecture Complete Course Part 2 ',
             description:
               ' In this course, you will learn to design the computer architecture of complex modern microprocessors. ',
             link: 'https://youtu.be/foCkCSZXOt8',
+            external: false,
           },
           {
             title: 'Computer Architecture Complete course Part 3 ',
             description:
               ' In this course, you will learn to design the computer architecture of complex modern microprocessors. ',
             link: 'https://youtu.be/BHMETwOXvWw',
+            external: false,
           },
         ],
         playlists: [],
@@ -3052,18 +3449,21 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
             description:
               ' Instructor Joe Gryniuk teaches you everything you wanted to know and more about the Fundamentals of Electricity. From the classrooms of Lake Washington Technical College in Kirkland, Washington. ',
             link: 'https://youtu.be/nb4ovfwqup8',
+            external: false,
           },
           {
             title: 'Basic Electronics Part 2 ',
             description:
               ' Instructor Joe Gryniuk teaches you everything you wanted to know and more about the Fundamentals of Electricity. From the classrooms of Lake Washington Technical College in Kirkland, Washington. ',
             link: 'https://youtu.be/FEK6lH_rtG8',
+            external: false,
           },
           {
             title: 'Basic Electronics Part 3 ',
             description:
               ' Instructor Joe Gryniuk teaches you everything you wanted to know and more about the Fundamentals of Electricity. From the classrooms of Lake Washington Technical College in Kirkland, Washington. ',
             link: 'https://youtu.be/_4zSRze0_bk',
+            external: false,
           },
         ],
         playlists: [],
@@ -3079,6 +3479,7 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
             title: 'Pyrobot LoCoBot Setup Guide ',
             description: null,
             link: 'https://youtu.be/uIieW4DW-P0',
+            external: false,
           },
         ],
         playlists: [],
@@ -3093,6 +3494,7 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
               'Programming Robots with Python; This is a series of videos showing you how to bring SMARS robots to life with Python code. ',
             description: null,
             link: 'https://www.youtube.com/live/N3jwEVbZyXY?feature=share',
+            external: true,
           },
         ],
         playlists: [
@@ -3120,12 +3522,14 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
             description:
               " If you keep your ear to the Tinkering community, I'm sure you've heard whispers (and shouts) of the Raspberry Pi. And if you wanted to get into making, tinkering, computing, or electronics, the Raspberry Pi is a great tool to have in your tool belt. But what is it? And why is it so popular? Let's find out!  ",
             link: 'https://youtu.be/EKPobkb1N6o',
+            external: false,
           },
           {
             title: 'Raspberry Pi 4 Getting Started ',
             description:
               ' This video covers the basics of getting started with the Raspberry Pi.  We start with an overview of the Raspberry Pi platform, all of the accessories needed to get started, and move onto how to install the OS and connect remotely to the Pi. ',
             link: 'https://youtu.be/BpJCAafw2qE',
+            external: false,
           },
         ],
         playlists: [],
@@ -3141,6 +3545,7 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
             description:
               ' Learn how to use Arduino hardware and software in this full course for beginners. Arduino is an easy-to-use, open-source electronics platform. Arduino boards are able to read inputs - light on a sensor, a finger on a button, or a Twitter message - and turn it into an output - activating a motor, turning on an LED, publishing something online. You can tell your board what to do by sending a set of instructions to the microcontroller on the board. ',
             link: 'https://youtu.be/zJ-LqeX_fLU',
+            external: false,
           },
           {
             title:
@@ -3148,6 +3553,7 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
             description:
               ' This is a tutorial series for absolute beginners. We show complete newbies how to get an arduino up and running, and in this lesson you will write your first three programs. ',
             link: 'https://youtu.be/fJWR7dBuc18',
+            external: false,
           },
         ],
         playlists: [],
@@ -3162,6 +3568,7 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
             description:
               ' Gael Langevin is a French modelmaker and sculptor. He works for the biggest brands since more than 25 years. InMoov is his personal project, it was initiated in January 2012 ',
             link: 'https://youtu.be/H4Z09edx52E',
+            external: false,
           },
           {
             title:
@@ -3169,12 +3576,14 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
             description:
               " Gael Langevin's full keynote presentation at Mindtrek Openmind 2015 on Tuesday 22nd of September at Tampere, Finland. ",
             link: 'https://youtu.be/rajEym5Vs6U',
+            external: false,
           },
           {
             title: 'Inmoov hand and forarm (STEP BY STEP tutorial) ',
             description:
               ' This video will take you to the point of completing the entire building proces. The next video I will post soon shows detailed how to attach the Arduino to all the servos. ',
             link: 'https://youtu.be/4t1daCFQ1OE',
+            external: false,
           },
         ],
         playlists: [],
@@ -3191,12 +3600,14 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
             description:
               ' Zerynth helps companies easily get their industrial processes digitized and bring innovative connected products to the world. ',
             link: 'https://youtu.be/osisO5KBxr0',
+            external: false,
           },
           {
             title: 'Python and C Blended Programming on ESP32 using Zerynth ',
             description:
               ' This is a step-by-step guide to use the Python and C Blended Programming on ESP32 using Zerynth.\nThis example uses the interrupt routine as an example of handling some peripherals in C while also developing your code in Python. ',
             link: 'https://youtu.be/OX2IqI76I3o',
+            external: false,
           },
         ],
         playlists: [
@@ -3235,12 +3646,14 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
             title: 'Overview and installation of ASE ',
             description: ' By Anthony Goodrow. ',
             link: 'https://youtu.be/yyxMWp_20h8',
+            external: false,
           },
           {
             title: 'Atomic Simulation Environment (ASE) in a nutshell ',
             description:
               ' Ase installation - building a molecule and saving xyz structure - opening a cif file and generating a Quantum-espresso input file (.pwi) - making  a supercell. All in 5 minutes. ',
             link: 'https://youtu.be/EQ3Fy3ugy6k',
+            external: false,
           },
         ],
         playlists: [
@@ -3272,12 +3685,14 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
             description:
               ' Learn how to create games with Unreal Engine 5 in this full course for beginners. This course will give you a solid foundation and will enable you to be able to develop any sort of game in Unreal Engine 5. ',
             link: 'https://youtu.be/6UlU_FsicK8',
+            external: false,
           },
           {
             title: 'Learn Unreal Engine (with C++) ',
             description:
               " Full Course for Beginners Learn Unreal Engine in this full tutorial using C++. In this beginner's course, you will how to create three full games with Unreal Engine and Blueprints. ",
             link: 'https://youtu.be/LsNW4FPHuZE',
+            external: false,
           },
         ],
         playlists: [],
@@ -3303,12 +3718,14 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
             description:
               ' Cryptography is an indispensable tool for protecting information in computer systems. In this course you will learn the inner workings of cryptographic systems and how to correctly use them in real-world applications. The course begins with a detailed discussion of how two parties who have a shared secret key can communicate securely when a powerful adversary eavesdrops and tampers with traffic. We will examine many deployed protocols and analyze mistakes in existing systems. ',
             link: 'https://youtu.be/j_8PLI_wCVU',
+            external: false,
           },
           {
             title: 'Cryptography Full Course Part 2 ',
             description:
               ' the course discusses public-key techniques that let two parties generate a shared secret key. Throughout the course participants will be exposed to many exciting open problems in the field and work on fun (optional) programming projects. In a second course (Crypto II) we will cover more advanced cryptographic tasks such as zero-knowledge, privacy mechanisms, and other forms of encryption ',
             link: 'https://youtu.be/s5yza-s0bhM',
+            external: false,
           },
         ],
         playlists: [
@@ -3333,6 +3750,7 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
             description:
               ' Learn to build a simple example application with the Cosmos SDK. Cosmos SDK is the most powerful, most used blockchain application framework in the cryptocurrency industry today. Try it yourself and follow along with our simple tutorial. ',
             link: 'https://youtu.be/pyAmxlzVdqM',
+            external: false,
           },
           {
             title:
@@ -3340,12 +3758,14 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
             description:
               ' This video is presented as part of the Interchain Developer Academy. Marko Baricevic, the then Cosmos SDK Project Lead at Interchain Gmbh, delivers a comprehensive breakdown of the Cosmos SDK: a modular, fully customizable, multi-language-friendly blockchain creation resource that is easy to work with and can be applied to potentially limitless use cases. ',
             link: 'https://youtu.be/1_ottIKPfI4',
+            external: false,
           },
           {
             title:
               "From Beginner to Building Your Own Blockchain In this workshop, we'll dive deep into a section inside the brand new Cosmos Academy and learn how we can get started in creating our own chain from scratch using Starport. ",
             description: null,
             link: 'https://youtu.be/jXo5VWlvP84',
+            external: false,
           },
           {
             title:
@@ -3353,6 +3773,7 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
             description:
               ' Tobias Schwarz, Developer Relations Engineering Manager, gives LA Blockchain Week attendees a workshop on using the Cosmos SDK to easily create and customize modules to build a Cosmos application. ',
             link: 'https://youtu.be/m3VxKxj7QPY',
+            external: false,
           },
         ],
         playlists: [],
@@ -3368,6 +3789,7 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
             description:
               ' Learn to build a simple example application with the Cosmos SDK. Cosmos SDK is the most powerful, most used blockchain application framework in the cryptocurrency industry today. Try it yourself and follow along with our simple tutorial. ',
             link: 'https://youtu.be/pyAmxlzVdqM',
+            external: false,
           },
           {
             title:
@@ -3375,12 +3797,14 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
             description:
               ' This video is presented as part of the Interchain Developer Academy. Marko Baricevic, the then Cosmos SDK Project Lead at Interchain Gmbh, delivers a comprehensive breakdown of the Cosmos SDK: a modular, fully customizable, multi-language-friendly blockchain creation resource that is easy to work with and can be applied to potentially limitless use cases. ',
             link: 'https://youtu.be/1_ottIKPfI4',
+            external: false,
           },
           {
             title: 'From Beginner to Building Your Own Blockchain ',
             description:
               " In this workshop, we'll dive deep into a section inside the brand new Cosmos Academy and learn how we can get started in creating our own chain from scratch using Starport. ",
             link: 'https://youtu.be/jXo5VWlvP84',
+            external: false,
           },
           {
             title:
@@ -3388,6 +3812,7 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
             description:
               ' Tobias Schwarz, Developer Relations Engineering Manager, gives LA Blockchain Week attendees a workshop on using the Cosmos SDK to easily create and customize modules to build a Cosmos application. ',
             link: 'https://youtu.be/m3VxKxj7QPY',
+            external: false,
           },
         ],
         playlists: [],
@@ -3404,12 +3829,14 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
             description:
               ' This is the Map of Quantum Physics and quantum mechanics covering everything you need to know about this field in one image. ',
             link: 'https://youtu.be/gAFAj3pzvAA',
+            external: false,
           },
           {
             title: "If You Don't Understand Quantum Physics, Try This! ",
             description:
               ' A simple and clear explanation of all the important features of quantum physics that you need to know. ',
             link: 'https://youtu.be/Usu9xZfabPM',
+            external: false,
           },
           {
             title:
@@ -3417,6 +3844,7 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
             description:
               ' In this lecture, you will learn about the prerequisites for the emergence of such a science as quantum physics, its foundations, and its prospects ',
             link: 'https://youtu.be/Lm9SZf2XFCc',
+            external: false,
           },
           {
             title:
@@ -3424,12 +3852,14 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
             description:
               " Join us for an engaging scientific lecture exploring the fascinating world of quantum mechanics. Delve into the fundamental concepts of separation of variables and the Schrödinger equation, unravel the mysteries of superposition, and explore the behavior of particles in the infinite square well and the 'particle in a box' scenarios. ",
             link: 'https://youtu.be/q0N7rDhTcEA',
+            external: false,
           },
           {
             title: 'Quantum Physics Full Course | Quantum Mechanics Course ',
             description:
               ' Quantum physics also known as Quantum mechanics is a fundamental theory in physics that provides a description of the physical properties of nature at the scale of atoms and subatomic particles. It is the foundation of all #quantum #physics including quantum chemistry, quantum field theory, quantum technology, and quantum information science. ',
             link: 'https://youtu.be/hyctIDPRSqY',
+            external: false,
           },
         ],
         playlists: [],
@@ -3447,11 +3877,13 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
             description:
               ' How did we discover neutrinos? What don’t they make any sense? Why do they have mass, and how do they change their identities? I discuss these questions and more in today’s Ask a Spaceman! ',
             link: 'https://youtu.be/0-VgesDOr9E',
+            external: false,
           },
           {
             title: 'Neutrinos: Why Do These "Useless" Ghost Particles Exist? ',
             description: null,
             link: 'https://youtu.be/2xW5QV9zwGs',
+            external: false,
           },
         ],
         playlists: [],
@@ -3476,12 +3908,14 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
             description:
               ' With this video I aim to give a really good overview of the field of quantum computing with a clear explanation of how they work, why people are excited about quantum algorithms and their value, the potential applications of quantum computers including quantum simulation, artificial intelligence and more, and the different models and physical implementations people are using to build quantum computers like superconducting devices, quantum dots, trapped ions, photons or neutral atoms, and the challenges they face. ',
             link: 'https://youtu.be/-UlxHPIEVqA',
+            external: false,
           },
           {
             title: 'Who Has The Best Quantum Computer? ',
             description:
               ' This is a summary of all the main companies building quantum computers today, and what their most powerful machines are. ',
             link: 'https://youtu.be/gcbMKt079l8',
+            external: false,
           },
         ],
         playlists: [],
@@ -3496,11 +3930,13 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
             description:
               ' Ep 1 Learn to play Quantum Pong and how you can program other quantum applications with Qiskit. This video is the first of many of our new series, Coding with Qiskit. ',
             link: 'https://youtu.be/a1NZC5rqQD8',
+            external: false,
           },
           {
             title: 'Lecture 1.1 - Vector Spaces, Tensor Products, and Qubits ',
             description: null,
             link: 'https://youtu.be/xgA4Dx_7q34',
+            external: false,
           },
         ],
         playlists: [
@@ -3541,6 +3977,7 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
             description:
               ' pyQuil is a Python-based, open-source quantum programming library. pyQuil is part of the Rigetti Forest toolkit for programming and running quantum algorithms in the cloud on both a physical quantum computer and classically-simulated quantum processor. Rigetti Computing is a start-up in Berkeley, on a mission to build the first large-scale commercial quantum computer. ',
             link: 'https://youtu.be/4BYcoblLGNU',
+            external: false,
           },
         ],
         playlists: [],
@@ -3557,6 +3994,7 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
             description:
               ' Getting back into the AI 101 videos this month, with quantum machine learning! We’ll be talking about what exactly quantum machine learning is, and walking through a TensorFlow tutorial together in Colab. ',
             link: 'https://youtu.be/2g7wIZLbt0I',
+            external: false,
           },
           {
             title:
@@ -3564,6 +4002,7 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
             description:
               ' We introduce TensorFlow Quantum, an open-source library for the rapid prototyping of novel hybrid quantum-classical ML algorithms. This library will extend the scope of current ML under TensorFlow and provides the necessary toolbox for bringing quantum computing and machine learning research communities together to control and model quantum data. ',
             link: 'https://youtu.be/-o9AhIz1uvo',
+            external: false,
           },
         ],
         playlists: [],
@@ -3579,6 +4018,7 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
             description:
               ' In this talk, we introduce Strawberry Fields, an open-source quantum software library for light-based quantum computers. Built in Python, Strawberry Fields is a full-stack library for design, simulation, optimization, and quantum machine learning of photonic quantum circuits. ',
             link: 'https://youtu.be/B2n0TxRDWPs',
+            external: false,
           },
           {
             title:
@@ -3586,6 +4026,7 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
             description:
               ' Computing Educator, Isaac de Vlugt, shows you how to run a job on an X-series device on the Xanadu Cloud. Level: Beginner ',
             link: 'https://youtu.be/gcEnMGiBFrc',
+            external: false,
           },
         ],
         playlists: [],
@@ -3600,12 +4041,14 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
             description:
               ' In this episode of QuantumCasts, Dave Bacon (Twitter: @dabacon) teaches you what a quantum program looks like via a simple “hello qubit” program. ',
             link: 'https://youtu.be/16ZfkPRVf2w',
+            external: false,
           },
           {
             title: 'How to build a quantum circuit with Cirq 1.0 ',
             description:
               ' The first step in programming a quantum computer is creating a quantum circuit. In this video, we explore how to build quantum circuits with Cirq 1.0.  ',
             link: 'https://youtu.be/MHYZgWmPhbI',
+            external: false,
           },
         ],
         playlists: [],
@@ -3632,6 +4075,7 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
             description:
               ' Discord is constantly adding new features and changing the way discord works, and when just jumping into discord, and can be tough to navigate and learn the platform sometimes. In this video, I show you how to setup a discord server, how to add bots to a discord server, and how to add some nice flair to your discord server to make it pop! If you need to learn how to create a discord server, this video is perfect for you! ',
             link: 'https://youtu.be/Z8ND1XcUomU',
+            external: false,
           },
         ],
         playlists: [],
@@ -3647,6 +4091,7 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
             title: 'Map of Biology ',
             description: null,
             link: 'https://youtu.be/wENhHnJI1ys',
+            external: false,
           },
         ],
         playlists: [],
@@ -3661,6 +4106,7 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
             description:
               " Thanks for joining us today for our first webinar in the #ResearchersAtWork Series! We'll be exploring the topic of CRISPR and how to start using it in your own experiments. CRISPR gene editing has allowed scientists to modify genes of interest much easier and faster than ever before. ",
             link: 'https://www.youtube.com/live/DXUQKIHFTMI?feature=share',
+            external: true,
           },
         ],
         playlists: [
@@ -3687,18 +4133,21 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
             title: 'Map of Biology ',
             description: null,
             link: 'https://youtu.be/wENhHnJI1ys',
+            external: false,
           },
           {
             title: 'GENE EDITING EXPLAINED! ',
             description:
               ' A comprehensive guide to the principles, methods and technologies! ',
             link: 'https://youtu.be/_6ZBVf6H_IA',
+            external: false,
           },
           {
             title: 'Learn Genetic Engineering - Part 1: How does it work? ',
             description:
               ' This series will get into the nitty gritty of how it works, starting from the basics of DNA design, to assembly strategies, and even genetic logic. This episode is an overview of the basics, how one goes about planning and preparing for an experiment, and a lot of resources to help you learn. ',
             link: 'https://www.youtube.com/live/E_TAHxPBqKY?feature=share',
+            external: true,
           },
           {
             title:
@@ -3706,6 +4155,7 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
             description:
               ' This series will get into the nitty gritty of how it works, starting from the basics of DNA design, to assembly strategies, and even genetic logic. This episode is an overview of the basics, how one goes about planning and preparing for an experiment, and a lot of resources to help you learn. ',
             link: 'https://www.youtube.com/live/1ThNnuSuZC0?feature=share',
+            external: true,
           },
         ],
         playlists: [],
@@ -3722,6 +4172,7 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
             description:
               ' In this video I investigate what makes a science a science, and how the scientific method is used in different subjects. I lay out all of the areas of human endeavor and show how they relate to each other from philosophy, through the sciences, to the social sciences, the arts and back to philosophy which I have drawn as a big donut. ',
             link: 'https://youtu.be/ohyai6GIRZg',
+            external: false,
           },
         ],
         playlists: [],
@@ -3736,6 +4187,7 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
             description:
               ' Welcome to a brand new tutorial series on SciPy! In this video, I will be giving a brief overview of SciPy as well as showing you how to install SciPy. ',
             link: 'https://youtu.be/xj_M8ZVjDOw',
+            external: false,
           },
           {
             title:
@@ -3743,6 +4195,7 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
             description:
               ' This from-scratch tutorial on SciPy is designed specifically for those studying physics, mathematics, and engineering. Before watching this, you may want to brush up on numpy: ',
             link: 'https://youtu.be/jmX4FOUEfgU',
+            external: false,
           },
           {
             title:
@@ -3750,6 +4203,7 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
             description:
               ' This from-scratch tutorial on NumPy is designed specifically for those in physics, mathematics, and engineering. In the future, I will be making tutorial videos on all the essential python packages, so subscribe for more! ',
             link: 'https://youtu.be/DcfYgePyedM',
+            external: false,
           },
         ],
         playlists: [
@@ -3775,12 +4229,14 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
             description:
               ' The entire field of chemistry summarised in 12mins from simple atoms to the molecules that keep you alive. ',
             link: 'https://youtu.be/P3RXtoYCW4M',
+            external: false,
           },
           {
             title: 'Physical chemistry ',
             description:
               ' Physical chemistry is the study of macroscopic, and particulate phenomena in chemical systems in terms of the principles, practices, and concepts of physics such as motion, energy, force, time, #thermodynamics, #quantum chemistry, #statistical mechanics, analytical dynamics and chemical equilibrium. ',
             link: 'https://youtu.be/PQechXuFoyI',
+            external: false,
           },
         ],
         playlists: [],
@@ -3795,12 +4251,14 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
             description:
               " Everything we know about physics - and a few things we don't - in a simple map. ",
             link: 'https://youtu.be/ZihywtixUYo',
+            external: false,
           },
           {
             title: 'Modern Physics || Modern Physics Full Lecture Course ',
             description:
               ' Modern physics is an effort to understand the underlying processes of the interactions with matter, utilizing the tools of science and engineering. In general, the term is used to refer to any branch of #physics either developed in the early 20th century and onward, or branches greatly influenced by early 20th century physics. ',
             link: 'https://youtu.be/3lTQqEehEhI',
+            external: false,
           },
         ],
         playlists: [],
@@ -3813,11 +4271,13 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
             title: 'ChemPy Tutorial #1 (Compounds and RxnSeries) ',
             description: null,
             link: 'https://youtu.be/9GG8erLNS-0',
+            external: false,
           },
           {
             title: 'ChemPy Tutorial #2 (Figures and Data Modules) ',
             description: null,
             link: 'https://youtu.be/WEx3XzHQ5qM',
+            external: false,
           },
         ],
         playlists: [],
@@ -3832,6 +4292,7 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
             description:
               ' This is the Map of Medicine showing you all of the different areas of medical practice, the principles of medicine, diagnostic methods, the surrounding sciences that support the field of medicine and a description of the placebo effect and clinical trials. ',
             link: 'https://youtu.be/CkwSeMrOPjc',
+            external: false,
           },
         ],
         playlists: [],
@@ -3846,12 +4307,14 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
             description:
               ' Every Thing in Space This video explores all of the things in the Universe from our Earth and local Solar System, out to the Milky Way Galaxy and looks at all of the different kinds of stars from Brown Dwarfs to Red Supergiant Stars. Then to the things they explode into like white dwarfs, neutron stars and black holes. Then we look at all the other kinds of galaxy in the universe, blazars, quasars and out to the cosmic microwave background and the big bang. It covers most of the different things that we know about in the Universe. ',
             link: 'https://youtu.be/uniGQrGLEoI',
+            external: false,
           },
           {
             title: 'The Map of Black Holes | Black Holes Explained ',
             description:
               ' This is the Map of Black Holes which isn’t a map of where all the black holes are in space, it’s a concept map of the subject of black holes: laying out our current knowledge of them. Their structure including Schwarzschild radius or event horizon, the singularity, photon sphere, innermost stable orbit, accretion disk, Hawking radiation and the difference between rotating and non-rotating black holes. I also look at the evidence for their existence, the many ways we have detected them though x-ray astronomy, gravitational wave astronomy and radio astronomy. Then the many outstanding mysteries still to be solved including wormholes, the holographic theory and information paradox. They are very fascinating objects indeed. ',
             link: 'https://youtu.be/Wf0uxjWGwPk',
+            external: false,
           },
         ],
         playlists: [],
@@ -3868,6 +4331,7 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
             description:
               ' In this video I attempt to capture all of that diversity in one picture: the Map of Engineering, so that we can get our heads around it all and set some bounds on the subject. ',
             link: 'https://youtu.be/pQgxiQAMTTo',
+            external: false,
           },
         ],
         playlists: [],
@@ -3885,12 +4349,14 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
             description:
               ' The sages of ancient India discovered that atma - the inner divinity or conscious essence of each person - is the true source of happiness.  Failing to recognize that inner source of happiness, one endlessly seeks lasting happiness in the world without success. ',
             link: 'https://youtu.be/V1oJAjVLuP4',
+            external: false,
           },
           {
             title: 'Atma: Sat Cit Ananda - Intro to Advaita Vedanta - Part 2 ',
             description:
               ' Your essential nature is consciousness, unborn, uncreated, untouched by suffering, the true source of happiness.  But this inner reality is hidden behind a veil of ignorance, and as a result, we identify ourselves as being male/female, young/old, healthy/ill, etc. when these attributes actually belong to the body, not the true self, atma. ',
             link: 'https://youtu.be/V8jzIMEVuIU',
+            external: false,
           },
           {
             title:
@@ -3898,6 +4364,7 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
             description:
               ' Perceptions, thoughts, and emotions arise in your mind as vrittis and become known to you, the eternal conscious being.  To observe these changing vrittis, consciousness must necessarily be unchanging, and is therefore utterly unaffected by the vrittis it reveals -- like the sun is unaffected by all it shines upon. ',
             link: 'https://youtu.be/NfvlrY2Nd3E',
+            external: false,
           },
           {
             title:
@@ -3905,6 +4372,7 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
             description:
               " The consciousness that is your essential nature, atma, is the sakshi, awareful witness, of all mind's activities when you you are awake, dreaming, or in deep dreamless sleep.  In deep sleep, you remain conscious, but there's nothing to be conscious of.  That consciousness is all-pervasive and is reflected or manifest differently by every mind as the divinity dwelling within. ",
             link: 'https://youtu.be/T5o_AJRxVp0',
+            external: false,
           },
           {
             title:
@@ -3912,6 +4380,7 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
             description:
               ' Rather than relying on blind faith in scriptures, as Western religions do, Vedanta unfolds the existence and nature of Ishvara (God) through scriptural teachings that are extensively supported by the use of reason and rational discourse.  Thus, Ishvara is shown to be the efficient cause (intelligent agent) for the universe, who possesses both the knowledge and power (maya) to create it. ',
             link: 'https://youtu.be/zJZ9fkNwm5I',
+            external: false,
           },
           {
             title:
@@ -3919,6 +4388,7 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
             description:
               " Ishvara is not only the intelligent creator of the universe, but is also the very material out of which the universe is fashioned.  The material for a spider's web comes from its body, but the spider remains separate from the web, unlike Ishvara who is non-separate from the universe like a dreamer is non-separate from his or her dream. ",
             link: 'https://youtu.be/oOYtZYme6zU',
+            external: false,
           },
         ],
         playlists: [],
@@ -3933,6 +4403,7 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
             description:
               ' In this video we will be talking about 10 Life Lessons From Buddha. Gautama Buddha was a philosopher, meditator, spiritual teacher, and religious leader who is credited as the founder of Buddhism. ',
             link: 'https://youtu.be/lnQuIGxteGI',
+            external: false,
           },
           {
             title:
@@ -3940,6 +4411,7 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
             description:
               ' Meet Shaolin Master Shi Heng Yi in his serene talk about self-discovery. Learn why rainfall is an essential part of each flowering. And every small step – part of the journey to the highest peek. The hindrances along the way to self-discovery and personal growth are easy to overcome. Learn how from his talk. ',
             link: 'https://youtu.be/4-079YIasck',
+            external: false,
           },
           {
             title:
@@ -3947,18 +4419,21 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
             description:
               ' He\'s a monk of the Gelug or "Yellow Hat" school of Tibetan Buddhism, the newest of the schools of Tibetan Buddhism. ',
             link: 'https://youtu.be/wSktiBReOSA',
+            external: false,
           },
           {
             title: 'Basics of Buddhism: Lecture Series ',
             description:
               ' Learn about the life of Buddha, basic Buddhist concepts, the Eight-fold path, how to reach Nirvana and the rise and spread of Buddhism throughout India and Asia. ',
             link: 'https://youtu.be/Id36EJKSO4I',
+            external: false,
           },
           {
             title: 'Lesson 1: FIRST NOBLE TRUTH (Suffering) - Full Talk ',
             description:
               ' In his first sermon (sutta) the Buddhas cover all his essential teachings. This first sermon revolves around the Four Noble Truths.  This week we look at Suffering - the first noble truth. ',
             link: 'https://youtu.be/7NP-1NUNlGM',
+            external: false,
           },
           {
             title:
@@ -3966,6 +4441,7 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
             description:
               " Continuing Richard Jones's 2016 Beginner's Buddhism course filmed at the London Buddhist Vihara in June 2016. Buddha asked us not to believe his teachings but to understand them. ",
             link: 'https://youtu.be/IdFQhVB9S5c',
+            external: false,
           },
           {
             title:
@@ -3973,30 +4449,35 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
             description:
               " The four noble truths are likened to a visit to the doctor.  The fourth truth is the 'cure'.  But for the cure to work you have to take it.  Only you can take it no one can do it for you. ",
             link: 'https://youtu.be/KoGt9Xbs4eI',
+            external: false,
           },
           {
             title: 'Lesson 4: The Law of Kamma (Karma) ',
             description:
               ' The law of Kamma describes how if you perform an action with a good intention in your mind, then, sooner or later you will receive good results.  Richard Jones explains with clarity, this  Buddhist doctrine, which is simple to explain in principle but complicated to understand in detail. ',
             link: 'https://youtu.be/UrX0Jsp81Ag',
+            external: false,
           },
           {
             title: 'Lesson 5: THE WHEEL OF LIFE - full talk ',
             description:
               " Richard Jones explains the Buddhist rich doctrine of the 'Wheel of Life' which describes how ALL physical and mental phenomena arise due to a previous cause.  A simple process of causality (conditioning). ",
             link: 'https://youtu.be/7vuMSCca03k',
+            external: false,
           },
           {
             title: 'Lesson 6: THE THREE CHARACTERISTICS OF EXISTENCE ',
             description:
               " When we try to acquire 'Right Understanding' (samma ditthi), what we are trying to become aware of is the Three Characteristics of Existence / The Three Marks of Being / The Three Signs of Being. ",
             link: 'https://youtu.be/CsswVG2ZSRo',
+            external: false,
           },
           {
             title: 'Lesson 7: THE FIVE AGGREGATES (the 5 Khandhas) ',
             description:
               " The Buddha analysed a being into Five 'Aggregates' (also known as 5 Khandhas or Skandhas): FORM, FEELING, PERCEPTION, MENTAL FORMATIONS & CONSCIOUSNESS. ",
             link: 'https://youtu.be/nOO5Y6HZvlU',
+            external: false,
           },
           {
             title:
@@ -4004,6 +4485,7 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
             description:
               ' This lesson (full talk) explores the goals and methods of Buddhist Meditation, or Bhāvanā, which means mental cultivation or development. ',
             link: 'https://youtu.be/SDmHayxA9vw',
+            external: false,
           },
         ],
         playlists: [],
@@ -4011,7 +4493,7 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
     },
     'Module 47: The Spirit Molecule': {
       'The Spirit Molecule': {
-        description: "DMT's impact on consciousness and spirituality.",
+        description: null,
         git: [],
         youtube: [
           {
@@ -4019,24 +4501,28 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
             description:
               ' Could psychedelics make you more creative? Shift your mind, connect you to others, and help you access a younger, more malleable version of yourself? Activist Rick Doblin, neuroscientist Gül Dölen, and musician Reggie Watts join Brian Greene for a mind-bending and multidisciplinary conversation about the promises and pitfalls of these "magic" molecules and their impact on creativity, connection, and consciousness. ',
             link: 'https://youtu.be/kxFTWk9lLDU',
+            external: false,
           },
           {
             title: 'DMT: The Spirit Molecule (2010) [multi subs] ',
             description:
               ' An investigation into the long-obscured mystery of dimethyltryptamine (DMT), a molecule found in nearly every living organism and considered the most potent psychedelic on Earth. ',
             link: 'https://youtu.be/fwZqVqbkyLM',
+            external: false,
           },
           {
             title:
               'Evidence That DMT Opens the Brain to Other Dimensions | Andrew Gallimore ',
             description: null,
             link: 'https://youtu.be/QbQckTWzWBo',
+            external: false,
           },
           {
             title: 'The Nature of Ayahuasca (2019) Documentary ',
             description:
               " Ayahausca is a traditional plant medicine from the Amazon used to treat a variety of physical and psychology illnesses and conditions. This film explores the use of the Ayahausca as a holistic medicine, challenging stigmas around its use and helping people become more conscious and ethical consumers of the plant if that's the path they choose. ",
             link: 'https://youtu.be/6j0_glRnJxI',
+            external: false,
           },
         ],
         playlists: [],

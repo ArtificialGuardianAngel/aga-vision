@@ -3,16 +3,23 @@ import cn from 'classnames';
 
 interface Props {
   fullPage?: boolean;
+  videoSource?: string;
+  mask?: boolean;
 }
 
-const VideoBackground: React.FC<Props> = ({ fullPage = true }) => {
+const VideoBackground: React.FC<Props> = ({
+  fullPage = true,
+  videoSource = '/video-bg.mp4',
+  mask = true,
+}) => {
   return (
     <>
       <div
-        className={cn(
-          'top-0 left-0 w-screen h-[100dvh] -z-10 wrapper-background',
-          { absolute: !fullPage, fixed: fullPage },
-        )}
+        className={cn('top-0 left-0 w-screen h-[100dvh] -z-10', {
+          absolute: !fullPage,
+          fixed: fullPage,
+          ['wrapper-background']: mask,
+        })}
       ></div>
       <video
         className={cn('top-0 left-0 w-screen h-[100dvh] -z-20 object-cover', {
@@ -25,9 +32,9 @@ const VideoBackground: React.FC<Props> = ({ fullPage = true }) => {
         controls={false}
         playsInline
       >
-        <source src="video-bg.webm" type='video/webm; codecs="vp8, vorbis"' />
+        {videoSource === '/video-bg.mp4' && <source src="video-bg.webm" type='video/webm; codecs="vp8, vorbis"' />}
         <source
-          src="video-bg.mp4"
+          src="{videoSource}"
           type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'
         />
       </video>
