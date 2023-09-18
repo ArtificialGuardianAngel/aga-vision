@@ -32,9 +32,11 @@ const VideoBackground: React.FC<Props> = ({
         controls={false}
         playsInline
       >
-        {videoSource === '/video-bg.mp4' && <source src="video-bg.webm" type='video/webm; codecs="vp8, vorbis"' />}
+        {videoSource === '/video-bg.mp4' && (
+          <source src="video-bg.webm" type='video/webm; codecs="vp8, vorbis"' />
+        )}
         <source
-          src="{videoSource}"
+          src={videoSource}
           type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'
         />
       </video>
