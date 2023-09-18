@@ -52,8 +52,8 @@ const MobileMenu: React.FC<{}> = () => {
             'radial-gradient(150.31% 94.37% at 60.52% 17.97%, rgba(191, 60, 189, 0.20) 0%, rgba(29, 42, 161, 0.20) 46.88%, rgba(28, 41, 60, 0.20) 100%), linear-gradient(0deg, #1C293C 0%, #1C293C 100%), #FFF',
         }}
       >
-        <div className="flex flex-col gap-[5px] p-[0_20px] text-center w-full text-[18px]">
-          <div className="bg-card rounded-[50px] p-[20px_30px]">
+        <div className="flex flex-col gap-[5px] p-[0_20px] text-center w-full text-[14px]">
+          <div className="bg-card rounded-[50px] p-[18px_30px] leading-[10px]">
             <Link
               className="transition-colors hover:text-accentGreen"
               href={pathname !== '' ? '/#about' : '#about'}
@@ -62,7 +62,7 @@ const MobileMenu: React.FC<{}> = () => {
               About
             </Link>
           </div>
-          <div className="bg-card rounded-[50px] p-[20px_30px]">
+          <div className="bg-card rounded-[50px] p-[18px_30px] leading-[10px]">
             <Link
               className="transition-colors hover:text-accentGreen"
               href={pathname !== '' ? '/#blueprint' : '#blueprint'}
@@ -71,7 +71,7 @@ const MobileMenu: React.FC<{}> = () => {
               Blueprint
             </Link>
           </div>
-          <div className="bg-card rounded-[50px] p-[20px_30px]">
+          <div className="bg-card rounded-[50px] p-[18px_30px] leading-[10px]">
             <Link
               className="transition-colors hover:text-accentGreen"
               href={pathname !== '' ? '/#training-camp' : '#training-camp'}
@@ -80,7 +80,7 @@ const MobileMenu: React.FC<{}> = () => {
               AI Dev Training camp
             </Link>
           </div>
-          <div className="bg-card rounded-[50px] p-[20px_30px]">
+          <div className="bg-card rounded-[50px] p-[18px_30px] leading-[10px]">
             <Link
               className="transition-colors hover:text-accentGreen"
               href={pathname !== '' ? '/#challenges' : '#challenges'}
