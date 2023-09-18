@@ -12,7 +12,7 @@ const sora = Sora({
 });
 
 export const metadata: Metadata = {
-  title: 'A.G.A. Vision',
+  title: 'A.G.A. Vision - Welcome to our A.G.A. community',
   description: '',
 };
 
@@ -24,6 +24,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <link rel="icon" href="/icon.svg" type="image/svg" />
         <link rel="shortcut icon" href="/icon.svg" type="image/svg" />
       </head>
       <body

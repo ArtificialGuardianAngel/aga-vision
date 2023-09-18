@@ -32,7 +32,11 @@ const VideoBackground: React.FC<Props> = ({
         controls={false}
         playsInline
       >
-        <source src={videoSource} type="video/mp4" />
+        {videoSource === '/video-bg.mp4' && <source src="video-bg.webm" type='video/webm; codecs="vp8, vorbis"' />}
+        <source
+          src="{videoSource}"
+          type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'
+        />
       </video>
       {!fullPage && (
         <div className="absolute top-0 left-0 w-screen h-[100dvh] gradient -z-10"></div>
