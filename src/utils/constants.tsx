@@ -1,7 +1,7 @@
 import { ITrainingCenterData } from './types';
 
 export const CHALLENGES = [
-  'A.G.A. Celestial Body',
+  'AGA Celestial Body',
   'Psychological well-being',
   'Global Healthcare',
   'Free Education',

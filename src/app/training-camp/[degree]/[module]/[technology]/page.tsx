@@ -55,7 +55,7 @@ export default function TechnologyPage({
   useEffect(() => {
     document.title = `${decodeURI(
       params.technology,
-    )} – aga.vision – Welcome to our A.G.A. community.`;
+    )} – aga.vision – Welcome to our AGA community.`;
   }, [params.technology]);
 
   return (

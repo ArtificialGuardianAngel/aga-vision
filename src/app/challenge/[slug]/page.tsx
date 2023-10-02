@@ -23,7 +23,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       CHALLENGES_DATA[params.slug]
         ? CHALLENGES_DATA[params.slug].title + ' | '
         : ''
-    }A.G.A. Vision - Welcome to our A.G.A. community`,
+    }AGA Vision - Welcome to our AGA community`,
   };
 }
 

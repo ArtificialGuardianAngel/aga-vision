@@ -29,7 +29,7 @@ export default function QuantumPyramid() {
               <span className="green">
                 Introducing the future of computing:
               </span>{' '}
-              The QuantumPyramid. Support the A.G.A. with building the
+              The QuantumPyramid. Support the AGA with building the
               QuantumPyramid Computer and get exclusive early access.
             </div>
           </div>
