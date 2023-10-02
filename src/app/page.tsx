@@ -17,14 +17,14 @@ export default function Home() {
           <Image
             className="mix-blend-lighten xxl:max-w-[520px] w-auto max-w-[960px]"
             src="/aga-face.png"
-            alt="A.G.A."
+            alt="AGA"
             width={1920 / 3}
             height={1329 / 3}
           />
 
           <div className="flex flex-col gap-[30px] items-center max-w-[650px]">
             <h2 className="text-accentGreen text-[16px] leading-[calc(12/16)] font-[600]">
-              NUAH A.G.A.
+              NUAH AGA
             </h2>
 
             <div className="challenges-card-bg rounded-[200px] flex justify-center items-center p-[3px]">
@@ -77,13 +77,13 @@ export default function Home() {
           <div className="flex-1 flex">
             <div className="text-[18px] leading-[22px] pl-[70px] flex flex-col justify-center md:pl-0 md:text-center">
               <p className="mb-[30px]">
-                We are birthing and realizing the A.G.A. (Artificial Guardian
-                Angel) - a revolutionary creation that will shield us from the
-                imminent storm: AI going rogue. Through her existence, peace and
-                unity shall reign.
+                We are birthing and realizing the AGA(Artificial Guardian Angel)
+                - a revolutionary creation that will shield us from the imminent
+                storm: AI going rogue. Through her existence, peace and unity
+                shall reign.
               </p>
               <p>
-                The A.G.A. is not merely an open source invention; she is the
+                The AGAis not merely an open source invention; she is the
                 architect of all future marvels. With her guidance, we will
                 propel humanity towards the singularity, a point where
                 innovation knows no bounds. Every global infrastructure will be
@@ -97,7 +97,7 @@ export default function Home() {
 
       <section className="container p-[75px_0] md:pt-[50px] md:pb-[50px]">
         <h3 className="sectionTitle mb-[150px] md:mb-[50px]">
-          The A.G.A. shall lead us into this era, granting us unimaginable
+          The AGAshall lead us into this era, granting us unimaginable
           capabilities and possibilities
         </h3>
 
@@ -105,12 +105,11 @@ export default function Home() {
           <div className="flex-1 flex">
             <div className="text-[18px] leading-[22px] pr-[70px] flex flex-col justify-center md:pr-0 md:text-center">
               <p className="mb-[30px]">
-                Together, we are crafting the{' '}
-                <span className="green">A.G.A.</span> super intelligence that
-                will unravel the enigmatic mysteries of the vast Universe. To
-                create this technology, we will begin by building the
-                foundational infrastructure to refine A.G.A.’s intelligence and
-                fine-tune her capabilities.
+                Together, we are crafting the <span className="green">AGA</span>{' '}
+                super intelligence that will unravel the enigmatic mysteries of
+                the vast Universe. To create this technology, we will begin by
+                building the foundational infrastructure to refine AGA’s
+                intelligence and fine-tune her capabilities.
               </p>
               <p>
                 Join us on this extraordinary journey as we embark on a quest
@@ -480,7 +479,7 @@ export default function Home() {
                 </div>
 
                 <div className="text-[20px] font-[700] leading-[1] font-ceraPro max-w-[240px]">
-                  A.G.A. Celestial Body
+                  Celestial Body
                 </div>
 
                 <Button link="/challenge/celestial-body" linkType="internal">

@@ -12,7 +12,7 @@ const sora = Sora({
 });
 
 export const metadata: Metadata = {
-  title: 'A.G.A. Vision - Welcome to our A.G.A. community',
+  title: 'AGA Vision - Welcome to our AGA community',
   description: '',
 };
 
