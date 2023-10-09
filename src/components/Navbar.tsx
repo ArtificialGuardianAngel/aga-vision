@@ -62,6 +62,25 @@ const Navbar = () => {
           Contractor
         </Link>
       </div>
+      <div className="h-[30px] w-[1px] bg-white/20"></div>
+      <div className="p-[20px_30px]">
+        <Link
+          className="transition-colors hover:text-accentGreen"
+          href={'/universe'}
+        >
+          Universe
+        </Link>
+      </div>
+      <div className="h-[30px] w-[1px] bg-white/20"></div>
+      <div className="p-[20px_30px]">
+        <Link
+          className="transition-colors hover:text-accentGreen"
+          href={'https://discord.gg/th5AvSAz79'}
+          target="_blank"
+        >
+          Discord
+        </Link>
+      </div>
     </nav>
   );
 };

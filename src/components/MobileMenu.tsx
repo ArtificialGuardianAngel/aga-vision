@@ -107,6 +107,25 @@ const MobileMenu: React.FC<{}> = () => {
               Contractor
             </Link>
           </div>
+          <div className="bg-card rounded-[50px] p-[18px_30px] leading-[10px]">
+            <Link
+              className="transition-colors hover:text-accentGreen"
+              href={'/universe'}
+              onClick={() => setOpened(false)}
+            >
+              Universe
+            </Link>
+          </div>
+          <div className="bg-card rounded-[50px] p-[18px_30px] leading-[10px]">
+            <Link
+              className="transition-colors hover:text-accentGreen"
+              href={'https://discord.gg/th5AvSAz79'}
+              target="_blank"
+              onClick={() => setOpened(false)}
+            >
+              Discord
+            </Link>
+          </div>
         </div>
       </div>
     </>
