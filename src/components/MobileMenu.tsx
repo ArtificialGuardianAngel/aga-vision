@@ -98,6 +98,15 @@ const MobileMenu: React.FC<{}> = () => {
               Hackathons
             </Link>
           </div>
+          <div className="bg-card rounded-[50px] p-[18px_30px] leading-[10px]">
+            <Link
+              className="transition-colors hover:text-accentGreen"
+              href={'/contractor'}
+              onClick={() => setOpened(false)}
+            >
+              Contractor
+            </Link>
+          </div>
         </div>
       </div>
     </>

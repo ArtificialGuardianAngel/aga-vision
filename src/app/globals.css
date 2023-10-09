@@ -91,8 +91,8 @@ pre {
 
 @media (max-width: 767px) {
   .container {
-    padding-left: 20px !important;
-    padding-right: 20px !important;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
   }
 }
 
@@ -396,4 +396,15 @@ input[type='range']::-moz-range-thumb {
     font-size: 24px;
     line-height: calc(30 / 24);
   }
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+  margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type='number'] {
+  -moz-appearance: textfield; /* Firefox */
 }

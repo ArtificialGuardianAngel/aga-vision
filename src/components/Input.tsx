@@ -1,17 +1,26 @@
 import React, { HTMLProps } from 'react';
 import cn from 'classnames';
 
-interface Props extends HTMLProps<HTMLInputElement> {}
+interface Props extends HTMLProps<HTMLInputElement> {
+  prefix?: string;
+}
 
-const Input: React.FC<Props> = ({ className, ...props }) => {
+const Input: React.FC<Props> = ({ className, prefix, ...props }) => {
   return (
-    <input
+    <div
       className={cn(
         className,
-        'p-[20px_25px] placeholder:text-[rgba(255,255,255,0.5)] bg-card rounded-[4px] text-[16px] leading-[calc(12/16)] outline-none text-[#D6E1FA]',
+        'p-[20px_25px] bg-card rounded-[4px] inline-flex gap-[10px] items-center',
       )}
-      {...props}
-    />
+    >
+      {prefix && <span className="text-[15px] text-mainColor">{prefix}</span>}
+      <input
+        className={cn(
+          'placeholder:text-[rgba(255,255,255,0.5)] text-[16px] leading-[calc(12/16)] outline-none text-[#D6E1FA] w-full bg-transparent appearance-none',
+        )}
+        {...props}
+      />
+    </div>
   );
 };
 

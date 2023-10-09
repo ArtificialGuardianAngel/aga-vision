@@ -5,9 +5,15 @@ interface Props {
   date: string;
   location: string;
   link: string;
+  showComingSoonModal: () => void;
 }
 
-const HackathonsEventCard: React.FC<Props> = ({ date, link, location }) => {
+const HackathonsEventCard: React.FC<Props> = ({
+  date,
+  link,
+  location,
+  showComingSoonModal,
+}) => {
   return (
     <div className="challenges-card-bg rounded-[20px] flex justify-center items-center p-[3px]">
       <div className="h-full w-full flex flex-col p-[50px_40px] gap-[20px] border-transparent bg-cardCombined rounded-[20px] sm:p-[30px_20px]">
@@ -21,8 +27,9 @@ const HackathonsEventCard: React.FC<Props> = ({ date, link, location }) => {
           className="self-start sm:w-full"
           size="sm"
           icon="arrow"
-          link={link}
-          linkType="external"
+          // link={link}
+          // linkType="external"
+          onClick={showComingSoonModal}
         >
           Join hackathon
         </Button>

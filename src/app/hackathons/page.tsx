@@ -49,6 +49,8 @@ export default function HackathonsPage() {
             className="self-center sm:self-stretch"
             size="lg"
             icon="arrow"
+            link="/single-invention.pdf"
+            linkType="external"
           >
             Read the Book here
           </Button>

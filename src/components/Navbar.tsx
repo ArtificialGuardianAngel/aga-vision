@@ -53,6 +53,15 @@ const Navbar = () => {
           Hackathons
         </Link>
       </div>
+      <div className="h-[30px] w-[1px] bg-white/20"></div>
+      <div className="p-[20px_30px]">
+        <Link
+          className="transition-colors hover:text-accentGreen"
+          href={'/contractor'}
+        >
+          Contractor
+        </Link>
+      </div>
     </nav>
   );
 };
