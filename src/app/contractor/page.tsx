@@ -1,5 +1,7 @@
 import Image from 'next/image';
 import ContractorWelcomeBlock from '@/components/contractor/ContractorWelcomeBlock';
+import ContractorIndustriesList from '@/components/contractor/ContractorIndustriesList';
+import ContractorForm from '@/components/contractor/ContractorForm';
 
 export default function ContractorPage() {
   return (
@@ -117,6 +119,10 @@ export default function ContractorPage() {
           <div className="h-[1px] w-full bg-white/20"></div>
 
           <h2 className="white-title">Industries we ignite:</h2>
+
+          <ContractorIndustriesList />
+
+          <ContractorForm />
         </div>
       </div>
     </main>
