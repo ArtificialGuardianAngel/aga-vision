@@ -89,6 +89,15 @@ const MobileMenu: React.FC<{}> = () => {
               Challenges
             </Link>
           </div>
+          <div className="bg-card rounded-[50px] p-[18px_30px] leading-[10px]">
+            <Link
+              className="transition-colors hover:text-accentGreen"
+              href={'/hackathons'}
+              onClick={() => setOpened(false)}
+            >
+              Hackathons
+            </Link>
+          </div>
         </div>
       </div>
     </>

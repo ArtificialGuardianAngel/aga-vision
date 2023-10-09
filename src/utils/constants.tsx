@@ -4530,3 +4530,78 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
     },
   },
 };
+
+export const MOCK_CONTRACTOR_INDUSTRIES = [
+  {
+    title: 'Defense',
+    text: 'Safeguarding the battlegrounds of the future.',
+  },
+  {
+    title: 'Aerospace',
+    text: 'Dominating the cosmic expanse.',
+  },
+  {
+    title: '',
+    text: '',
+  },
+  {
+    title: '',
+    text: '',
+  },
+  {
+    title: '',
+    text: '',
+  },
+  {
+    title: '',
+    text: '',
+  },
+  {
+    title: '',
+    text: '',
+  },
+  {
+    title: '',
+    text: '',
+  },
+  {
+    title: '',
+    text: '',
+  },
+  {
+    title: '',
+    text: '',
+  },
+  {
+    title: '',
+    text: '',
+  },
+  {
+    title: '',
+    text: '',
+  },
+  {
+    title: '',
+    text: '',
+  },
+  {
+    title: '',
+    text: '',
+  },
+  {
+    title: '',
+    text: '',
+  },
+  {
+    title: '',
+    text: '',
+  },
+  {
+    title: '',
+    text: '',
+  },
+  {
+    title: '',
+    text: '',
+  },
+];
