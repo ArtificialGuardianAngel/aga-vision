@@ -15,7 +15,7 @@ install:
     - pwd
     - whoami
     - id -Gn
-    - rm -rf $PROJECT_PATH/*
+    - sudo rm -rf $PROJECT_PATH/*
     - cp -r ./* $PROJECT_PATH
     - cd $PROJECT_PATH
     - npm install
