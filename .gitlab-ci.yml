@@ -13,6 +13,8 @@ install:
   stage: install
   script:
     - pwd
+    - whoami
+    - id -Gn
     - rm -rf $PROJECT_PATH/*
     - cp -r ./* $PROJECT_PATH
     - cd $PROJECT_PATH
