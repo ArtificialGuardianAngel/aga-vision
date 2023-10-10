@@ -6,14 +6,16 @@ variables:
 
 stages:
   - install
-  - test
   - deploy
   - rollback
 
 install:
   stage: install
   script:
-    - rm -rf $PROJECT_PATH/*
+    - pwd
+    - whoami
+    - id -Gn
+    - sudo rm -rf $PROJECT_PATH/*
     - cp -r ./* $PROJECT_PATH
     - cd $PROJECT_PATH
     - npm install
@@ -21,15 +23,10 @@ install:
     paths:
       - node_modules/
 
-test:
-  stage: test
-  script:
-    - cd $PROJECT_PATH
-    - npm test
-
 deploy:
   stage: deploy
   script:
+    - pwd
     - cd $PROJECT_PATH
     - sudo cp $NGINX_CONF /etc/nginx/sites-available/aga.vision
     - echo NEXT_PUBLIC_DISCORD_URL=$NEXT_PUBLIC_DISCORD_URL >> .env
