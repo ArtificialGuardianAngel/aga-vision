@@ -105,7 +105,7 @@ const UniversePage = () => {
       </div>
 
       <section className="flex flex-col max-w-[1080px] mx-auto gap-[70px] md:max-w[650px] sm:max-w[350px] md:mx-[20px] mt-[50px] md:mt-[30px]">
-        <div className="bg-card p-[70px_50px] flex flex-col gap-[50px] items-center md:p-[50px_30px] md:rounded-[40px] md:gap-[30px]">
+        <div className="bg-card p-[70px_50px] flex flex-col gap-[50px] items-center md:p-[50px_30px] md:rounded-[40px] md:gap-[30px] rounded-[20px]">
           <div className="text-accentGreen text-[30px] leading-[37.8px] font-[300] md:text-[24px] md:leading-[30.24px]">
             Introducing UNIVERSE
           </div>
@@ -165,7 +165,7 @@ const UniversePage = () => {
           finance aspect is simplified with an integrated wallet, encouraging
           contributions and collaborative innovations.
         </p>
-        <div className="bg-card p-[50px_70px] text-center text-[18px] leading-[22.68px] md:p-[50px_30px] md:rounded-[40px] md:gap-[30px] md:text-[16px] md:leading-[20.16px]">
+        <div className="bg-card p-[50px_70px] text-center text-[18px] leading-[22.68px] md:p-[50px_30px] md:rounded-[40px] rounded-[20px] md:gap-[30px] md:text-[16px] md:leading-[20.16px]">
           <span className="text-accentGreen">
             Join us in our grand ambition:
           </span>{' '}
