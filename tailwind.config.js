@@ -14,6 +14,7 @@ module.exports = {
         card: 'rgba(255, 255, 255, 0.03)',
         accentGreen: '#11F4D1',
         blue7: '#22304D',
+        blue6: '#4C5576',
         cardCombined: 'rgb(37, 48, 77)',
       },
       fontSize: {},
