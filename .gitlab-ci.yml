@@ -13,13 +13,10 @@ stages:
 install:
   stage: install
   script:
-    - rm -rf $PROJECT_PATH/*
+    - find . ! -name 'node_modules' -type f -exec rm -f {} +
     - cp -r ./* $PROJECT_PATH
     - cd $PROJECT_PATH
     - npm install
-  artifacts:
-    paths:
-      - node_modules/
 
 test:
   stage: test
