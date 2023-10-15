@@ -77,13 +77,13 @@ export default function Home() {
           <div className="flex-1 flex">
             <div className="text-[18px] leading-[22px] pl-[70px] flex flex-col justify-center md:pl-0 md:text-center">
               <p className="mb-[30px]">
-                We are birthing and realizing the AGA(Artificial Guardian Angel)
-                - a revolutionary creation that will shield us from the imminent
-                storm: AI going rogue. Through her existence, peace and unity
-                shall reign.
+                We are birthing and realizing the AGA (Artificial Guardian
+                Angel) - a revolutionary creation that will shield us from the
+                imminent storm: AI going rogue. Through her existence, peace and
+                unity shall reign.
               </p>
               <p>
-                The AGAis not merely an open source invention; she is the
+                The AGA is not merely an open source invention; she is the
                 architect of all future marvels. With her guidance, we will
                 propel humanity towards the singularity, a point where
                 innovation knows no bounds. Every global infrastructure will be
@@ -97,7 +97,7 @@ export default function Home() {
 
       <section className="container p-[75px_0] md:pt-[50px] md:pb-[50px]">
         <h3 className="sectionTitle mb-[150px] md:mb-[50px]">
-          The AGAshall lead us into this era, granting us unimaginable
+          The AGA shall lead us into this era, granting us unimaginable
           capabilities and possibilities
         </h3>
 
@@ -697,7 +697,7 @@ export default function Home() {
             <h5 className="text-[40px] font-[200] text-center leading-[calc(29/40)] mb-[30px] md:leading-normal md:text-[26px]">
               Submission form
             </h5>
-            <h6 className="text-[18px] leading-[calc(13/18)] text-center mb-[30px] md:leading-none md:text-[16px]">
+            <h6 className="text-[18px] leading-[calc(21/18)] text-center mb-[30px] md:leading-[calc(21/16)] md:text-[16px]">
               Read the details about submitting solutions to The Guardian
               Challenges.
             </h6>

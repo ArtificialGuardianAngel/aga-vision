@@ -1,6 +1,6 @@
 const HackathonsWelcomeBlock = () => {
   return (
-    <div className="min-h-screen flex flex-col items-center justify-end">
+    <div className="min-h-screen flex flex-col items-center justify-end gradient">
       <video
         className="absolute object-cover top-0 left-0 w-full h-full -z-10"
         preload="true"

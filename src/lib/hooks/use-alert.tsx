@@ -1,4 +1,4 @@
-'use client'
+'use client';
 import { ReactNode, useCallback, useMemo, useState } from 'react';
 import { AiOutlineClose } from 'react-icons/ai';
 import cn from 'classnames';
@@ -9,7 +9,11 @@ export type AlertProps = {
   onClose?: () => void;
 };
 
-const Alert = ({ type, message }: AlertProps & { type: AlertType }) => (
+const Alert = ({
+  type,
+  message,
+  onClose,
+}: AlertProps & { type: AlertType }) => (
   <section
     aria-label={'alert-error'}
     className={cn('flex justify-between p-4 border', {
@@ -20,7 +24,7 @@ const Alert = ({ type, message }: AlertProps & { type: AlertType }) => (
     })}
   >
     <pre className="text-start text-sm">{message}</pre>
-    <button className="self-start">
+    <button className="self-start" onClick={onClose}>
       <AiOutlineClose />
     </button>
   </section>
@@ -36,11 +40,6 @@ export const useAlert = () => {
     setIsOpen((p) => !p);
   }, []);
 
-  const alertComponent = useMemo(() => {
-    if (!isOpen) return null;
-    return <Alert message={message} type={type} />;
-  }, [type, message, isOpen]);
-
   const open = useCallback((message?: string, type?: AlertType) => {
     type && setType(type);
     setMessage(message || '');
@@ -50,6 +49,11 @@ export const useAlert = () => {
     setIsOpen(false);
     setMessage('');
   }, []);
+
+  const alertComponent = useMemo(() => {
+    if (!isOpen) return null;
+    return <Alert message={message} type={type} onClose={() => close()} />;
+  }, [type, message, isOpen, close]);
 
   return {
     toggle,

@@ -15,9 +15,9 @@ const schema = z.object({
   participants: z.array(z.string()).optional(),
   links: z.object(
     {
-      document: z.string(),
-      github: z.string(),
-      video: z.string(),
+      document: z.string().nonempty({ message: 'You must pass document link' }),
+      github: z.string().nonempty({ message: 'You must pass github link' }),
+      video: z.string().nonempty({ message: 'You must pass video demo link' }),
     },
     { required_error: 'You must pass links' },
   ),

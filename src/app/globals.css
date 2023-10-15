@@ -344,7 +344,7 @@ input[type='range']::-moz-range-thumb {
 }
 
 .gradient {
-  box-shadow: inset 0 -60px 50px -30px var(--color);
+  box-shadow: inset 0 -60px 50px -10px var(--color);
 }
 
 .hackathons-bg-fade {
@@ -407,4 +407,14 @@ input::-webkit-inner-spin-button {
 
 input[type='number'] {
   -moz-appearance: textfield; /* Firefox */
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* For IE, Edge and Firefox */
+.scrollbar-hide {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
