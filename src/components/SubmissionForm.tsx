@@ -12,12 +12,13 @@ import { CHALLENGES } from '@/utils/constants';
 import Image from 'next/image';
 
 const SubmissionForm = () => {
-  const { alertComponent, open } = useAlert();
+  const { alertComponent, open, close } = useAlert();
   const [challenge, setChallenge] = useState<string>('');
   const [success, setSuccess] = useState(false);
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     e.stopPropagation();
+    close();
     const fd = new FormData(e.currentTarget);
     const data: Record<string, string | string[] | boolean | Object> = {}; // Object to store the form values
 

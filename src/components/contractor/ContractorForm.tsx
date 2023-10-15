@@ -11,11 +11,13 @@ import schema from '@/lib/schemas/contractor-form.schema';
 import { useAlert } from '@/lib/hooks/use-alert';
 
 const ContractorForm = () => {
-  const { alertComponent, open } = useAlert();
+  const { alertComponent, open, close } = useAlert();
   const [success, setSuccess] = useState(false);
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    e.stopPropagation();
+    close();
 
     const formData = new FormData(e.currentTarget);
     const data: Record<string, string | string[] | boolean | Object> = {};

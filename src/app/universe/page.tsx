@@ -17,7 +17,7 @@ const DownloadButton = ({
   <button
     {...props}
     className={cn(
-      'flex items-center gap-[10px] rounded-[50px] bg-accentGreen p-[0_30px_0_5px] h-[60px] text-blue6 min-w-[180px]',
+      'flex items-center gap-[10px] rounded-[50px] bg-accentGreen p-[0_30px_0_5px] h-[60px] text-blue6 min-w-[180px] mix-blend-lighten',
       className,
       {
         'opacity-[0.2]': disabled,
@@ -104,7 +104,7 @@ const UniversePage = () => {
         <DownloadSection />
       </div>
 
-      <section className="flex flex-col max-w-[1080px] mx-auto gap-[70px] md:max-w[650px] sm:max-w[350px] md:mx-[20px] mt-[50px] md:mt-[30px]">
+      <section className="flex flex-col max-w-[1080px] mx-auto gap-[70px] md:max-w[650px] sm:max-w[350px] md:mx-[20px] mt-[50px] md:mt-[30px] container">
         <div className="bg-card p-[70px_50px] flex flex-col gap-[50px] items-center md:p-[50px_30px] md:rounded-[40px] md:gap-[30px] rounded-[20px]">
           <div className="text-accentGreen text-[30px] leading-[37.8px] font-[300] md:text-[24px] md:leading-[30.24px]">
             Introducing UNIVERSE

@@ -14,7 +14,7 @@ export default function TrainingFunction() {
   return (
     <>
       <main className="relative">
-        <BackButton className="fixed top-[50px] left-[50px] md:top-[20px] md:left-[20px]" />
+        <BackButton className="fixed top-[90px] left-[50px] md:top-[20px] md:left-[20px]" />
 
         <section className="p-[150px_0_25px] md:p-[75px_0_25px]">
           <VideoBackground />
