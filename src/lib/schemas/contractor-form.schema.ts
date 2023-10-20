@@ -7,7 +7,7 @@ const schema = z.object({
   contactPerson: z.string({
     required_error: 'You must enter the contact person',
   }),
-  email: z.string({ required_error: 'You must enter email address' }),
+  email: z.string({ required_error: 'You must enter email address' }).email(),
   phone: z.string().optional(),
   vision: z.string({
     required_error: 'You must enter the vision of the Outcome',

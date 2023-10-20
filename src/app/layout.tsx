@@ -33,7 +33,7 @@ export default function RootLayout({
           sora.className,
         )}
       >
-        <Navbar />
+        {/* <Navbar /> */}
         <MobileMenu />
         <BackToTopButton />
 

@@ -13,6 +13,7 @@ import { useAlert } from '@/lib/hooks/use-alert';
 const ContractorForm = () => {
   const { alertComponent, open, close } = useAlert();
   const [success, setSuccess] = useState(false);
+  const [privacy, setPrivacy] = useState(false);
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -23,11 +24,18 @@ const ContractorForm = () => {
     const data: Record<string, string | string[] | boolean | Object> = {};
 
     formData.forEach((value, name) => {
-      data[name] = value as string;
+      if (value) {
+        data[name] = value as string;
+      }
     });
 
-    data.amount = +data.amount;
-    data['privacy'] = data['privacy'] === 'on';
+    if (data.amount) {
+      data.amount = +data.amount;
+    }
+
+    if (data['privacy']) {
+      data['privacy'] = data['privacy'] === 'on';
+    }
 
     const validation = schema.safeParse(data);
 
@@ -126,14 +134,18 @@ const ContractorForm = () => {
             </div>
 
             <div className="flex gap-[50px] justify-between items-start md:flex-col">
-              <Checkbox name="privacy">
+              <Checkbox
+                name="privacy"
+                checked={privacy}
+                onChange={(e) => setPrivacy((p) => !p)}
+              >
                 I accept{' '}
                 <Link href="privacy-policy" className="underline">
                   Privacy Policy
                 </Link>
                 .
               </Checkbox>
-              <Button className="md:w-full" size="lg">
+              <Button className="md:w-full" size="lg" disabled={!privacy}>
                 Submit
               </Button>
             </div>

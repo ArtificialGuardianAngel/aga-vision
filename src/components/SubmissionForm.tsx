@@ -15,6 +15,7 @@ const SubmissionForm = () => {
   const { alertComponent, open, close } = useAlert();
   const [challenge, setChallenge] = useState<string>('');
   const [success, setSuccess] = useState(false);
+  const [privacy, setPrivacy] = useState(false);
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     e.stopPropagation();
@@ -24,21 +25,32 @@ const SubmissionForm = () => {
 
     // Loop through the FormData entries and populate formValues object
     fd.forEach((value, name) => {
-      data[name] = value as string;
+      if (value) {
+        data[name] = value as string;
+      }
     });
-    data['links'] = {
-      document: data['document_link'],
-      github: data['github_link'],
-      video: data['video_link'],
-    };
-    delete data['document_link'];
-    delete data['github_link'];
-    delete data['video_link'];
-    data['challenge'] = challenge;
-    data['participants'] = (data['participants'] as string).split(',');
-    data['privacy'] = data['privacy'] === 'on';
-    const validation = schema.safeParse(data);
 
+    if (data['document_link'] && data['github_link'] && data['video_link']) {
+      data['links'] = {
+        document: data['document_link'],
+        github: data['github_link'],
+        video: data['video_link'],
+      };
+      delete data['document_link'];
+      delete data['github_link'];
+      delete data['video_link'];
+    }
+
+    data['challenge'] = challenge;
+
+    if (data['participants']) {
+      data['participants'] = (data['participants'] as string).split(',');
+    }
+
+    if (data['privacy']) {
+      data['privacy'] = data['privacy'] === 'on';
+    }
+    const validation = schema.safeParse(data);
     if (validation.success) {
       try {
         await fetch('/api/submit', {
@@ -149,7 +161,11 @@ const SubmissionForm = () => {
 
         <div className="flex gap-[50px] md:flex-col">
           <div className="flex-1">
-            <Checkbox name="privacy">
+            <Checkbox
+              name="privacy"
+              checked={privacy}
+              onChange={(e) => setPrivacy((p) => !p)}
+            >
               I accept{' '}
               <Link className="underline" href="/privacy-policy">
                 Privacy Policy
@@ -157,7 +173,9 @@ const SubmissionForm = () => {
               .
             </Checkbox>
           </div>
-          <Button size="lg">Submit solution</Button>
+          <Button disabled={!privacy} size="lg">
+            Submit solution
+          </Button>
         </div>
       </form>
       {alertComponent}

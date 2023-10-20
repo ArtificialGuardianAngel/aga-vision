@@ -9,7 +9,7 @@ const schema = z.object({
     invalid_type_error: 'You must select challange for submittion',
   }),
   name: z.string({ required_error: 'You must enter the name' }),
-  email: z.string({ required_error: 'You must enter email address' }),
+  email: z.string({ required_error: 'You must enter email address' }).email(),
   phone: z.string().optional(),
 
   participants: z.array(z.string()).optional(),

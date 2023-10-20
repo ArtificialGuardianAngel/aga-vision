@@ -13,7 +13,7 @@ const MobileMenu: React.FC<{}> = () => {
     <>
       <div
         className={cn(
-          'fixed w-[50px] h-[50px] rounded-full border-accentGreen top-[20px] right-[20px] z-50 border-2 hidden md:block backdrop-blur-[25px]',
+          'fixed w-[50px] h-[50px] rounded-full border-accentGreen top-[20px] right-[20px] z-50 border-2 backdrop-blur-[25px] cursor-pointer',
         )}
         onClick={() => setOpened((p) => !p)}
       >
@@ -52,8 +52,8 @@ const MobileMenu: React.FC<{}> = () => {
             'radial-gradient(150.31% 94.37% at 60.52% 17.97%, rgba(191, 60, 189, 0.20) 0%, rgba(29, 42, 161, 0.20) 46.88%, rgba(28, 41, 60, 0.20) 100%), linear-gradient(0deg, #1C293C 0%, #1C293C 100%), #FFF',
         }}
       >
-        <div className="flex flex-col gap-[5px] p-[0_20px] text-center w-full text-[14px]">
-          <div className="bg-card rounded-[50px] p-[18px_30px] leading-[10px]">
+        <div className="flex flex-col gap-[5px] p-[0_20px] text-center w-full text-[15px] font-[500] uppercase items-center">
+          <div className="md:bg-card md:rounded-[50px] p-[18px_30px] leading-[10px] w-[255px] md:p-[20px] border-b-white/10 border-b-[1px]">
             <Link
               className="transition-colors hover:text-accentGreen"
               href={pathname !== '' ? '/#about' : '#about'}
@@ -62,7 +62,7 @@ const MobileMenu: React.FC<{}> = () => {
               About
             </Link>
           </div>
-          <div className="bg-card rounded-[50px] p-[18px_30px] leading-[10px]">
+          <div className="md:bg-card md:rounded-[50px] p-[18px_30px] leading-[10px] w-[255px] md:p-[20px] border-b-white/10 border-b-[1px]">
             <Link
               className="transition-colors hover:text-accentGreen"
               href={pathname !== '' ? '/#blueprint' : '#blueprint'}
@@ -71,7 +71,7 @@ const MobileMenu: React.FC<{}> = () => {
               Blueprint
             </Link>
           </div>
-          <div className="bg-card rounded-[50px] p-[18px_30px] leading-[10px]">
+          <div className="md:bg-card md:rounded-[50px] p-[18px_30px] leading-[10px] w-[255px] md:p-[20px] border-b-white/10 border-b-[1px]">
             <Link
               className="transition-colors hover:text-accentGreen"
               href={pathname !== '' ? '/#training-camp' : '#training-camp'}
@@ -80,7 +80,7 @@ const MobileMenu: React.FC<{}> = () => {
               AI Dev Training camp
             </Link>
           </div>
-          <div className="bg-card rounded-[50px] p-[18px_30px] leading-[10px]">
+          <div className="md:bg-card md:rounded-[50px] p-[18px_30px] leading-[10px] w-[255px] md:p-[20px] border-b-white/10 border-b-[1px]">
             <Link
               className="transition-colors hover:text-accentGreen"
               href={pathname !== '' ? '/#challenges' : '#challenges'}
@@ -89,7 +89,7 @@ const MobileMenu: React.FC<{}> = () => {
               Challenges
             </Link>
           </div>
-          <div className="bg-card rounded-[50px] p-[18px_30px] leading-[10px]">
+          <div className="md:bg-card md:rounded-[50px] p-[18px_30px] leading-[10px] w-[255px] md:p-[20px] border-b-white/10 border-b-[1px]">
             <Link
               className="transition-colors hover:text-accentGreen"
               href={'/hackathons'}
@@ -98,7 +98,7 @@ const MobileMenu: React.FC<{}> = () => {
               Hackathons
             </Link>
           </div>
-          <div className="bg-card rounded-[50px] p-[18px_30px] leading-[10px]">
+          <div className="md:bg-card md:rounded-[50px] p-[18px_30px] leading-[10px] w-[255px] md:p-[20px] border-b-white/10 border-b-[1px]">
             <Link
               className="transition-colors hover:text-accentGreen"
               href={'/contractor'}
@@ -107,7 +107,7 @@ const MobileMenu: React.FC<{}> = () => {
               Contractor
             </Link>
           </div>
-          <div className="bg-card rounded-[50px] p-[18px_30px] leading-[10px]">
+          <div className="md:bg-card md:rounded-[50px] p-[18px_30px] leading-[10px] w-[255px] md:p-[20px] border-b-white/10 border-b-[1px]">
             <Link
               className="transition-colors hover:text-accentGreen"
               href={'/universe'}
@@ -116,7 +116,7 @@ const MobileMenu: React.FC<{}> = () => {
               Universe
             </Link>
           </div>
-          <div className="bg-card rounded-[50px] p-[18px_30px] leading-[10px]">
+          <div className="md:bg-card md:rounded-[50px] p-[18px_30px] leading-[10px] w-[255px] md:p-[20px]">
             <Link
               className="transition-colors hover:text-accentGreen"
               href={'https://discord.gg/th5AvSAz79'}

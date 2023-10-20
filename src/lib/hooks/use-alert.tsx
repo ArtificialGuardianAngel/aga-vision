@@ -2,6 +2,12 @@
 import { ReactNode, useCallback, useMemo, useState } from 'react';
 import { AiOutlineClose } from 'react-icons/ai';
 import cn from 'classnames';
+import { Sora } from 'next/font/google';
+
+const sora = Sora({
+  weight: ['200', '300', '400', '500', '600', '700', '800'],
+  subsets: ['latin'],
+});
 
 export type AlertType = 'error' | 'success' | 'warning' | 'info';
 export type AlertProps = {
@@ -13,22 +19,24 @@ const Alert = ({
   type,
   message,
   onClose,
-}: AlertProps & { type: AlertType }) => (
-  <section
-    aria-label={'alert-error'}
-    className={cn('flex justify-between p-4 border', {
-      'bg-red-300/50 border-red-400': type === 'error',
-      'bg-blue-300/50 border-blue-400': type === 'info',
-      'bg-green-300/50 border-green-400': type === 'success',
-      'bg-orange-300/50 border-orange-400': type === 'warning',
-    })}
-  >
-    <pre className="text-start text-sm">{message}</pre>
-    <button className="self-start" onClick={onClose}>
-      <AiOutlineClose />
-    </button>
-  </section>
-);
+}: AlertProps & { type: AlertType }) => {
+  return (
+    <section
+      aria-label={'alert-error'}
+      className={cn('flex justify-between p-4 border', {
+        'bg-red-300/50 border-red-400': type === 'error',
+        'bg-blue-300/50 border-blue-400': type === 'info',
+        'bg-green-300/50 border-green-400': type === 'success',
+        'bg-orange-300/50 border-orange-400': type === 'warning',
+      })}
+    >
+      <pre className={cn('text-start text-sm', sora.className)}>{message}</pre>
+      <button className="self-start" onClick={onClose}>
+        <AiOutlineClose />
+      </button>
+    </section>
+  );
+};
 
 export const useAlert = () => {
   const [isOpen, setIsOpen] = useState(false);

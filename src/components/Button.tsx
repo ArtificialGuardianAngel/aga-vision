@@ -9,6 +9,7 @@ interface ButtonProps {
   icon?: 'arrow' | 'external';
   link?: string;
   linkType?: 'external' | 'internal';
+  disabled?: boolean;
 }
 
 type Props = PropsWithChildren<
@@ -24,6 +25,7 @@ const Button = ({
   className,
   linkType,
   onClick,
+  disabled,
 }: Props) => {
   const stylesClass = cn(
     'relative cursor-pointer font-[600] rounded-[50px] uppercase inline-block text-center transition-colors',
@@ -88,7 +90,7 @@ const Button = ({
         'relative cursor-pointer font-[600] rounded-[50px] uppercase text-center transition-colors',
         className,
         {
-          ['bg-accentGreen text-blue7 font-[600] hover:bg-[#9AF3E9]']:
+          ['bg-accentGreen text-blue7 font-[600] hover:bg-[#9AF3E9] disabled:bg-accentGreen/30 disabled:cursor-not-allowed']:
             type === 'primary',
           ['bg-transparent text-accentGreen border-[2px] border-accentGreen hover:bg-white/5']:
             type === 'secondary',
@@ -100,6 +102,7 @@ const Button = ({
         },
       )}
       onClick={onClick}
+      disabled={disabled}
     >
       {children}
       {icon && (
