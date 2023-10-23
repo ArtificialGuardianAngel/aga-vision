@@ -2,10 +2,12 @@ import Image from 'next/image';
 import ContractorWelcomeBlock from '@/components/contractor/ContractorWelcomeBlock';
 import ContractorIndustriesList from '@/components/contractor/ContractorIndustriesList';
 import ContractorForm from '@/components/contractor/ContractorForm';
+import VideoBackground from '@/components/VideoBackground';
 
 export default function ContractorPage() {
   return (
     <main>
+      <VideoBackground />
       <ContractorWelcomeBlock />
 
       <div className="container">
