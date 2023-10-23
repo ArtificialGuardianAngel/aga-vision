@@ -1402,7 +1402,7 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
           },
         ],
       },
-      'GPT Engineer ': {
+      'GPT Engineer': {
         description:
           'Guiding language models with prompts for desired outputs.',
         git: ['https://github.com/AntonOsika/gpt-engineer'],
@@ -1616,7 +1616,7 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
           },
         ],
       },
-      'Rift ': {
+      Rift: {
         description: 'Open-source coding laguage server and IDE extension ',
         git: ['https://github.com/morph-labs/rift'],
         youtube: [],
@@ -2323,7 +2323,7 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
           },
         ],
       },
-      'GPT LLM Trainer ': {
+      'GPT LLM Trainer': {
         description:
           'Training models for generating high-quality and coherent text.',
         git: ['https://github.com/mshumer/gpt-llm-trainer'],
@@ -2498,7 +2498,7 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
           },
         ],
       },
-      'C++ ': {
+      CPlusPlus: {
         description:
           'Powerful language for system-level programming and software development.',
         git: ['https://github.com/isocpp/CppCoreGuidelines'],
@@ -3092,7 +3092,7 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
           },
         ],
       },
-      'HTML & CSS': {
+      'HTML and CSS': {
         description:
           'Fundamental web development languages for structuring and styling content.',
         git: [],
@@ -3145,7 +3145,7 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
         ],
         playlists: [],
       },
-      'UI / UX': {
+      'UI and UX': {
         description:
           'User Interface (UI) and User Experience (UX) design, focusing on creating intuitive and engaging digital experiences for users.',
         git: ['https://github.com/wasabeef/awesome-android-ui'],
@@ -3353,7 +3353,7 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
         ],
         playlists: [],
       },
-      'Statistics ': {
+      Statistics: {
         description:
           'Mathematics field dealing with data analysis, probability, and inferences.',
         git: [],
@@ -3674,7 +3674,7 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
         playlists: [],
       },
     },
-    'Module 33: Meta AR/VR worlds': {
+    'Module 33: Meta AR VR worlds': {
       Unreal: {
         description:
           'Industry-leading game engine for creating interactive and immersive experiences.',
@@ -3699,7 +3699,7 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
       },
     },
     'Module 34: Cogno-Neuroscience': {
-      'Cogno -Neuroscience ': {
+      'Cogno-Neuroscience': {
         description:
           'A curated list of awesome neuroscience libraries, software and any content related to the domain.',
         git: ['https://github.com/analyticalmonk/awesome-neuroscience'],
@@ -3819,7 +3819,7 @@ export const TRAINING_CENTER: { [name: string]: ITrainingCenterData } = {
       },
     },
     'Module 37: Quantum Physics': {
-      'Quantum Physics / Mechanics': {
+      'Quantum Physics - Mechanics': {
         description:
           'Study of particles and energy at the quantum level, defying classical physics.',
         git: [],

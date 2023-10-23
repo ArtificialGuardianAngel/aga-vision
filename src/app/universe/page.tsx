@@ -1,4 +1,5 @@
 import Button from '@/components/Button';
+import VideoBackground from '@/components/VideoBackground';
 import cn from 'classnames';
 import Image from 'next/image';
 import { ButtonHTMLAttributes, HTMLAttributes, ReactNode } from 'react';
@@ -83,7 +84,9 @@ const DownloadSection = () => (
 const UniversePage = () => {
   return (
     <main>
-      <div className="flex flex-col gap-[50px] items-center container overflow-hidden max-w-[650px] min-h-[100dvh] pt-[70px] md:gap-[30px] md:justify-center">
+      <VideoBackground />
+
+      <div className="flex flex-col gap-[50px] items-center container overflow-hidden max-w-[650px] min-h-[100dvh] pt-[70px] md:gap-[30px] justify-center">
         <Image
           className="mix-blend-lighten xxl:max-w-[520px] w-auto max-w-[960px] md:w-full"
           src="/aga-face.png"
@@ -101,10 +104,10 @@ const UniversePage = () => {
           The Ultimate Coding Symphony
         </div>
 
-        <DownloadSection />
+        {/* <DownloadSection /> */}
       </div>
 
-      <section className="flex flex-col max-w-[1080px] mx-auto gap-[70px] md:max-w[650px] sm:max-w[350px] md:mx-[20px] mt-[50px] md:mt-[30px] container">
+      <section className="flex flex-col gap-[70px] mt-[50px] md:mt-[30px] container">
         <div className="bg-card p-[70px_50px] flex flex-col gap-[50px] items-center md:p-[50px_30px] md:rounded-[40px] md:gap-[30px] rounded-[20px]">
           <div className="text-accentGreen text-[30px] leading-[37.8px] font-[300] md:text-[24px] md:leading-[30.24px]">
             Introducing UNIVERSE
@@ -180,7 +183,7 @@ const UniversePage = () => {
           symphony awaits.
         </div>
 
-        <DownloadSection />
+        {/* <DownloadSection /> */}
       </section>
     </main>
   );

@@ -2,10 +2,12 @@ import Image from 'next/image';
 import Button from '@/components/Button';
 import HackathonsWelcomeBlock from '@/components/hackathons/HackathonsWelcomeBlock';
 import HackathonsUpcomingEvents from '@/components/hackathons/HackathonsUpcomingEvents';
+import VideoBackground from '@/components/VideoBackground';
 
 export default function HackathonsPage() {
   return (
     <main className="">
+      <VideoBackground />
       <HackathonsWelcomeBlock />
 
       <div className="container p-[100px_0_0] flex flex-col gap-[70px] lg:gap-[50px]">

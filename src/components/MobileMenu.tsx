@@ -44,8 +44,8 @@ const MobileMenu: React.FC<{}> = () => {
       </div>
       <div
         className={cn(
-          'fixed top-0 left-0 w-screen h-[100dvh] z-40 flex items-center justify-center transition-all',
-          { 'translate-x-0': opened, 'translate-x-full': !opened },
+          'fixed bottom-0 left-0 w-screen h-[100dvh] z-40 flex items-center justify-center transition-all duration-500',
+          { 'translate-y-0': opened, 'translate-y-full': !opened },
         )}
         style={{
           background:
@@ -53,7 +53,7 @@ const MobileMenu: React.FC<{}> = () => {
         }}
       >
         <div className="flex flex-col gap-[5px] p-[0_20px] text-center w-full text-[15px] font-[500] uppercase items-center">
-          <div className="md:bg-card md:rounded-[50px] p-[18px_30px] leading-[10px] w-[255px] md:p-[20px] border-b-white/10 border-b-[1px]">
+          <div className="md:bg-card md:rounded-[50px] p-[18px_30px] leading-[10px] w-[255px] md:p-[20px] border-b-white/10 border-b-[1px] md:border-b-0">
             <Link
               className="transition-colors hover:text-accentGreen"
               href={pathname !== '' ? '/#about' : '#about'}
@@ -62,7 +62,7 @@ const MobileMenu: React.FC<{}> = () => {
               About
             </Link>
           </div>
-          <div className="md:bg-card md:rounded-[50px] p-[18px_30px] leading-[10px] w-[255px] md:p-[20px] border-b-white/10 border-b-[1px]">
+          <div className="md:bg-card md:rounded-[50px] p-[18px_30px] leading-[10px] w-[255px] md:p-[20px] border-b-white/10 border-b-[1px] md:border-b-0">
             <Link
               className="transition-colors hover:text-accentGreen"
               href={pathname !== '' ? '/#blueprint' : '#blueprint'}
@@ -71,7 +71,7 @@ const MobileMenu: React.FC<{}> = () => {
               Blueprint
             </Link>
           </div>
-          <div className="md:bg-card md:rounded-[50px] p-[18px_30px] leading-[10px] w-[255px] md:p-[20px] border-b-white/10 border-b-[1px]">
+          <div className="md:bg-card md:rounded-[50px] p-[18px_30px] leading-[10px] w-[255px] md:p-[20px] border-b-white/10 border-b-[1px] md:border-b-0">
             <Link
               className="transition-colors hover:text-accentGreen"
               href={pathname !== '' ? '/#training-camp' : '#training-camp'}
@@ -80,7 +80,7 @@ const MobileMenu: React.FC<{}> = () => {
               AI Dev Training camp
             </Link>
           </div>
-          <div className="md:bg-card md:rounded-[50px] p-[18px_30px] leading-[10px] w-[255px] md:p-[20px] border-b-white/10 border-b-[1px]">
+          <div className="md:bg-card md:rounded-[50px] p-[18px_30px] leading-[10px] w-[255px] md:p-[20px] border-b-white/10 border-b-[1px] md:border-b-0">
             <Link
               className="transition-colors hover:text-accentGreen"
               href={pathname !== '' ? '/#challenges' : '#challenges'}
@@ -89,7 +89,7 @@ const MobileMenu: React.FC<{}> = () => {
               Challenges
             </Link>
           </div>
-          <div className="md:bg-card md:rounded-[50px] p-[18px_30px] leading-[10px] w-[255px] md:p-[20px] border-b-white/10 border-b-[1px]">
+          <div className="md:bg-card md:rounded-[50px] p-[18px_30px] leading-[10px] w-[255px] md:p-[20px] border-b-white/10 border-b-[1px] md:border-b-0">
             <Link
               className="transition-colors hover:text-accentGreen"
               href={'/hackathons'}
@@ -98,7 +98,7 @@ const MobileMenu: React.FC<{}> = () => {
               Hackathons
             </Link>
           </div>
-          <div className="md:bg-card md:rounded-[50px] p-[18px_30px] leading-[10px] w-[255px] md:p-[20px] border-b-white/10 border-b-[1px]">
+          <div className="md:bg-card md:rounded-[50px] p-[18px_30px] leading-[10px] w-[255px] md:p-[20px] border-b-white/10 border-b-[1px] md:border-b-0">
             <Link
               className="transition-colors hover:text-accentGreen"
               href={'/contractor'}
@@ -107,7 +107,7 @@ const MobileMenu: React.FC<{}> = () => {
               Contractor
             </Link>
           </div>
-          <div className="md:bg-card md:rounded-[50px] p-[18px_30px] leading-[10px] w-[255px] md:p-[20px] border-b-white/10 border-b-[1px]">
+          <div className="md:bg-card md:rounded-[50px] p-[18px_30px] leading-[10px] w-[255px] md:p-[20px] border-b-white/10 border-b-[1px] md:border-b-0">
             <Link
               className="transition-colors hover:text-accentGreen"
               href={'/universe'}
