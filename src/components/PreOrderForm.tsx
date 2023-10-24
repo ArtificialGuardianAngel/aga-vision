@@ -1,14 +1,21 @@
 'use client';
-import React, { FormEvent, Suspense } from 'react';
-import Link from 'next/link';
+import React, { FormEvent, Suspense, useContext } from 'react';
 import Checkbox from './Checkbox';
 import Button from './Button';
 import Input from './Input';
 import { useAlert } from '@/lib/hooks/use-alert';
 import schema from '@/lib/schemas/preorder-form.schema';
+import OverlayContext from '@/context/OverlayContext';
+import PrivacyPolicyContent from './PrivacyPolicyContent';
 
 const PreOrderForm: React.FC<{}> = () => {
   const { open, alertComponent } = useAlert();
+  const { setContent, open: openOverlay } = useContext(OverlayContext);
+
+  const showPrivacyPolicyOverlay = () => {
+    setContent(<PrivacyPolicyContent />);
+    openOverlay();
+  };
 
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -55,9 +62,12 @@ const PreOrderForm: React.FC<{}> = () => {
           <div className="flex-1">
             <Checkbox>
               I accept{' '}
-              <Link className="underline" href="/privacy-policy">
+              <span
+                className="underline cursor-pointer"
+                onClick={showPrivacyPolicyOverlay}
+              >
                 Privacy Policy
-              </Link>
+              </span>
               .
             </Checkbox>
           </div>

@@ -1,19 +1,26 @@
 'use client';
 
-import { FormEvent, useState } from 'react';
+import { FormEvent, useContext, useState } from 'react';
 import Image from 'next/image';
-import Link from 'next/link';
 import Checkbox from '../Checkbox';
 import Input from '../Input';
 import Textarea from '../Textarea';
 import Button from '../Button';
 import schema from '@/lib/schemas/contractor-form.schema';
 import { useAlert } from '@/lib/hooks/use-alert';
+import OverlayContext from '@/context/OverlayContext';
+import PrivacyPolicyContent from '../PrivacyPolicyContent';
 
 const ContractorForm = () => {
   const { alertComponent, open, close } = useAlert();
   const [success, setSuccess] = useState(false);
   const [privacy, setPrivacy] = useState(false);
+  const { setContent, open: openOverlay } = useContext(OverlayContext);
+
+  const showPrivacyPolicyOverlay = () => {
+    setContent(<PrivacyPolicyContent />);
+    openOverlay();
+  };
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -140,9 +147,12 @@ const ContractorForm = () => {
                 onChange={(e) => setPrivacy((p) => !p)}
               >
                 I accept{' '}
-                <Link href="privacy-policy" className="underline">
+                <span
+                  className="underline cursor-pointer"
+                  onClick={showPrivacyPolicyOverlay}
+                >
                   Privacy Policy
-                </Link>
+                </span>
                 .
               </Checkbox>
               <Button className="md:w-full" size="lg" disabled={!privacy}>

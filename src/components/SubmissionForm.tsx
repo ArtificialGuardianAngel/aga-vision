@@ -1,21 +1,29 @@
 'use client';
 
-import React, { FormEvent, useState } from 'react';
+import React, { FormEvent, useContext, useState } from 'react';
 import Input from './Input';
 import Button from './Button';
 import Checkbox from './Checkbox';
 import Select from './Select';
-import Link from 'next/link';
 import schema from '@/lib/schemas/submition-form.schema';
 import { useAlert } from '@/lib/hooks/use-alert';
 import { CHALLENGES } from '@/utils/constants';
 import Image from 'next/image';
+import OverlayContext from '@/context/OverlayContext';
+import PrivacyPolicyContent from './PrivacyPolicyContent';
 
 const SubmissionForm = () => {
   const { alertComponent, open, close } = useAlert();
+  const { setContent, open: openOverlay } = useContext(OverlayContext);
   const [challenge, setChallenge] = useState<string>('');
   const [success, setSuccess] = useState(false);
   const [privacy, setPrivacy] = useState(false);
+
+  const showPrivacyPolicyOverlay = () => {
+    setContent(<PrivacyPolicyContent />);
+    openOverlay();
+  };
+
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     e.stopPropagation();
@@ -167,9 +175,12 @@ const SubmissionForm = () => {
               onChange={(e) => setPrivacy((p) => !p)}
             >
               I accept{' '}
-              <Link className="underline" href="/privacy-policy">
+              <span
+                className="underline cursor-pointer"
+                onClick={showPrivacyPolicyOverlay}
+              >
                 Privacy Policy
-              </Link>
+              </span>
               .
             </Checkbox>
           </div>
