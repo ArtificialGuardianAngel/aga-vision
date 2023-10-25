@@ -5,6 +5,7 @@ import cn from 'classnames';
 import Navbar from '@/components/Navbar';
 import MobileMenu from '@/components/MobileMenu';
 import BackToTopButton from '@/components/BackToTopButton';
+import Providers from '@/components/Providers';
 
 const sora = Sora({
   weight: ['200', '300', '400', '500', '600', '700', '800'],
@@ -37,7 +38,7 @@ export default function RootLayout({
         <MobileMenu />
         <BackToTopButton />
 
-        {children}
+        <Providers>{children}</Providers>
 
         <section className="p-[75px_0_25px] container md:p-[25px_0]">
           <div className="flex flex-col items-center gap-[50px]">

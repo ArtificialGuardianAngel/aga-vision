@@ -1,4 +1,6 @@
-import React from 'react';
+'use client';
+
+import React, { useEffect, useRef } from 'react';
 import cn from 'classnames';
 
 interface Props {
@@ -14,6 +16,18 @@ const VideoBackground: React.FC<Props> = ({
   mask = true,
   mobileMask = false,
 }) => {
+  const videoRef = useRef<HTMLVideoElement>(null);
+
+  useEffect(() => {
+    const timeout = setTimeout(() => {
+      if (videoRef.current) {
+        videoRef.current.play();
+      }
+    }, 0);
+
+    return () => clearTimeout(timeout);
+  }, []);
+
   return (
     <>
       <div
@@ -29,7 +43,7 @@ const VideoBackground: React.FC<Props> = ({
           absolute: !fullPage,
           fixed: fullPage,
         })}
-        autoPlay
+        ref={videoRef}
         loop
         muted
         controls={false}
