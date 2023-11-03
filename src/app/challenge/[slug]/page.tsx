@@ -93,7 +93,12 @@ export default function Challenge({ params }: Props) {
                 <div className="max-w-[880px] text-center">
                   {data.extraDescription}
                 </div>
-                <Link href="/#submmition-form">
+              </div>
+            )}
+
+            {data.button && (
+              <div className="flex flex-col items-center p-[50px_0]">
+                <Link href={`/?challenge=${data.button}#submmition-form`}>
                   <Button size="lg">Submit your work</Button>
                 </Link>
               </div>
