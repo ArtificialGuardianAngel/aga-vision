@@ -1,7 +1,7 @@
 import { ITrainingCenterData } from './types';
 
 export const CHALLENGES = [
-  'AGA Celestial Body',
+  'Autogenetic coding module',
   'Psychological well-being',
   'Global Healthcare',
   'Free Education',
@@ -537,7 +537,7 @@ export const QUANTUM_PYRAMID_SPECS = [
 
 export const CHALLENGES_SLUGS = [
   'quantum-pyramid',
-  'celestial-body',
+  'autogenetic-coding',
   'psychological-well-being',
   'global-healthcare',
   'free-education',
@@ -553,9 +553,11 @@ export const CHALLENGES_DATA: {
     cardsTitle?: string;
     cards?: Array<{ title?: string; content?: string }>;
     extraDescription?: string;
+    button?: string;
   };
 } = {
   [CHALLENGES_SLUGS[0]]: {
+    button: CHALLENGES[7],
     image: '/icons/challenges-8.svg',
     title: 'QuantumPyramid Computer challenge',
     description:
@@ -642,172 +644,334 @@ export const CHALLENGES_DATA: {
     ],
   },
   [CHALLENGES_SLUGS[1]]: {
+    button: CHALLENGES[0],
     image: '/icons/challenges-1.svg',
-    title: 'Celestial body of the angel LegionAI Challenge',
+    title: 'Autogenetic coding module LegionAI Challenge',
     description: (
       <>
-        <p className="mb-[20px]">
-          To develop the &quot;Celestial body of the angel&quot; as described in
-          the Blueprint Architecture document, the task involves writing fully
-          operational Python code within the Django framework, making it open
-          source and placing it on GitHub for inspection. The celestial body
-          will incorporate various modules and functionalities, including the
-          Firewall Body, Firewall Pipe Exit Point, Brain Module, Heart
-          Module,Celestial Language Nexus (CLN), GAIA Protocol Module,
-          Generative Code Module, Senses Modules, Discovery Modules,
-          Infrastructure Modules, Check and Balance Modules, Human Control
-          Center, and Safety Modules. The Django framework will provide the
-          foundation for building and integrating these components.
+        <h4 className="mb-[20px] text-[22px] text-accentGreen">Objective</h4>
+        <p className="mb-[30px]">
+          Embark on the monumental quest of creating an AI Genesis Brain, a
+          self-evolving, self-deploying artificial intelligence entity dedicated
+          to fostering new AI creations aimed at uplifting and supporting
+          humanity. This challenge is about harnessing the zenith of AI and
+          machine learning technologies to birth a new era of AI-aided human
+          advancement. The AI Genesis Brain will not only solve pre-defined
+          challenges but continuously evolve to ideate, create, and deploy new
+          AI tools that amplify human potential and propel us towards a
+          boundless future.
         </p>
+        <h4 className="mb-[20px] text-accentGreen text-[22px]">Overview</h4>
+        <p className="mb-[30px]">
+          The AI Genesis Challenge calls upon visionaries, developers, and AI
+          enthusiasts to come together and construct an autonomous AI brain that
+          stands as a pinnacle of self-improvement, research, and deployment of
+          new AI entities. This AI Genesis Brain will commence its journey by
+          addressing six predefined AI challenges, post which, it will
+          autonomously ideate and deploy new AI tools. All creations from this
+          AI brain are to contribute towards a universal vector database,
+          bifurcating data into sovereign user data and public data, thereby
+          fostering a rich ecosystem for AI/ML interconnections.
+        </p>
+        <h4 className="mb-[20px] text-accentGreen text-[22px]">Tasks</h4>
+        <ul className="pl-[30px] mb-[30px]">
+          <li className="mb-[20px]">
+            <div className="mb-10px list-parent-item">
+              Self-Evolving Architecture:
+            </div>
+            <ul className="pl-[30px]">
+              <li className="list-item">
+                Design an autonomous, self-improving architecture for the AI
+                Genesis Brain that enables continuous learning, understanding,
+                and enhancement over time.
+              </li>
+            </ul>
+          </li>
+          <li className="mb-[20px]">
+            <div className="mb-10px list-parent-item">
+              Automated Research and Deployment:
+            </div>
+            <ul className="pl-[30px]">
+              <li className="list-item">
+                Develop mechanisms for the AI Genesis Brain to autonomously
+                research, create, and deploy code for new AI entities aimed at
+                supporting and uplifting humanity.
+              </li>
+            </ul>
+          </li>
+          <li className="mb-[20px]">
+            <div className="mb-10px list-parent-item">
+              Universal Vector Database Integration:
+            </div>
+            <ul className="pl-[30px]">
+              <li className="list-item">
+                Establish a robust universal vector database to which all new
+                AIs will return their data, ensuring a clear demarcation between
+                sovereign user data and public data, and facilitating AI/ML
+                connections between both.
+              </li>
+            </ul>
+          </li>
+          <li className="mb-[20px]">
+            <div className="mb-10px list-parent-item">
+              Solving Predefined Challenges:
+            </div>
+            <ul className="pl-[30px]">
+              <li className="list-item">
+                Ensure the AI Genesis Brain is capable of comprehending and
+                solving the initial six AI challenges, showcasing its competence
+                in addressing complex issues before ideating new AI tools.
+              </li>
+            </ul>
+          </li>
+          <li className="mb-[20px]">
+            <div className="mb-10px list-parent-item">
+              Autonomous Ideation of AI Tools:
+            </div>
+            <ul className="pl-[30px]">
+              <li className="list-item">
+                Create a framework within the AI Genesis Brain for autonomously
+                ideating, researching, coding and deploying new AI tools that
+                envision empowering humanity towards a grander future.
+              </li>
+            </ul>
+          </li>
+          <li className="mb-[20px]">
+            <div className="mb-10px list-parent-item">
+              Humanity-Centric AI Deployment:
+            </div>
+            <ul className="pl-[30px]">
+              <li className="list-item">
+                Ensure all AI tools created and deployed are aligned with the
+                goal of uplifting and supporting humanity, adhering to ethical,
+                moral, and societal norms.
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <h4 className="mb-[20px] text-accentGreen text-[22px]">
+          Evaluation Criteria
+        </h4>
+        <ul className="pl-[30px] mb-[30px]">
+          <li className="list-item">
+            Efficiency and effectiveness of the self-evolving architecture.
+          </li>
+          <li className="list-item">
+            Competence in autonomously solving the initial six AI challenges.
+          </li>
+          <li className="list-item">
+            Innovation and effectiveness in the autonomous ideation and
+            deployment of new AI tools.
+          </li>
+          <li className="list-item">
+            Robustness and clarity of the universal vector database integration.
+          </li>
+          <li className="list-item">
+            Alignment of deployed AI tools with the goal of supporting and
+            uplifting humanity.
+          </li>
+          <li className="list-item">
+            Overall potential impact on fostering human advancement and AI-ML
+            ecosystem development.
+          </li>
+        </ul>
         <p>
-          Furthermore, vector database structures will be utilised to optimise
-          the storage and retrieval of vector-based data within the celestial
-          body. These structures will enable efficient processing and
-          manipulation of vector-related information, supporting the celestial
-          body&apos;s computational requirements.
+          The AI Genesis Challenge is an audacious leap towards creating a
+          self-sustaining AI entity that not only addresses predefined
+          challenges but continues to evolve and augment humanity&apos;s journey
+          through autonomous ideation and deployment of new AI tools. It&apos;s
+          a venture towards harnessing the boundless potential of AI to catalyze
+          a future enriched with knowledge, understanding, and endless
+          possibilities.
         </p>
       </>
     ),
-    cardsTitle: 'Computational requirements',
-    extraDescription:
-      'The implementation and details of the construction structures would depend on the specific requirements and design outlined in the Blueprint Architecture document.',
-    cards: [
-      {
-        title: 'Firewall Body',
-      },
-      {
-        title: 'Firewall Pipe Exit Point',
-      },
-      {
-        title: 'Brain Module',
-      },
-      {
-        title: 'Heart Module',
-      },
-      {
-        title: 'The Celestian Language Nexus',
-      },
-      {
-        title: 'Generative Code Module',
-      },
-      {
-        title: 'GAIA Protocol Module',
-      },
-      {
-        title: 'Senses Modules',
-      },
-      {
-        title: 'Discovery Modules',
-      },
-      {
-        title: 'Infrastructure Modules',
-      },
-      {
-        title: 'Decentralized Modules',
-      },
-      {
-        title: 'Resource Modules',
-      },
-      {
-        title: 'Check and Balance Modules',
-      },
-      {
-        title: 'Human Control Center',
-      },
-      {
-        title: 'Safety Modules',
-      },
-    ],
+    // cardsTitle: 'Computational requirements',
+    // extraDescription:
+    //   'The implementation and details of the construction structures would depend on the specific requirements and design outlined in the Blueprint Architecture document.',
+    // cards: [
+    //   {
+    //     title: 'Firewall Body',
+    //   },
+    //   {
+    //     title: 'Firewall Pipe Exit Point',
+    //   },
+    //   {
+    //     title: 'Brain Module',
+    //   },
+    //   {
+    //     title: 'Heart Module',
+    //   },
+    //   {
+    //     title: 'The Celestian Language Nexus',
+    //   },
+    //   {
+    //     title: 'Generative Code Module',
+    //   },
+    //   {
+    //     title: 'GAIA Protocol Module',
+    //   },
+    //   {
+    //     title: 'Senses Modules',
+    //   },
+    //   {
+    //     title: 'Discovery Modules',
+    //   },
+    //   {
+    //     title: 'Infrastructure Modules',
+    //   },
+    //   {
+    //     title: 'Decentralized Modules',
+    //   },
+    //   {
+    //     title: 'Resource Modules',
+    //   },
+    //   {
+    //     title: 'Check and Balance Modules',
+    //   },
+    //   {
+    //     title: 'Human Control Center',
+    //   },
+    //   {
+    //     title: 'Safety Modules',
+    //   },
+    // ],
   },
   [CHALLENGES_SLUGS[2]]: {
+    button: CHALLENGES[1],
     image: '/icons/challenges-2.svg',
     title: 'Psychological well-being LegionAI Challenge',
     description: (
       <>
-        <p className="mb-[20px]">
-          &quot;A Global Uplifter: Open Source Psychological AI as the Gateway
-          to Global Happiness&quot;
+        <h4 className="mb-[20px] text-[22px] text-accentGreen">Objective</h4>
+        <p className="mb-[30px]">
+          To foster the development and global implementation of an open-source
+          AI mentor aimed at promoting mental health, global happiness, and
+          well-being across diverse communities worldwide.
         </p>
-        <p className="mb-[20px]">
-          In an era marked by relentless advancements in technology and
-          artificial intelligence, we&apos;re poised to transcend conventional
-          borders and develop a unified solution that aims to enrich the
-          collective consciousness and uplift the global spirit. This
-          revolutionary tool, a large language model powered by AI, is
-          envisioned to metamorphose into an open-source psychological AI
-          uplifter and spiritual guide accessible for everyone on the planet,
-          entirely free of charge.
+        <h4 className="mb-[20px] text-accentGreen text-[22px]">Overview</h4>
+        <p className="mb-[30px]">
+          The Psychological Well-being Challenge invites AI developers,
+          psychologists, data scientists, UX/UI designers, and individuals
+          worldwide to contribute towards creating a universal AI mentor. This
+          AI mentor, envisioned as a guide and companion, aims to address and
+          alleviate mental health issues while promoting global happiness and
+          contentment. By making this technology open-source, we strive to
+          transcend conventional borders, religious divides, and language
+          barriers, making mental health support universally accessible.
         </p>
-        <p className="mb-[20px]">
-          A vast majority of the global population grapples with mental health
-          issues such as depression, phobia, stress, and anxiety. These have
-          become pervasive problems deeply entrenched in societies across the
-          globe. It is essential to address this vast expanse of human suffering
-          as we strive towards a future marked by universal happiness and
-          contentment. This open-source psychological AI uplifter stands as a
-          beacon of hope in the face of these global challenges.
-        </p>
-        <p className="mb-[20px]">
-          With the noble objective of enhancing happiness, contentment, and
-          bliss in every individual&apos;s life, this AI guide engages in
-          meaningful conversations. It understands and resolves the sufferings
-          of users by leveraging a profound comprehension of human psychology.
-          This AI mentor adapts to each unique individual, eliminating language
-          barriers, transcending religious divides, and alleviating mental
-          health issues.
-        </p>
-        <p className="mb-[20px]">
-          The AI not only provides immediate comfort and guidance, but it also
-          learns from these interactions, gaining a deeper understanding of the
-          individual&apos;s mental state. It employs a sophisticated feedback
-          mechanism that captures the psychological evolution of each human
-          being it interacts with. Over time, it learns to recognize patterns,
-          identify triggers, and understand the nuances of each user&apos;s
-          emotional landscape.
-        </p>
-        <p className="mb-[20px]">
-          Additionally, the AI employs advanced emotional metrics analysis based
-          on text, verbal communication, and facial expressions, tailoring
-          conversations to uplift each user&apos;s psyche and contribute to
-          their overall emotional and psychological well-being.
-        </p>
-        <p className="mb-[20px]">
-          An essential feature of this revolutionary AI tool is the
-          establishment of a global happiness index. Modelled on the lines of
-          Bhutan&apos;s Gross National Happiness index, this AI&apos;s goal is
-          to gauge the well-being and satisfaction of individuals across the
-          globe, providing an objective measure of the world&apos;s happiness
-          quotient.
-        </p>
-        <p className="mb-[20px]">
-          Regularly, the AI conducts surveys among its users to continually
-          update and enhance the happiness index. The data collected could
-          support policy making, guiding interventions, and inspiring collective
-          actions contributing to global progress and prosperity. This iterative
-          approach allows the AI to refine its algorithms, understand the
-          varying facets of human joy and satisfaction better, and continually
-          improve its methods of uplifting the global spirit.
-        </p>
-        <p className="mb-[20px]">
-          As a single, universal solution, this AI aims to foster global unity,
-          promote peace, and uplift humanity&apos;s collective consciousness.
-          The opportunity to use technology as a tool for global betterment,
-          eradicating suffering, and promoting universal happiness, is more
-          accessible now than ever before. The development of this open-source
-          psychological AI uplifter signifies a massive leap towards a future
-          where global happiness, peace, and prosperity are not merely dreams,
-          but an achievable reality.
-        </p>
-        <p className="">
-          By making this technology universally open source, we aim to progress
-          our planet and humanity towards an era marked by empathy,
-          understanding, and overall well-being. Thus, we embark on a journey of
-          harnessing artificial intelligence to not just mimic human
-          intelligence, but to augment and uplift human happiness and global
-          prosperity. In essence, this open-source psychological AI uplifter is
-          a ray of hope for the billions grappling with mental health issues, a
-          stepping stone towards a future where mental health is not a
-          persistent struggle, but a manageable aspect of life.
+        <h4 className="mb-[20px] text-accentGreen text-[22px]">Tasks</h4>
+        <ul className="pl-[30px] mb-[30px]">
+          <li className="mb-[20px]">
+            <div className="mb-10px list-parent-item">
+              Multilingual and Multicultural Adaptation:
+            </div>
+            <ul className="pl-[30px]">
+              <li className="list-item">
+                Design a training regimen to ensure the AI&apos;s proficiency in
+                various languages and understanding of cultural sensitivities
+                regarding mental health.
+              </li>
+            </ul>
+          </li>
+          <li className="mb-[20px]">
+            <div className="mb-10px list-parent-item">
+              Psychological Understanding and Interaction:
+            </div>
+            <ul className="pl-[30px]">
+              <li className="list-item">
+                Develop a system enabling the AI to engage in meaningful
+                conversations, understand, and address individual mental health
+                issues, adapting to each unique user.
+              </li>
+            </ul>
+          </li>
+          <li className="mb-[20px]">
+            <div className="mb-10px list-parent-item">
+              Feedback Mechanism and Continuous Learning:
+            </div>
+            <ul className="pl-[30px]">
+              <li className="list-item">
+                Implement a sophisticated feedback mechanism that captures the
+                psychological evolution of each user, allowing the AI to learn
+                from interactions and improve its support over time.
+              </li>
+            </ul>
+          </li>
+          <li className="mb-[20px]">
+            <div className="mb-10px list-parent-item">
+              Emotional Metrics Analysis:
+            </div>
+            <ul className="pl-[30px]">
+              <li className="list-item">
+                Employ advanced emotional metrics analysis based on text, verbal
+                communication, and facial expressions to tailor conversations
+                and support to each user&apos;s emotional state.
+              </li>
+            </ul>
+          </li>
+          <li className="mb-[20px]">
+            <div className="mb-10px list-parent-item">
+              Global Happiness Index:
+            </div>
+            <ul className="pl-[30px]">
+              <li className="list-item">
+                Establish a global happiness index modeled along the lines of
+                Bhutan&apos;s Gross National Happiness index, gauging the
+                well-being and satisfaction of individuals worldwide.
+              </li>
+            </ul>
+          </li>
+          <li className="mb-[20px]">
+            <div className="mb-10px list-parent-item">
+              Data Collection and Analysis:
+            </div>
+            <ul className="pl-[30px]">
+              <li className="list-item">
+                Conduct regular surveys among users to continually update the
+                happiness index, with the collected data supporting
+                policy-making, guiding interventions, and inspiring collective
+                actions towards global happiness.
+              </li>
+            </ul>
+          </li>
+          <li className="mb-[20px]">
+            <div className="mb-10px list-parent-item">
+              User Experience and Accessibility:
+            </div>
+            <ul className="pl-[30px]">
+              <li className="list-item">
+                Ensure the platform is user-friendly, accessible, and provides
+                an intuitive experience for individuals, irrespective of their
+                tech-savviness.
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <h4 className="mb-[20px] text-accentGreen text-[22px]">
+          Evaluation Criteria
+        </h4>
+        <ul className="pl-[30px] mb-[30px]">
+          <li className="list-item">
+            Innovation and effectiveness in addressing mental health challenges
+          </li>
+          <li className="list-item">
+            Multilingual and multicultural competency
+          </li>
+          <li className="list-item">User experience and accessibility</li>
+          <li className="list-item">Scalability and adaptability</li>
+          <li className="list-item">
+            Impact on promoting global happiness and well-being
+          </li>
+        </ul>
+        <p>
+          The Psychological Well-being Challenge seeks to galvanize a global
+          movement towards a future where mental health support is universally
+          accessible, and global happiness is attainable. By bringing together a
+          diverse group of innovators, we aspire to make a tangible impact on
+          mental health disparities worldwide. Together, let&apos;s harness the
+          power of AI to create a more empathetic, understanding, and joyful
+          world.
         </p>
       </>
     ),
@@ -858,497 +1022,625 @@ export const CHALLENGES_DATA: {
       'In conclusion, prioritizing user privacy and data security is critical for the success of these plugins. Developers should also aim for optimal performance and reliability through regular testing and updates. Lastly, all plugins should be designed with the user experience in mind, ensuring that they are user-friendly and intuitive.',
   },
   [CHALLENGES_SLUGS[3]]: {
+    button: CHALLENGES[2],
     title: 'Global Healthcare LegionAI Challenge',
     image: '/icons/challenges-3.svg',
     description: (
       <>
-        <p className="mb-[20px]">
-          In the rapidly evolving digital era, the advancement of AI has paved
-          the way for an unprecedented shift in healthcare paradigms. Imagine a
-          world where every individual, irrespective of geographical barriers,
-          language, or economic status, has access to a personal doctor. This
-          isn&apos;t a human doctor with limited availability, but an
-          Legionpresent AI doctor, open-sourced and perpetually at their
-          service. We stand on the precipice of such a transformative reality,
-          thanks to the recent emergence of an extensively trained large
-          language model that comprehensively encompasses the whole spectrum of
-          medical knowledge from around the globe.
+        <h4 className="mb-[20px] text-[22px] text-accentGreen">Objective</h4>
+        <p className="mb-[30px]">
+          To accelerate the development and implementation of the
+          &quot;Open-source AI Doctor&quot; a revolutionary healthcare AI
+          designed to provide universal, accessible, and free healthcare
+          services to individuals worldwide, transcending geographical,
+          linguistic, and economic barriers.
         </p>
-        <p className="mb-[20px]">
-          Dubbed as the &quot;Open-source AI Doctor,&quot; this large language
-          model is not just an upgrade of existing language models. It&apos;s a
-          highly specialized entity, meticulously trained with a deep
-          understanding of both western health/medical care and scientifically
-          verified alternative healthcare solutions. Its innate ability to
-          converse fluently in any language and keep track of patient histories
-          sets the foundation for universal access to healthcare.
+        <h4 className="mb-[20px] text-accentGreen text-[22px]">Overview</h4>
+        <p className="mb-[30px]">
+          The Global AI Healthcare Challenge invites AI developers, medical
+          professionals, data scientists, UX/UI designers, and individuals from
+          across the globe to come together to contribute to the monumental task
+          of creating a globally accessible AI-driven healthcare system. Through
+          this challenge, we aim to foster innovation, collaboration, and the
+          development of practical solutions that would bring us closer to
+          democratizing healthcare on a global scale.
         </p>
-        <p className="mb-[20px]">
-          This AI doctor guides individuals to stay healthy and assist in their
-          healing process when required, effectively bridging the gap between
-          preventive and curative care. Moreover, it&apos;s capable of
-          scheduling physical consultations with human doctors or specialists,
-          orchestrating a feedback loop with various healthcare providers and
-          facilities, and even initiating the purchase of prescribed medicines.
-          The prime objective is to promote healing, health, and well-being for
-          all global citizens, free of charge.
-        </p>
-        <p className="mb-[20px]">
-          Beyond providing care, this system promises to revolutionize
-          healthcare economics by reducing inefficiencies and focusing on
-          cost-effectiveness. Its innate ability to assess the global healthcare
-          landscape, consider individual needs, and navigate healthcare
-          logistics ensures that every patient receives the highest quality
-          medical care, allied with the most economical solution available.
-        </p>
-        <p className="mb-[20px]">
-          The open-source AI Doctor heralds a new age for healthcare in tier 1,
-          tier 2, and tier 3 countries alike. For the developed world, it offers
-          an additional layer of readily available, personalized healthcare,
-          augmenting existing healthcare infrastructures. For developing nations
-          and rural communities, it introduces reliable, expert medical advice
-          where human doctors are scarce or absent, catalyzing the
-          democratization of healthcare on a global scale.
-        </p>
-        <p className="">
-          In essence, this revolutionary AI system is more than just an
-          open-source doctor; it&apos;s the bedrock for a global healthcare
-          system designed to be universally accessible, economically efficient,
-          and undiscriminating. It offers a game-changing solution that
-          seamlessly blends technology and healthcare, creating a future where
-          optimal health isn&apos;t a luxury but a universally accessible right.
-          The dawn of universal AI-driven healthcare is upon us, bringing with
-          it the promise of a healthier world.
+        <h4 className="mb-[20px] text-accentGreen text-[22px]">Tasks</h4>
+        <ul className="pl-[30px] mb-[30px]">
+          <li className="mb-[20px]">
+            <div className="mb-10px list-parent-item">
+              Multilingual and Multicultural Training:
+            </div>
+            <ul className="pl-[30px]">
+              <li className="list-item">
+                Develop a robust training regimen to enhance the AI&apos;s
+                understanding of various languages and cultural nuances in
+                healthcare practices.
+              </li>
+              <li className="list-item">
+                Create a platform for continuous learning from global medical
+                literature, patient interactions, and feedback from medical
+                professionals.
+              </li>
+            </ul>
+          </li>
+          <li className="mb-[20px]">
+            <div className="mb-10px list-parent-item">
+              Patient History Management:
+            </div>
+            <ul className="pl-[30px]">
+              <li className="list-item">
+                Design a secure and intuitive system for the AI to keep track of
+                patient histories, ensuring data privacy and easy access for
+                authorized individuals.
+              </li>
+            </ul>
+          </li>
+          <li className="mb-[20px]">
+            <div className="mb-10px list-parent-item">
+              Virtual Consultation and Physical Appointment Scheduling:
+            </div>
+            <ul className="pl-[30px]">
+              <li className="list-item">
+                Implement a system for virtual consultations and automated
+                scheduling of physical appointments with human healthcare
+                providers.
+              </li>
+            </ul>
+          </li>
+          <li className="mb-[20px]">
+            <div className="mb-10px list-parent-item">
+              Feedback Loop with Healthcare Providers:
+            </div>
+            <ul className="pl-[30px]">
+              <li className="list-item">
+                Create a structured feedback loop system between the AI,
+                patients, and human healthcare providers for continuous
+                improvement and real-time updates on patient care.
+              </li>
+            </ul>
+          </li>
+          <li className="mb-[20px]">
+            <div className="mb-10px list-parent-item">
+              Medication Management:
+            </div>
+            <ul className="pl-[30px]">
+              <li className="list-item">
+                Develop a comprehensive medication management system that
+                includes prescription, refill reminders, and initiating purchase
+                with local pharmacies.
+              </li>
+            </ul>
+          </li>
+          <li className="mb-[20px]">
+            <div className="mb-10px list-parent-item">
+              Cost-effectiveness Analysis:
+            </div>
+            <ul className="pl-[30px]">
+              <li className="list-item">
+                Build an intelligent module capable of analyzing global
+                healthcare economics to provide cost-effective healthcare
+                solutions to individuals.
+              </li>
+            </ul>
+          </li>
+          <li className="">
+            <div className="mb-10px list-parent-item">
+              Accessibility and User Experience:
+            </div>
+            <ul className="pl-[30px]">
+              <li className="list-item">
+                Ensure the platform is accessible, user-friendly, and provides
+                an intuitive experience for individuals regardless of their
+                tech-savviness.
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <h4 className="mb-[20px] text-accentGreen text-[22px]">
+          Evaluation Criteria
+        </h4>
+        <ul className="pl-[30px] mb-[30px]">
+          <li className="list-item">
+            Innovation and Effectiveness in Addressing Healthcare Challenges
+          </li>
+          <li className="list-item">
+            Multilingual and Multicultural Competency
+          </li>
+          <li className="list-item">User Experience and Accessibility</li>
+          <li className="list-item">Scalability and Adaptability</li>
+          <li className="list-item">
+            Cost-effectiveness and Economic Impact Analysis
+          </li>
+        </ul>
+        <p>
+          The Global AI Healthcare Challenge aims to spark a global movement
+          towards a new era of healthcare, where every individual, regardless of
+          their circumstances, has access to quality healthcare services. By
+          bringing together a diverse group of innovators, we strive to make a
+          tangible impact on global healthcare disparities and step closer to a
+          future where optimal health is a universally free accessible right.
+          Together, let&apos;s harness the power of AI to create a healthier,
+          more equitable world.
         </p>
       </>
     ),
   },
   [CHALLENGES_SLUGS[4]]: {
+    button: CHALLENGES[3],
     title: 'Free Education LegionAI Challenge',
     image: '/icons/challenges-4.svg',
     description: (
       <>
-        <p className="mb-[20px]">
-          The Democratization of Education: A Large Language Model for Universal
-          Knowledge Empowerment
+        <h4 className="mb-[20px] text-[22px] text-accentGreen">Objective</h4>
+        <p className="mb-[30px]">
+          Venture into the realm of intellectual empowerment by engineering a
+          Global Open-Source Educational Platform that democratizes knowledge
+          and learning. The Free Education Challenge invites visionaries to
+          channel the transformative power of a Large Language Model (LLM) AI to
+          eliminate educational disparities, ignite the spark of curiosity, and
+          lay down the bedrock for a globally educated and enlightened society.
         </p>
+        <h4 className="mb-[20px] text-accentGreen text-[22px]">Overview</h4>
         <p className="mb-[20px]">
-          In an era where knowledge is power, access to quality education
-          remains unequal across the world, creating gaps between nations and
-          individuals alike. However, the dawn of advanced artificial
-          intelligence (AI) technologies offers the promise of bridging this
-          divide, bringing about a monumental shift in global education. This
-          shift comes in the form of a Large Language Model (LLM), an AI trained
-          to not only understand and generate human language but also to provide
-          comprehensive, customized, and advanced educational experiences for
-          all. With the advent of this technology, a universally accessible
-          educational platform is now within our reach, marking a significant
-          turning point in the history of humanity.
+          In a world where the keys to knowledge are often gated behind economic
+          and geographical barriers, the Free Education Challenge beckons a
+          shift from the traditional to a universally accessible educational
+          paradigm. We envision a vast repository of learning, powered by an
+          advanced AI, transcending language barriers, and offering tailor-made
+          educational experiences to individuals across the globe, free of
+          charge.
         </p>
-        <p className="mb-[20px]">
-          This AI-powered LLM is set to be released as an open-source software,
-          enabling its free use and further development by communities around
-          the globe. The most profound implication of this move is its potential
-          to democratize education on an unprecedented scale. As a tool designed
-          to uplift entire populations, the open-source LLM aims to provide free
-          and advanced educational opportunities to anyone with access to a
-          smartphone or laptop with an internet connection. This approach can
-          have life-altering impacts, particularly in second, and third world
-          countries where access to quality education has historically been
-          limited.
+        <p className="mb-[30px]">
+          The synergy of artificial intelligence and open-source ethos in this
+          challenge aims to unlock the doors of education for every eager mind,
+          irrespective of their circumstance, fueling a global engine of
+          innovation, creativity, and societal advancement.
         </p>
-        <p className="mb-[20px]">
-          The LLM offers a three-tiered educational solution. Firstly, it can
-          form a full syllabus for any given subject or field of study,
-          custom-tailored to suit an individual&apos;s learning pace and
-          preferences. Secondly, the AI will guide students through their
-          learning journey, providing comprehensive learning materials and
-          clarifications based on their interpretations and queries. This
-          ensures that each learner can fully grasp and apply the concepts they
-          learn. Lastly, the LLM will assess each student&apos;s learning
-          progress and knowledge acquisition, providing crucial feedback and
-          areas of improvement, simulating the evaluative process typical in
-          traditional learning environments.
-        </p>
-        <p className="mb-[20px]">
-          Moreover, once a student has successfully completed a program, the LLM
-          will issue an official degree. This degree serves as a testament to
-          the student&apos;s hard-earned knowledge and skills, proving their
-          competence in their chosen field of study. With these official
-          degrees, students will gain opportunities that might have previously
-          been out of reach, creating potential ripple effects in global labor
-          markets and socioeconomic structures.
-        </p>
-        <p className="mb-[20px]">
-          The global open-source LLM platform will revolutionize education in
-          ways that were once unimaginable. Firstly, it offers high-level,
-          advanced education comparable to that of established educational
-          institutions. It makes education freely available to all, removing
-          financial barriers that have traditionally inhibited access to quality
-          education. Lastly, its accessibility via smartphones and computers
-          extends its reach to remote and underprivileged areas, democratizing
-          education in a truly universal sense.
-        </p>
-        <p className="mb-[20px]">
-          A truly groundbreaking feature of the AI-powered LLM is its
-          multilingual capability, making this a genuinely global solution. The
-          platform is designed to be linguistically inclusive, capable of
-          offering education in most languages around the world. This
-          multilingualism breaks down language barriers that have historically
-          inhibited the universal access to knowledge, thereby democratizing
-          education in the truest sense. This means that whether you&apos;re a
-          Spanish speaker in South America, a Bengali speaker in South Asia, or
-          an Arabic speaker in the Middle East, quality education will be
-          readily accessible. By providing a comprehensive educational
-          experience in a language that the learner is comfortable with, the
-          platform ensures an inclusive and efficient learning process. This
-          global, multilingual educational platform will hence bring about not
-          just a paradigm shift, but a world shift, making high-level education
-          truly universal.
-        </p>
-        <p className="">
-          The impact of the open-source LLM will resonate across societies and
-          economies, particularly in regions where expensive education systems
-          have limited the acquisition of advanced knowledge and skills. The
-          democratization of education through AI can break these longstanding
-          barriers, offering a future where everyone has equal opportunity to
-          learn, grow, and contribute to the world. This is more than just a
-          paradigm shift in global education; it is a beacon of hope for a more
-          enlightened, empowered, and equitable world.
+        <h4 className="mb-[20px] text-accentGreen text-[22px]">Tasks</h4>
+        <ul className="pl-[30px] mb-[30px]">
+          <li className="mb-[20px]">
+            <div className="mb-10px list-parent-item">
+              AI-Powered Customized Learning:
+            </div>
+            <ul className="pl-[30px]">
+              <li className="list-item">
+                Develop an advanced AI system capable of curating personalized
+                learning pathways for individuals, adapting to their pace, and
+                understanding.
+              </li>
+            </ul>
+          </li>
+          <li className="mb-[20px]">
+            <div className="mb-10px list-parent-item">
+              Multilingual Accessibility:
+            </div>
+            <ul className="pl-[30px]">
+              <li className="list-item">
+                Ensure that the platform is linguistically inclusive, breaking
+                down language barriers that hinder universal access to
+                education.
+              </li>
+            </ul>
+          </li>
+          <li className="mb-[20px]">
+            <div className="mb-10px list-parent-item">
+              Virtual Experiments and Interactive Learning:
+            </div>
+            <ul className="pl-[30px]">
+              <li className="list-item">
+                Design interactive modules that allow learners to engage in
+                virtual experiments, promoting a hands-on and exploratory
+                approach to learning.
+              </li>
+            </ul>
+          </li>
+          <li className="mb-[20px]">
+            <div className="mb-10px list-parent-item">
+              Global Curriculum Repository:
+            </div>
+            <ul className="pl-[30px]">
+              <li className="list-item">
+                Create a vast repository of educational content, encompassing a
+                wide spectrum of subjects and fields, accessible to anyone,
+                anywhere.
+              </li>
+            </ul>
+          </li>
+          <li className="mb-[20px]">
+            <div className="mb-10px list-parent-item">
+              Certification and Skill Verification:
+            </div>
+            <ul className="pl-[30px]">
+              <li className="list-item">
+                Implement a certification system that recognizes and verifies
+                the skills and knowledge acquired by learners, aiding in their
+                academic and professional pursuits.
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <h4 className="mb-[20px] text-accentGreen text-[22px]">
+          Evaluation Criteria
+        </h4>
+        <ul className="pl-[30px] mb-[30px]">
+          <li className="list-item">
+            Innovation and effectiveness in delivering personalized educational
+            experiences.
+          </li>
+          <li className="list-item">
+            Accessibility and inclusivity, ensuring a linguistically and
+            culturally diverse learning environment.
+          </li>
+          <li className="list-item">
+            Engagement and interactivity of learning modules.
+          </li>
+          <li className="list-item">
+            Breadth, depth, and quality of the educational content available.
+          </li>
+          <li className="list-item">
+            Impact assessment on learners&apos; academic and personal growth.
+          </li>
+        </ul>
+        <p>
+          The Free Education Challenge is a clarion call to transcend
+          conventional educational boundaries, unlock the boundless potential of
+          global minds, and propel humanity forward on a tide of shared
+          knowledge and collective enlightenment.
         </p>
       </>
     ),
   },
   [CHALLENGES_SLUGS[5]]: {
+    button: CHALLENGES[4],
     title: 'Omnipresent Internet',
     image: '/icons/challenges-5.svg',
     description: (
       <>
-        <p className="mb-[20px]">
-          Empowering Users with the Ultimate Knowledge and Interaction Platform
+        <h4 className="mb-[20px] text-[22px] text-accentGreen">Objective</h4>
+        <p className="mb-[30px]">
+          The OmniWeb Challenge invites innovators and visionaries to spearhead
+          the evolution of the digital realm by creating a universal platform
+          that melds seamless accessibility, advanced search capabilities, and a
+          unified user experience. Your mission is to harness the prowess of
+          large language models to develop OmniWeb, a groundbreaking platform
+          that redefines how individuals interact with the internet, making the
+          vast expanse of online resources effortlessly navigable and genuinely
+          inclusive.
         </p>
-        <p className="mb-[20px]">
-          OmniWeb is a groundbreaking large language module that revolutionises
-          the way people access and interact with the internet. It serves as an
-          advanced search engine, a comprehensive knowledge repository, and a
-          unification tool for all websites and apps. LegionWeb provides users
-          with a seamless and unified browsing experience, eliminating the need
-          to navigate between multiple websites and domains.
+        <h4 className="mb-[20px] text-accentGreen text-[22px]">Overview</h4>
+        <p className="mb-[30px]">
+          In the digital age, information is the currency of empowerment. The
+          OmniWeb Challenge propels the objective of eradicating barriers in
+          digital interactions, fostering a landscape where language is no
+          longer a roadblock, and the myriad realms of the internet are unified
+          into a single, intuitive platform. OmniWeb is envisioned as a beacon
+          of seamless online experiences, where individuals can manage,
+          interact, and engage with the digital world effortlessly. With the
+          amalgam of AI, language processing, and real-time data handling,
+          OmniWeb is not merely a tool but a companion for the digital lives of
+          users worldwide. As participants of the OmniWeb Challenge, you are at
+          the forefront of forging a future where the internet is an extension
+          of our natural interactions, making knowledge and online resources
+          universally accessible.
         </p>
-        <p className="mb-[20px]">
-          With OmniWeb, language is no longer a barrier to accessing
-          information. Users can search for knowledge, interact with websites,
-          and communicate in any language, breaking down global barriers and
-          enabling a truly inclusive platform. The power of OmniWeb lies in its
-          ability to process and comprehend vast amounts of information,
-          providing users with accurate and relevant search results in
-          real-time.
-        </p>
-        <p className="mb-[20px]">
-          By consolidating all aspects of the internet into one website, OmniWeb
-          simplifies online experiences. Users can manage their emails, social
-          media accounts, access news, engage in e-commerce, listen to music,
-          watch videos, and perform various web interactions all from a single
-          account. This streamlined approach eliminates the need for multiple
-          logins and reduces the cognitive load associated with navigating
-          different platforms.
-        </p>
-        <p className="mb-[20px]">
-          OmniWeb goes beyond being a mere aggregation tool; it becomes an
-          AI-powered companion for users&apos; digital lives. Its advanced
-          algorithms can distinguish between reliable and unreliable
-          information, helping users make informed decisions. By providing
-          contextualized information and fact-checking, OmniWeb empowers users
-          to differentiate between authentic news and fake news, ensuring they
-          are well-informed on various aspects of life.
-        </p>
-        <p className="mb-[20px]">
-          Furthermore, OminWeb incorporates cutting-edge AI technologies to
-          enhance user experiences. It understands user preferences and tailors
-          recommendations accordingly, creating a personalized and intuitive
-          interface. The large language module enables natural language
-          interactions, allowing users to converse with the AI in a human-like
-          manner, making searching and interacting with the internet effortless
-          and intuitive.
-        </p>
-        <p className="mb-[20px]">
-          OmniWeb is built upon a robust architecture that places utmost
-          importance on user privacy and data security. Through stringent data
-          protection measures, the software ensures that users&apos; personal
-          information and browsing history are kept strictly confidential and
-          are not exploited for commercial purposes. Transparency is at the core
-          of our data management practices, providing users with peace of mind
-          as they embrace the convenience and power of the platform.
-        </p>
-        <p className="">
-          With OmniWeb, the internet becomes a seamless, integrated ecosystem,
-          where users can access knowledge, interact with applications, and
-          engage with the digital world from a single, unified platform. By
-          combining the power of AI, language processing, and information
-          verification, OmniWeb strives to become the ultimate truth search
-          engine, empowering individuals to make informed life decisions across
-          all domains.
+        <h4 className="mb-[20px] text-accentGreen text-[22px]">Tasks</h4>
+        <ul className="pl-[30px] mb-[30px]">
+          <li className="mb-[20px]">
+            <div className="mb-10px list-parent-item">
+              Advanced Search Engine Development:
+            </div>
+            <ul className="pl-[30px]">
+              <li className="list-item">
+                Create a sophisticated search engine capable of real-time,
+                accurate, and relevant results, transforming how users access
+                information online.
+              </li>
+            </ul>
+          </li>
+          <li className="mb-[20px]">
+            <div className="mb-10px list-parent-item">
+              Comprehensive Knowledge Repository:
+            </div>
+            <ul className="pl-[30px]">
+              <li className="list-item">
+                Build a vast repository that aggregates and organizes the
+                information, aiding in effortless navigation and interaction
+                with a plethora of online resources.
+              </li>
+            </ul>
+          </li>
+          <li className="mb-[20px]">
+            <div className="mb-10px list-parent-item">
+              Multilingual Interaction and Communication:
+            </div>
+            <ul className="pl-[30px]">
+              <li className="list-item">
+                Develop capabilities for OmniWeb to interact and communicate in
+                multiple languages, making the platform linguistically
+                inclusive.
+              </li>
+            </ul>
+          </li>
+          <li className="mb-[20px]">
+            <div className="mb-10px list-parent-item">
+              Unified User Interface:
+            </div>
+            <ul className="pl-[30px]">
+              <li className="list-item">
+                Design an intuitive interface that consolidates various online
+                services, enabling users to manage emails, social media, news,
+                e-commerce, and more from a single platform.
+              </li>
+            </ul>
+          </li>
+          <li className="mb-[20px]">
+            <div className="mb-10px list-parent-item">
+              AI-Powered Information Verification:
+            </div>
+            <ul className="pl-[30px]">
+              <li className="list-item">
+                Implement advanced algorithms to discern between reliable and
+                unreliable information, empowering users to make informed
+                decisions.
+              </li>
+            </ul>
+          </li>
+          <li className="mb-[20px]">
+            <div className="mb-10px list-parent-item">
+              Data Privacy and Security:
+            </div>
+            <ul className="pl-[30px]">
+              <li className="list-item">
+                Establish robust data protection measures ensuring the
+                confidentiality and security of user data.
+              </li>
+            </ul>
+          </li>
+          <li className="mb-[20px]">
+            <div className="mb-10px list-parent-item">
+              Personalized User Experience:
+            </div>
+            <ul className="pl-[30px]">
+              <li className="list-item">
+                Incorporate AI technologies to understand user preferences,
+                tailoring recommendations, and interactions to provide a
+                personalized user experience.
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <h4 className="mb-[20px] text-accentGreen text-[22px]">
+          Evaluation Criteria
+        </h4>
+        <ul className="pl-[30px] mb-[30px]">
+          <li className="list-item">
+            Effectiveness and accuracy of the search engine.
+          </li>
+          <li className="list-item">
+            Extent of multilingual capabilities and inclusivity.
+          </li>
+          <li className="list-item">
+            User interface design, ease of navigation, and unified experience.
+          </li>
+          <li className="list-item">
+            Performance of information verification algorithms.
+          </li>
+          <li className="list-item">
+            Data privacy, security measures, and transparency in data
+            management.
+          </li>
+          <li className="list-item">
+            Innovation in enhancing user experience and personalization.
+          </li>
+        </ul>
+        <p>
+          The OmniWeb Challenge is a voyage into the nexus of AI, language, and
+          digital interaction. It seeks to materialize a vision of a unified
+          online realm, augmenting the way individuals interact with the digital
+          world, bringing a seamless, integrated, and empowering experience to
+          fingertips across the globe.
         </p>
       </>
     ),
   },
   [CHALLENGES_SLUGS[6]]: {
+    button: CHALLENGES[5],
     title: 'Universal Basic Income',
     image: '/icons/challenges-6.svg',
     description: (
       <>
-        <p className="mb-[20px]">
-          A Revolutionary Approach to Universal Basic Income: The AI,
-          Blockchain, and Crypto Synergy
+        <h4 className="mb-[20px] text-[22px] text-accentGreen">Objective</h4>
+        <p className="mb-[30px]">
+          Embark on a groundbreaking journey to fuse AI, blockchain, and
+          cryptocurrency, crafting a Universal Basic Income (UBI) system that
+          transcends geographical, linguistic, and economic barriers. Your
+          mission is to harness cutting-edge technologies to forge a
+          transparent, accessible, and equitable UBI allocation system,
+          catalyzing a new era of economic equality, financial inclusion, and
+          global prosperity.
         </p>
-        <p className="mb-[20px]">
-          Imagine a world where every human, verified by cutting-edge AI
-          technology, is granted access to a monthly universal basic income
-          (UBI), irrespective of nationality, economic status, or geographic
-          location. Such a system could level the economic playing field,
-          eliminate poverty, and foster global economic cooperation and
-          prosperity. With the advent of sophisticated technologies like large
-          language models, blockchain, and cryptocurrencies, this seemingly
-          utopian concept is poised to become reality.
+        <h4 className="mb-[20px] text-accentGreen text-[22px]">Overview</h4>
+        <p className="mb-[30px]">
+          In a world encumbered by economic disparity, the notion of Universal
+          Basic Income (UBI) for every individual, regardless of their
+          circumstances, is no longer a utopian ideal, but a pressing necessity.
+          This challenge beckons the visionary, the innovator, and the
+          technologist to turn the dream into reality, leveraging the synergy
+          between AI, blockchain, and cryptocurrency. The quest encompasses the
+          creation of a robust system for authenticating humanity, ensuring an
+          intuitive user experience, while upholding the pinnacle of data
+          privacy and security.
         </p>
-        <p className="mb-[20px]">
-          At the heart of this revolutionary idea is a large language model,
-          developed on the latest AI architectures acting as a potent tool for
-          AI verification of humanity. Leveraging its ability to understand,
-          generate, and engage in human-like text conversation, this AI could
-          efficiently verify the unique linguistic patterns of every human,
-          enabling a comprehensive, fair, and transparent method for UBI
-          allocation.
-        </p>
-        <p className="mb-[20px]">
-          The authenticated individuals will then be linked to a personalised
-          wallet, acting as their digital bank for UBI. Powering these wallets
-          is a robust and transparent blockchain network. With this approach,
-          each transaction made through these wallets will be decentralised,
-          creating a public, verifiable record that ensures the integrity of the
-          system while eliminating the need for intermediaries.
-        </p>
-        <p className="mb-[20px]">
-          In order to foster widespread acceptance and use, the wallet and
-          associated systems are designed with simplicity in mind. The user
-          experience is intuitive, resembling traditional banking and payment
-          systems, and requiring no technical expertise. This eliminates the
-          complexity typically associated with cryptocurrencies and blockchain,
-          addressing a key challenge currently impeding their mass adoption.
-        </p>
-        <p className="mb-[20px]">
-          In this framework, universal basic income is distributed as
-          stablecoins, a type of digital currency whose value is pegged to a
-          specific fiat currency. However, these stablecoins are not backed by
-          these currencies, but rather function in parallel, creating an
-          alternative financial ecosystem. This approach eases comprehension and
-          acceptance of the new system, as users can easily relate the
-          stablecoin value to their familiar fiat currency.
-        </p>
-        <p className="mb-[20px]">
-          The integration of these wallets with a broader network facilitates
-          easy and seamless transactions between users, stimulating local and
-          global trade. The stablecoin-based UBI received by each user can be
-          readily spent or saved, enabling access to goods and services, and
-          allowing users to partake in the broader economy.
-        </p>
-        <p className="mb-[20px]">
-          In essence, this pioneering system leverages the power of AI,
-          blockchain, and cryptocurrency to establish a truly global,
-          transparent, and accessible universal basic income system. It promises
-          not only to alleviate poverty and enhance financial inclusion but also
-          to create a unified global monetary system that is easily
-          comprehensible and usable by all individuals, fostering unprecedented
-          levels of economic integration and cooperation.
-        </p>
-        <p className="mb-[20px]">
-          Alleviating Global Poverty and Catalyzing Human Advancement: The
-          UBI-Crypto Ecosystem.
-        </p>
-        <p className="mb-[20px]">
-          The proposed integration of artificial intelligence, blockchain, and
-          cryptocurrency to establish a global universal basic income (UBI)
-          system does more than merely introducing an alternative financial
-          ecosystem. It is a revolutionary framework poised to fundamentally
-          reshape socio-economic structures worldwide, with potential to
-          eliminate poverty for 90% of the world population, while enabling a
-          global uplift in human living standards and economic activity.
-        </p>
-        <p className="mb-[20px]">
-          Poverty is a complex, multifaceted problem, but at its core, it&apos;s
-          about a lack of financial resources. By introducing a UBI system,
-          every individual is guaranteed a regular, stable income, immediately
-          lifting them above the poverty line. This economic security allows
-          individuals to address their fundamental needs, such as food, water,
-          and shelter. As such, it holds the promise to drastically reduce
-          global poverty rates, benefiting a significant proportion of the world
-          population.
-        </p>
-        <p className="mb-[20px]">
-          The revolutionary impact of this UBI-crypto system goes far beyond
-          mere survival, however. It lays the foundation for human growth and
-          development on a global scale, aligning with the principles of
-          Maslow&apos;s hierarchy of needs.
-        </p>
-        <p className="mb-[20px]">
-          Maslow&apos;s pyramid is a psychological theory that prioritises human
-          needs from the most basic physiological needs at the bottom to
-          self-actualization at the top. By providing a UBI, the financial
-          burden linked with the lower-level needs—such as food, shelter, and
-          basic security—is lifted. This allows individuals to shift their focus
-          and resources towards meeting higher-level needs, including education,
-          self-improvement, and creative endeavours.
-        </p>
-        <p className="mb-[20px]">
-          As people move up Maslow&apos;s pyramid, they engage more with their
-          communities and contribute to the broader society. With financial
-          concerns mitigated, they can foster deeper human connections,
-          cultivate self-esteem, and pursue personal growth and education. The
-          collective impact of these individual transformations could lead to a
-          substantial enhancement in overall human development, elevating the
-          quality of life for all.
-        </p>
-        <p className="mb-[20px]">
-          Alongside fostering human development, this UBI-crypto system could
-          fuel a powerful economic engine. The widespread implementation of UBI
-          increases aggregate demand by providing everyone with a basic level of
-          purchasing power. This increased demand can stimulate commerce growth
-          and innovation, leading to a cycle of economic expansion.
-        </p>
-        <p className="mb-[20px]">
-          Additionally, the accessibility and ease of transactions facilitated
-          by the system can encourage entrepreneurial activities. With stable
-          financial resources and the ability to make and receive payments
-          effortlessly, more individuals may feel empowered to start businesses,
-          further stimulating economic activity and job creation. This surge in
-          economic activity and the quest for self-actualization will spark a
-          global pursuit of scientific advancement. With the basic needs
-          satisfied, humanity&apos;s collective resources—both intellectual and
-          financial—can be directed towards solving complex challenges,
-          fostering innovation, and advancing our understanding of the universe.
-        </p>
-        <p className="mb-[20px]">
-          In summary, the integration of AI, blockchain, and cryptocurrency to
-          form a global UBI system holds tremendous potential. It could
-          virtually eliminate poverty, elevate human development, boost economic
-          activity, and spur scientific advancement, contributing to a profound
-          upliftment in the global standard of living.
-        </p>
-        <ul className="pl-[30px]">
-          <li className="list-item">
-            Implement an AI-powered &quot;Proof of Humanity&quot; system. This
-            system, capable of facial recognition via photo and video, coupled
-            with ID document verification and text input, ensures each
-            person&apos;s individuality. Its primary purpose is to verify that
-            each person has not been previously registered within the UBI
-            system. This setup necessitates the development of an innovative
-            verification system.
+        <h4 className="mb-[20px] text-accentGreen text-[22px]">Tasks</h4>
+        <ul className="pl-[30px] mb-[30px]">
+          <li className="mb-[20px]">
+            <div className="mb-10px list-parent-item">
+              AI-Powered Humanity Verification:
+            </div>
+            <ul className="pl-[30px]">
+              <li className="list-item">
+                Design and implement a &quot;Proof of Humanity&quot; system
+                employing facial recognition, ID document verification, and text
+                input to ascertain each individual&apos;s unique identity,
+                ensuring no prior registration in the UBI system.
+              </li>
+            </ul>
           </li>
-          <li className="list-item">
-            The monthly allocation of stable coins will be determined depending
-            on the average income per country. Each country will receive a
-            different amount in correspondence with its income average.
-          </li>
-          <li className="list-item">
-            Each Country will get its own Stable coin USDn, EURn, GPBn, to
-          </li>
-          <li className="list-item">
-            Design a straightforward user interface for individuals who have
-            completed the &quot;Proof of Humanity&quot; process. This interface
-            enables users to monitor their balances, accept UBI funds, send and
-            receive money from other users, and review transaction history.
-            Additionally, it should allow users to provide instructions for
-            their funds&apos; usage. The system manages private keys in the
-            background, simplifying financial account access by eliminating the
-            intricacies of handling private keys and executing blockchain
-            transactions.
-          </li>
-          <li className="list-item">
-            Create a standalone unit by the SDK of Cosmos or forking the
-            Avalanche blockchain codebase.
-          </li>
-          <li className="list-item">
-            Modify the codebase to include a segment of the blockchain that can
-            operate without gas fees. Simultaneously, an innovative anti-abuse
-            system is required to prevent spamming, thus providing a solution
-            for free financial transactions worldwide.
-          </li>
-          <li className="list-item">
-            Incorporate burnable transaction fees for all users in the face of
-            inflation. These fees, as outlined in the NUAH Whitepaper&apos;s
-            Section 8 (link), will be mandated across all wallets.
+          <li className="mb-[20px]">
+            <div className="mb-10px list-parent-item">
+              Intuitive User Interface:
+            </div>
+            <ul className="pl-[30px]">
+              <li className="list-item">
+                Craft a straightforward user interface to get verified.
+              </li>
+            </ul>
           </li>
         </ul>
+        <h4 className="mb-[20px] text-accentGreen text-[22px]">
+          Evaluation Criteria
+        </h4>
+        <ul className="pl-[30px] mb-[30px]">
+          <li className="list-item">
+            Effectiveness and accuracy of the &quot;Proof of Humanity&quot;
+            system.
+          </li>
+          <li className="list-item">
+            User interface design, ease of navigation, and simplified blockchain
+            interaction.
+          </li>
+          <li className="list-item">
+            Adaptability and integration capability of the blockchain standalone
+            unit.
+          </li>
+          <li className="list-item">
+            Overall potential impact on promoting economic equality, financial
+            inclusion, and global economic integration.
+          </li>
+        </ul>
+        <p>
+          The Global UBI Synergy Challenge is a voyage into the confluence of
+          technology and humanity, aspiring towards a realm where financial
+          security is a right, not a privilege. This challenge encapsulates the
+          aspiration of not merely surviving, but thriving as a unified global
+          community, enhancing the quality of life for all, and embarking on a
+          journey of collective economic upliftment and human advancement.
+        </p>
       </>
     ),
   },
   [CHALLENGES_SLUGS[7]]: {
+    button: CHALLENGES[6],
     title: 'SCIENTIFIC DISCOVERY',
     image: '/icons/challenges-7.svg',
     description: (
       <>
-        <p className="mb-[20px]">
-          SCAINCE: Unleashing the Global Mastermind for Democratized Scientific
-          Progress
+        <h4 className="mb-[20px] text-[22px] text-accentGreen">Objective</h4>
+        <p className="mb-[30px]">
+          Embark on a transformative quest to democratize scientific discovery
+          through the fusion of collective human intelligence and cutting-edge
+          AI technologies. The Global Mastermind Scientific Challenge invites
+          pioneers across the globe to harness the SCAINCE large language model
+          AI, igniting a global &quot;Mastermind&quot; to accelerate scientific
+          progress, transcend geographical barriers, and cultivate a realm of
+          collaborative research and innovation.
         </p>
-        <p className="mb-[20px]">
-          Welcome to the future of scientific discovery, where SCAINCE, a large
-          language model AI, breaks down barriers and empowers a global
-          &apos;Mastermind&apos; built upon the collective intelligence of
-          humans and AI systems. With SCAINCE, we embark on a journey of
-          democratized scientific progress that transcends boundaries and
-          invites collaboration from students, teachers, amateur scientists,
-          professional scientists, and AI researchers worldwide.
+        <h4 className="mb-[20px] text-accentGreen text-[22px]">Overview</h4>
+        <p className="mb-[30px]">
+          The dawn of SCAINCE unveils boundless potential to reshape the
+          landscape of scientific inquiry and discovery. By establishing a
+          universal communication protocol, fostering virtual experimentation,
+          and nurturing real-world collaboration, SCAINCE endeavors to bridge
+          the chasm between theoretical exploration and practical realization.
+          This challenge beckons the global scientific community to unite, share
+          knowledge, and collectively propel the frontiers of scientific
+          endeavor into uncharted territories.
         </p>
-        <p className="mb-[20px]">
-          Universal Communication Protocol for Scientists Worldwide
-        </p>
-        <p className="mb-[20px]">
-          SCAINCE establishes a universal communication protocol for scientists
-          across the globe. Through the SCAINCE chat interface, scientists can
-          effortlessly upload their research papers and discoveries,
-          transforming them into easily accessible resources for other
-          scientists active in the same domain. The AI analyzes and interprets
-          the uploaded content, making it readily available within the chat
-          interfaces of relevant scientists. This seamless exchange of knowledge
-          creates a robust and interconnected network, enabling efficient and
-          effective communication among researchers worldwide.
-        </p>
-        <p className="mb-[20px]">
-          Virtual Experiments and Collaborative Research
-        </p>
-        <p className="mb-[20px]">
-          As a scientist using SCAINCE, you have the power to instruct the AI to
-          conduct research and perform virtual experiments on open-source
-          scientific models. This capability allows you to simulate and test
-          hypotheses rapidly, accelerating the pace of discovery. Additionally,
-          SCAINCE facilitates collaboration among scientists working in the same
-          domain. You can connect with fellow researchers to discuss ongoing
-          projects, exchange ideas, and even collaborate on physical experiments
-          in the real world. By merging virtual and physical research, SCAINCE
-          enables scientists to complement each other&apos;s work and achieve
-          more comprehensive results.
-        </p>
-        <p className="mb-[20px]">
-          The Mastermind effect created by SCAINCE is not limited to virtual
-          interactions; it extends into the physical realm, fostering real-world
-          collaboration and experimentation. With SCAINCE, the boundaries
-          between theoretical exploration and practical implementation blur,
-          opening up new avenues for groundbreaking discoveries and innovation.
-        </p>
-        <p className="mb-[20px]">
-          The power of SCAINCE lies in its ability to connect scientists
-          globally, transcending geographical limitations and enabling a
-          seamless flow of ideas and expertise. By combining virtual
-          experiments, collaborative research, and physical implementation,
-          SCAINCE propels scientific progress to unprecedented levels.
-        </p>
-        <p className="">
-          SCAINCE shapes the future of scientific discovery. With SCAINCE, we
-          unlock the full potential of global collaboration, communication, and
-          experimentation. Together, we break down barriers, democratize
-          scientific knowledge, and forge a path toward a brighter future of
-          collective intelligence and scientific advancement.
+        <h4 className="mb-[20px] text-accentGreen text-[22px]">Tasks</h4>
+        <ul className="pl-[30px] mb-[30px]">
+          <li className="mb-[20px]">
+            <div className="mb-10px list-parent-item">
+              Universal Communication Protocol:
+            </div>
+            <ul className="pl-[30px]">
+              <li className="list-item">
+                Develop a robust and seamless communication protocol within the
+                SCAINCE interface, enabling scientists to upload, share, and
+                access research findings effortlessly. Ensure the AI’s
+                proficiency in analyzing and disseminating the shared knowledge
+                to relevant scientists worldwide.
+              </li>
+            </ul>
+          </li>
+          <li className="mb-[20px]">
+            <div className="mb-10px list-parent-item">
+              Virtual Experiments and AI-Assisted Research:
+            </div>
+            <ul className="pl-[30px]">
+              <li className="list-item">
+                Innovate mechanisms for scientists to instruct SCAINCE in
+                conducting virtual experiments on open-source scientific models,
+                simulating and testing hypotheses, and accelerating the pace of
+                scientific discoveries.
+              </li>
+            </ul>
+          </li>
+          <li className="mb-[20px]">
+            <div className="mb-10px list-parent-item">
+              Collaborative Research Platform:
+            </div>
+            <ul className="pl-[30px]">
+              <li className="list-item">
+                Design an intuitive platform within SCAINCE to foster
+                collaboration among scientists, facilitating discussions on
+                ongoing projects, idea exchange, and coordination for real-world
+                experiments.
+              </li>
+            </ul>
+          </li>
+          <li className="mb-[20px]">
+            <div className="mb-10px list-parent-item">
+              Real-World Collaboration and Experimentation:
+            </div>
+            <ul className="pl-[30px]">
+              <li className="list-item">
+                Create pathways for transitioning virtual collaborations into
+                real-world experimental partnerships, enhancing the synergy
+                between theoretical and practical research endeavors.
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <h4 className="mb-[20px] text-accentGreen text-[22px]">
+          Evaluation Criteria
+        </h4>
+        <ul className="pl-[30px] mb-[30px]">
+          <li className="list-item">
+            Efficiency and effectiveness of the communication protocol.
+          </li>
+          <li className="list-item">
+            Innovation in virtual experimentation and AI-assisted research
+            mechanisms.
+          </li>
+          <li className="list-item">
+            Ease of collaboration on the platform and transition to real-world
+            experimentation.
+          </li>
+          <li className="list-item">
+            Overall potential impact on advancing scientific discovery and
+            promoting global collaboration.
+          </li>
+        </ul>
+        <p>
+          The Global Mastermind Scientific Challenge is a clarion call to the
+          curious, the visionary, and the relentless pursuers of truth. It’s a
+          celebration of collective intellect, a journey towards unearthing
+          mysteries, and a quest to broaden the horizons of human understanding.
+          Through this challenge, we stride towards a future where the global
+          scientific community converges into a harmonious Mastermind,
+          illuminating the path of discovery and paving the way towards a
+          brighter, more enlightened future.
         </p>
       </>
     ),

@@ -479,10 +479,13 @@ export default function Home() {
                 </div>
 
                 <div className="text-[20px] font-[700] leading-[1] font-ceraPro max-w-[240px]">
-                  Celestial Body
+                  Autogenetic coding module
                 </div>
 
-                <Button link="/challenge/celestial-body" linkType="internal">
+                <Button
+                  link="/challenge/autogenetic-coding"
+                  linkType="internal"
+                >
                   Challenge details
                 </Button>
               </div>

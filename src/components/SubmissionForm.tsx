@@ -11,11 +11,15 @@ import { CHALLENGES } from '@/utils/constants';
 import Image from 'next/image';
 import OverlayContext from '@/context/OverlayContext';
 import PrivacyPolicyContent from './PrivacyPolicyContent';
+import { useSearchParams } from 'next/navigation';
 
 const SubmissionForm = () => {
   const { alertComponent, open, close } = useAlert();
   const { setContent, open: openOverlay } = useContext(OverlayContext);
-  const [challenge, setChallenge] = useState<string>('');
+  const params = useSearchParams();
+  const [challenge, setChallenge] = useState<string>(
+    params.get('challenge') || '',
+  );
   const [success, setSuccess] = useState(false);
   const [privacy, setPrivacy] = useState(false);
 

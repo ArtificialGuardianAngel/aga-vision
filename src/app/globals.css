@@ -284,6 +284,23 @@ pre {
   transform: translate(-50%, 50%);
 }
 
+.list-parent-item {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.list-parent-item::before {
+  content: '';
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background-color: #d6e1fa;
+  top: calc(50% - 8px);
+  left: -15px;
+  border-radius: 50%;
+  transform: translate(-50%, 50%);
+}
+
 input[type='range'] {
   -webkit-appearance: none;
   -moz-appearance: none;
