@@ -13,7 +13,7 @@ const MobileMenu: React.FC<{}> = () => {
     <>
       <div
         className={cn(
-          'fixed w-[50px] h-[50px] rounded-full border-accentGreen top-[20px] right-[20px] z-50 border-2 backdrop-blur-[25px] cursor-pointer',
+          'hidden fixed w-[50px] h-[50px] rounded-full border-accentGreen top-[20px] right-[20px] z-50 border-2 backdrop-blur-[25px] cursor-pointer lg:block',
         )}
         onClick={() => setOpened((p) => !p)}
       >
@@ -77,7 +77,7 @@ const MobileMenu: React.FC<{}> = () => {
               href={pathname !== '' ? '/#training-camp' : '#training-camp'}
               onClick={() => setOpened(false)}
             >
-              AI Dev Training camp
+              AI Dev camp
             </Link>
           </div>
           <div className="md:bg-card md:rounded-[50px] p-[18px_30px] leading-[10px] w-[255px] md:p-[20px] border-b-white/10 border-b-[1px] md:border-b-0">
