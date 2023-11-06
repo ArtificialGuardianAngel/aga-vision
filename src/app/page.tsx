@@ -1,3 +1,5 @@
+'use client';
+
 import Button from '@/components/Button';
 import Guideline from '@/components/Guideline';
 import { ScrollBottomIcon } from '@/components/ScrollBottonIcon';
@@ -6,8 +8,23 @@ import VideoBackground from '@/components/VideoBackground';
 import { VideoPlayer } from '@/components/VideoPlayer';
 import Image from 'next/image';
 import Link from 'next/link';
+import { useEffect } from 'react';
 
 export default function Home() {
+  useEffect(() => {
+    setTimeout(() => {
+      const hash = window.location.hash;
+
+      if (hash) {
+        const el = document.querySelector(hash);
+
+        if (el) {
+          el.scrollIntoView();
+        }
+      }
+    });
+  }, []);
+
   return (
     <main>
       <section className="p-[20px_0] min-h-screen flex items-center flex-col">
