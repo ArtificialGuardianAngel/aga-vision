@@ -3,12 +3,17 @@
 import { useEffect, useRef } from 'react';
 
 const HackathonsWelcomeBlock = () => {
-  const videoRef = useRef<HTMLVideoElement>(null);
+  const desktopVideoRef = useRef<HTMLVideoElement>(null);
+  const mobileVideoRef = useRef<HTMLVideoElement>(null);
 
   useEffect(() => {
     const timeout = setTimeout(() => {
-      if (videoRef.current) {
-        videoRef.current.play();
+      if (desktopVideoRef.current) {
+        desktopVideoRef.current.play();
+      }
+
+      if (mobileVideoRef.current) {
+        mobileVideoRef.current.play();
       }
     }, 0);
 
@@ -20,7 +25,7 @@ const HackathonsWelcomeBlock = () => {
       <video
         className="absolute object-cover top-0 left-0 w-full h-full -z-10 block lg:hidden"
         preload="true"
-        ref={videoRef}
+        ref={desktopVideoRef}
         loop
         muted
         playsInline
@@ -30,7 +35,7 @@ const HackathonsWelcomeBlock = () => {
       <video
         className="absolute object-cover top-0 left-0 w-full h-full -z-10 hidden lg:block"
         preload="true"
-        ref={videoRef}
+        ref={mobileVideoRef}
         loop
         muted
         playsInline

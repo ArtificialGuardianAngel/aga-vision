@@ -74,6 +74,14 @@ const SubmissionForm = () => {
         });
 
         setSuccess(true);
+
+        setTimeout(() => {
+          const el = document.querySelector('#form-success');
+
+          if (el) {
+            el.scrollIntoView();
+          }
+        });
       } catch (e) {
         open('Something went wrong', 'error');
       } finally {
@@ -85,7 +93,10 @@ const SubmissionForm = () => {
 
   if (success) {
     return (
-      <div className="p-[50px] flex flex-col gap-[50px] bg-card rounded-[10px] md:p-[50px_20px] md:mr-[-20px] md:ml-[-20px] md:rounded-none">
+      <div
+        className="p-[50px] flex flex-col gap-[50px] bg-card rounded-[10px] md:p-[50px_20px] md:mr-[-20px] md:ml-[-20px] md:rounded-none"
+        id="form-success"
+      >
         <div className="flex flex-col gap-[30px] items-center">
           <div className="rounded-full w-[80px] h-[80px] border-[1px] border-accentGreen flex items-center justify-center">
             <Image src="/icons/icon-check.svg" alt="" width={20} height={14} />
