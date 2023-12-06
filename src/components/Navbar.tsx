@@ -5,8 +5,14 @@ import { usePathname } from 'next/navigation';
 import React from 'react';
 import cn from 'classnames';
 
+const NAVBAR_BLACKLIST_URLS = ['/hackathon'];
+
 const Navbar = () => {
   const pathname = usePathname();
+
+  if (NAVBAR_BLACKLIST_URLS.includes(pathname)) {
+    return null;
+  }
 
   return (
     <nav className="fixed top-[20px] left-[50%] translate-x-[-50%] p-[0_25px] bg-white/10 z-[100] flex rounded-[50px] text-[13px] font-[600] whitespace-nowrap uppercase text-white leading-[7px] items-center transition-colors lg:hidden backdrop-blur-[25px] gap-[20px]">
