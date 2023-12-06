@@ -5,9 +5,15 @@ import cn from 'classnames';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
+const NAVBAR_BLACKLIST_URLS = ['/hackathon'];
+
 const MobileMenu: React.FC<{}> = () => {
   const [opened, setOpened] = useState(false);
   const pathname = usePathname();
+
+  if (NAVBAR_BLACKLIST_URLS.includes(pathname)) {
+    return null;
+  }
 
   return (
     <>

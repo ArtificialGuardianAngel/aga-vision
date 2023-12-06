@@ -4,6 +4,7 @@ import cn from 'classnames';
 const HackathonTitle: FC<PropsWithChildren & HTMLProps<HTMLTitleElement>> = ({
   children,
   className,
+  id,
 }) => {
   return (
     <h2

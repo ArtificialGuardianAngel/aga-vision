@@ -63,6 +63,9 @@ export default function HackathonPage() {
                 width={400}
                 height={400}
                 className="m-auto md:max-w-[250px]"
+                style={{
+                  filter: 'drop-shadow(0px 10px 80px rgba(17, 244, 209, 0.40))',
+                }}
               />
 
               <div className="p-[50px] rounded-[20px] bg-white/[0.03] flex flex-col gap-[20px] md:p-[50px_30px]">
@@ -85,6 +88,9 @@ export default function HackathonPage() {
                 width={400}
                 height={400}
                 className="m-auto md:max-w-[250px]"
+                style={{
+                  filter: 'drop-shadow(0px 10px 80px rgba(17, 244, 209, 0.40))',
+                }}
               />
 
               <div className="p-[50px] rounded-[20px] bg-white/[0.03] flex flex-col gap-[20px] md:p-[50px_30px]">
@@ -132,7 +138,13 @@ export default function HackathonPage() {
               }}
               className="md:max-w-[200px]"
             />
-            <HackathonTitle>Sign up now</HackathonTitle>
+            <HackathonTitle className="relative">
+              Sign up now
+              <div
+                id="form"
+                className="absolute -top-[100px] md:-top-[50px]"
+              ></div>
+            </HackathonTitle>
           </div>
 
           <HackathonSignupForm />
@@ -153,9 +165,13 @@ export default function HackathonPage() {
 
             <p className="text-center text-[18px] md:text-[15px]">
               To prepare for the hackathon, refer to our{' '}
-              <span className="border-b-[1px] border-white">
+              <a
+                className="border-b-[1px] border-white"
+                href="/hackathon/doc.pdf"
+                target="_blank"
+              >
                 THE INFRASTRUCTURE - AGI Discovery
-              </span>{' '}
+              </a>{' '}
               document for insights and inspiration. This document outlines key
               advancements and concepts in AGI from our previous hackathon,
               setting the stage for what&apos;s to come. Visit also our GitHub
@@ -166,7 +182,7 @@ export default function HackathonPage() {
               size="lg"
               className="self-center md:self-stretch"
               icon="arrow"
-              link="https://github.com"
+              link="https://github.com/ArtificialGuardianAngel"
               linkType="external"
             >
               Go to our github

@@ -23,10 +23,7 @@ const HackathonSignupForm = () => {
   };
 
   return (
-    <div
-      className="p-[70px_50px] rounded-[20px] bg-white/[0.03] shadow-[3px_3px_0px_0px_#11F4D1] flex flex-col gap-[50px] md:p-[50px_20px]"
-      id="form"
-    >
+    <div className="p-[70px_50px] rounded-[20px] bg-white/[0.03] shadow-[3px_3px_0px_0px_#11F4D1] flex flex-col gap-[50px] md:p-[50px_20px]">
       <div className="font-[500] md:text-[15px]">
         Ready to be a part of this groundbreaking event? Follow these simple
         steps to secure your spot:
@@ -77,17 +74,15 @@ const HackathonSignupForm = () => {
         </div>
       </div>
 
-      {haveTeam === 'yes' && (
-        <div className="grid grid-cols-1 gap-[10px]">
-          <Input name="name" placeholder="Name" />
-          <Textarea
-            className="min-h-[200px]"
-            placeholder="Briefly describe your coding experience or projects (optional)"
-          />
-          <Input name="github" placeholder="GitHub link (optional)" />
-          <Input name="linkedin" placeholder="LinkedIn link (optional)" />
-        </div>
-      )}
+      <div className="grid grid-cols-1 gap-[10px]">
+        {haveTeam === 'yes' && <Input name="name" placeholder="Name" />}
+        <Textarea
+          className="min-h-[200px]"
+          placeholder="Briefly describe your coding experience or projects (optional)"
+        />
+        <Input name="github" placeholder="GitHub link (optional)" />
+        <Input name="linkedin" placeholder="LinkedIn link (optional)" />
+      </div>
 
       <div className="h-[1px] w-full bg-white/20"></div>
 
@@ -108,7 +103,9 @@ const HackathonSignupForm = () => {
             .
           </Checkbox>
         </div>
-        <Button size="lg">Submit</Button>
+        <Button size="lg" disabled={!privacy}>
+          Submit
+        </Button>
       </div>
 
       <div className="h-[1px] w-full bg-white/20"></div>
