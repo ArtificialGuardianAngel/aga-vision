@@ -27,9 +27,9 @@ const HackathonsEventCard: React.FC<Props> = ({
           className="self-start sm:w-full"
           size="sm"
           icon="arrow"
-          // link={link}
-          // linkType="external"
-          onClick={showComingSoonModal}
+          {...(link
+            ? { link, linkType: 'internal' }
+            : { onClick: showComingSoonModal })}
         >
           Join hackathon
         </Button>

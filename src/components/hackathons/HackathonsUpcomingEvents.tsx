@@ -5,18 +5,18 @@ import HackathonsEventCard from './HackathonsEventCard';
 
 const MOCK_DATA = [
   {
-    date: '06/12/2023',
-    location: 'Katowice, Poland',
+    date: 'February TBA',
+    location: 'Bangkok, Thailand',
     link: '',
   },
   {
-    date: '06/01/2024',
-    location: 'Tokyo, Japan',
-    link: '',
+    date: '23/02/2024 - 25/02/2024',
+    location: 'Bali, Indonesia',
+    link: 'https://aga.vision/hackathon',
   },
   {
-    date: '27/01/2024',
-    location: 'Berlin, Germany',
+    date: 'TBA',
+    location: 'Singapore',
     link: '',
   },
 ];
