@@ -10,6 +10,7 @@
     "test": "echo Ok"
   },
   "dependencies": {
+    "@google-cloud/local-auth": "2.1.0",
     "@types/node": "20.4.8",
     "@types/react": "18.2.18",
     "@types/react-dom": "18.2.7",
@@ -17,7 +18,10 @@
     "classnames": "^2.3.2",
     "eslint": "8.46.0",
     "eslint-config-next": "13.4.12",
+    "googleapis": "105",
     "next": "13.4.12",
+    "node-fetch": "^3.3.2",
+    "nodemailer": "^6.9.7",
     "postcss": "8.4.27",
     "react": "18.2.0",
     "react-dom": "18.2.0",
@@ -29,6 +33,7 @@
     "zod": "^3.21.4"
   },
   "devDependencies": {
+    "@types/nodemailer": "^6.4.14",
     "prettier": "^3.0.1"
   }
 }
