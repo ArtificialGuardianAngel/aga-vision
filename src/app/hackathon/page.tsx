@@ -16,7 +16,7 @@ export default function HackathonPage() {
         <div className="container pt-[50px] flex flex-col gap-[100px] md:gap-[50px]">
           <div className="flex gap-[20px] md:flex-col">
             <PerspectiveCard className="flex-1" title="Date">
-              February [exact dates TBD]
+              23-25.02.2024
             </PerspectiveCard>
 
             <PerspectiveCard className="flex-1" title="Location">
