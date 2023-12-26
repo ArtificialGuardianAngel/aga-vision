@@ -190,7 +190,7 @@ export default function Home() {
               <div className="text-[16px] leading-normal">
                 For additional information, download the{' '}
                 <a href="/whitepaper.pdf" className="green" target="_blank">
-                  NUAH WHITE PAPER
+                  NUAH WHITEPAPER
                 </a>
                 .
               </div>
