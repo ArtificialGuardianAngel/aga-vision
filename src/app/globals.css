@@ -445,3 +445,65 @@ input[type='number'] {
     ),
     #1c293c;
 }
+
+.gradient-button {
+  border-radius: 50px;
+  border: 3px solid #7c1dce;
+  background: linear-gradient(94deg, #11f4d1 0.22%, #7c1dce 162.19%);
+  box-shadow: 0px 0px 100px 0px #ef37ff;
+  padding: 28px 50px;
+
+  font-size: 16px;
+  line-height: 12px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.code-in-universa-bg {
+  background: url('/universa/code-in-universe-bg.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  mix-blend-mode: lighten;
+}
+
+@media (max-width: 767px) {
+  .code-in-universa-bg {
+    background-size: cover;
+  }
+}
+
+.universa-combinations-bg {
+  background: url('/universa/universa-combinations-bg.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  mix-blend-mode: lighten;
+}
+
+.universa-start-dev-bg {
+  background: url('/universa/universa-start-dev-bg.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+@media (max-width: 767px) {
+  .universa-start-dev-bg {
+    background-size: auto;
+  }
+}
+
+.universa-start-dev-bg::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 0;
+  border-radius: 20px;
+}

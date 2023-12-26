@@ -67,9 +67,9 @@ const Navbar = () => {
       <div className="p-[20px_0]">
         <Link
           className="transition-colors hover:text-accentGreen"
-          href={'/universe'}
+          href={'/universa'}
         >
-          Universe
+          Universa
         </Link>
       </div>
       <div className="h-[30px] w-[1px] bg-white/20"></div>

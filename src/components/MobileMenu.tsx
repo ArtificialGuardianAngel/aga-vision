@@ -116,10 +116,10 @@ const MobileMenu: React.FC<{}> = () => {
           <div className="md:bg-card md:rounded-[50px] p-[18px_30px] leading-[10px] w-[255px] md:p-[20px] border-b-white/10 border-b-[1px] md:border-b-0">
             <Link
               className="transition-colors hover:text-accentGreen"
-              href={'/universe'}
+              href={'/universa'}
               onClick={() => setOpened(false)}
             >
-              Universe
+              Universa
             </Link>
           </div>
           <div className="md:bg-card md:rounded-[50px] p-[18px_30px] leading-[10px] w-[255px] md:p-[20px]">
