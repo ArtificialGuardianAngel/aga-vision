@@ -16,7 +16,7 @@ export default function HackathonPage() {
         <div className="container pt-[50px] flex flex-col gap-[100px] md:gap-[50px]">
           <div className="flex gap-[20px] md:flex-col">
             <PerspectiveCard className="flex-1" title="Date">
-              23-25.02.2024
+              1-3.03.2024
             </PerspectiveCard>
 
             <PerspectiveCard className="flex-1" title="Location">
@@ -37,7 +37,7 @@ export default function HackathonPage() {
 
           <div className="flex flex-col gap-[20px] text-center max-w-[880px] m-auto text-[18px] md:text-[15px]">
             <p>
-              Join us this February for an extraordinary journey in the world of
+              Join us this March for an extraordinary journey in the world of
               AGI, at the much-anticipated sequel to our successful Bali
               Hackathon. Hosted at Livit Hub in Sanur, this event is more than
               just a hackathon - it&apos;s a convergence of brilliant minds from
@@ -229,7 +229,7 @@ export default function HackathonPage() {
                 advancements.
               </p>
 
-              <h5 className="font-[600]">See you in February!</h5>
+              <h5 className="font-[600]">See you in March!</h5>
             </div>
           </div>
         </div>
